@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "ScorecardDocument": {
+      "title": "ScorecardDocument",
+      "description": "Incorrect quiz answer statistics for a given user, stored by lesson, vocabulary, and test direction.",
+      "type": "object",
+      "properties": {
+        "scores": {
+          "type": "object",
+          "description": "Map representing { [lessonId]: { [vocabulary]: { [testMode]: count } } }"
+        }
+      },
+      "required": ["scores"]
+    }
+  },
+  "firestore": {
+    "artifacts/{appId}/users/{userId}/scorecard/{docId}": {
+      "schema": "ScorecardDocument",
+      "description": "Incorrect vocabulary scorecard records for a specific user within the current Applet instance."
+    }
+  }
+}

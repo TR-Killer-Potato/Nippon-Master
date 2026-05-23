@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 14",
+  "vocabulary": [
+    {
+      "v": "払う",
+      "r": "はらう",
+      "m": "To pay",
+      "isReadingRedundant": false,
+      "dv": [
+        "仏う",
+        "拡う"
+      ],
+      "dr": [
+        "ばらう",
+        "はーらう"
+      ],
+      "dm": [
+        "To receive",
+        "To steal"
+      ]
+    },
+    {
+      "v": "週間",
+      "r": "しゅうかん",
+      "m": "Week",
+      "isReadingRedundant": false,
+      "dv": [
+        "週問",
+        "週門"
+      ],
+      "dr": [
+        "じゅうかん",
+        "しゅかん"
+      ],
+      "dm": [
+        "Month",
+        "Year"
+      ]
+    },
+    {
+      "v": "色々",
+      "r": "いろいろ",
+      "m": "Various",
+      "isReadingRedundant": false,
+      "dv": [
+        "巴々",
+        "芭々"
+      ],
+      "dr": [
+        "いーろいろ",
+        "いどいろ"
+      ],
+      "dm": [
+        "Specific",
+        "Single"
+      ]
+    },
+    {
+      "v": "ところで",
+      "r": "-",
+      "m": "By the way",
+      "isReadingRedundant": true,
+      "dv": [
+        "どことで",
+        "てころで"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Therefore",
+        "Because"
+      ]
+    },
+    {
+      "v": "高校",
+      "r": "こうこう",
+      "m": "Senior high",
+      "isReadingRedundant": false,
+      "dv": [
+        "高効",
+        "高交"
+      ],
+      "dr": [
+        "ごうこう",
+        "こーこう"
+      ],
+      "dm": [
+        "Middle school",
+        "University"
+      ]
+    },
+    {
+      "v": "押す",
+      "r": "おす",
+      "m": "To push/press",
+      "isReadingRedundant": false,
+      "dv": [
+        "抽す",
+        "伸す"
+      ],
+      "dr": [
+        "おーす",
+        "おず"
+      ],
+      "dm": [
+        "To pull",
+        "To turn"
+      ]
+    },
+    {
+      "v": "下がる",
+      "r": "さがる",
+      "m": "To go down",
+      "isReadingRedundant": false,
+      "dv": [
+        "上がる",
+        "卜がる"
+      ],
+      "dr": [
+        "ざがる",
+        "さーがる"
+      ],
+      "dm": [
+        "To go up",
+        "To stay"
+      ]
+    },
+    {
+      "v": "客",
+      "r": "きゃく",
+      "m": "Guest/customer",
+      "isReadingRedundant": false,
+      "dv": [
+        "各",
+        "容"
+      ],
+      "dr": [
+        "giゃく",
+        "きゃーく"
+      ],
+      "dm": [
+        "Host",
+        "Owner"
+      ]
+    },
+    {
+      "v": "白",
+      "r": "しろ",
+      "m": "White",
+      "isReadingRedundant": false,
+      "dv": [
+        "百",
+        "自"
+      ],
+      "dr": [
+        "じろ",
+        "しーろ"
+      ],
+      "dm": [
+        "Blue",
+        "Yellow"
+      ]
+    },
+    {
+      "v": "赤い",
+      "r": "あかい",
+      "m": "Red",
+      "isReadingRedundant": false,
+      "dv": [
+        "亦い",
+        "志い"
+      ],
+      "dr": [
+        "あがい",
+        "あーかい"
+      ],
+      "dm": [
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "v": "黒",
+      "r": "くろ",
+      "m": "Black",
+      "isReadingRedundant": false,
+      "dv": [
+        "里",
+        "墨"
+      ],
+      "dr": [
+        "ぐろ",
+        "くーろ"
+      ],
+      "dm": [
+        "White",
+        "Red"
+      ]
+    },
+    {
+      "v": "神様",
+      "r": "かみさま",
+      "m": "God",
+      "isReadingRedundant": false,
+      "dv": [
+        "祖様",
+        "祥様"
+      ],
+      "dr": [
+        "gぁみさま",
+        "かみざま"
+      ],
+      "dm": [
+        "Demon",
+        "Human"
+      ]
+    },
+    {
+      "v": "クラス",
+      "r": "-",
+      "m": "Class",
+      "isReadingRedundant": true,
+      "dv": [
+        "グラス",
+        "クラヌ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Teacher",
+        "School"
+      ]
+    },
+    {
+      "v": "この間",
+      "r": "このあいだ",
+      "m": "The other day",
+      "isReadingRedundant": false,
+      "dv": [
+        "この問",
+        "この門"
+      ],
+      "dr": [
+        "ごのあいだ",
+        "このあーいだ"
+      ],
+      "dm": [
+        "Today",
+        "Tomorrow"
+      ]
+    },
+    {
+      "v": "今年",
+      "r": "ことし",
+      "m": "This year",
+      "isReadingRedundant": false,
+      "dv": [
+        "令年",
+        "今季"
+      ],
+      "dr": [
+        "ごとし",
+        "こどし"
+      ],
+      "dm": [
+        "Next year",
+        "Last year"
+      ]
+    },
+    {
+      "v": "例えば",
+      "r": "たとえば",
+      "m": "For example",
+      "isReadingRedundant": false,
+      "dv": [
+        "列えば",
+        "例えは"
+      ],
+      "dr": [
+        "だとえば",
+        "たどえば"
+      ],
+      "dm": [
+        "In conclusion",
+        "Therefore"
+      ]
+    },
+    {
+      "v": "違い",
+      "r": "ちがい",
+      "m": "Difference",
+      "isReadingRedundant": false,
+      "dv": [
+        "達い",
+        "偉い"
+      ],
+      "dr": [
+        "ぢがい",
+        "ちかーい"
+      ],
+      "dm": [
+        "Similarity",
+        "Agreement"
+      ]
+    },
+    {
+      "v": "小さな",
+      "r": "ちいさな",
+      "m": "Small",
+      "isReadingRedundant": false,
+      "dv": [
+        "少さな",
+        "歩さな"
+      ],
+      "dr": [
+        "ぢいさな",
+        "ちーさな"
+      ],
+      "dm": [
+        "Large",
+        "Huge"
+      ]
+    },
+    {
+      "v": "耳",
+      "r": "みみ",
+      "m": "Ear",
+      "isReadingRedundant": false,
+      "dv": [
+        "目",
+        "身"
+      ],
+      "dr": [
+        "みーみ",
+        "びみ"
+      ],
+      "dm": [
+        "Nose",
+        "Eye"
+      ]
+    },
+    {
+      "v": "デート",
+      "r": "-",
+      "m": "Date",
+      "isReadingRedundant": true,
+      "dv": [
+        "デー卜",
+        "テート"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Meeting",
+        "Appointment"
+      ]
+    },
+    {
+      "v": "兄弟",
+      "r": "きょうだい",
+      "m": "Siblings",
+      "isReadingRedundant": false,
+      "dv": [
+        "兄第",
+        "呆弟"
+      ],
+      "dr": [
+        "giょうだい",
+        "きょうたい"
+      ],
+      "dm": [
+        "Parents",
+        "Friends"
+      ]
+    },
+    {
+      "v": "お礼",
+      "r": "おれい",
+      "m": "Thanks/gratitude",
+      "isReadingRedundant": false,
+      "dv": [
+        "お札",
+        "お乱"
+      ],
+      "dr": [
+        "おーれい",
+        "おれー"
+      ],
+      "dm": [
+        "Apology",
+        "Complaint"
+      ]
+    },
+    {
+      "v": "玉",
+      "r": "たま",
+      "m": "Ball/sphere",
+      "isReadingRedundant": false,
+      "dv": [
+        "王",
+        "主"
+      ],
+      "dr": [
+        "だま",
+        "たーま"
+      ],
+      "dm": [
+        "Cube",
+        "Square"
+      ]
+    },
+    {
+      "v": "隣",
+      "r": "となり",
+      "m": "Neighbour/next door",
+      "isReadingRedundant": false,
+      "dv": [
+        "隣り",
+        "燐"
+      ],
+      "dr": [
+        "どなり",
+        "とーなり"
+      ],
+      "dm": [
+        "Far away",
+        "Distant"
+      ]
+    },
+    {
+      "v": "掛ける",
+      "r": "かける",
+      "m": "To hang up/call",
+      "isReadingRedundant": false,
+      "dv": [
+        "街ける",
+        "封ける"
+      ],
+      "dr": [
+        "がける",
+        "かーける"
+      ],
+      "dm": [
+        "To pick up",
+        "To drop"
+      ]
+    },
+    {
+      "v": "返事",
+      "r": "へんじ",
+      "m": "Reply/answer",
+      "isReadingRedundant": false,
+      "dv": [
+        "反事",
+        "返吏"
+      ],
+      "dr": [
+        "べんじ",
+        "へんし"
+      ],
+      "dm": [
+        "Question",
+        "Inquiry"
+      ]
+    },
+    {
+      "v": "願い",
+      "r": "ねがい",
+      "m": "Desire/wish",
+      "isReadingRedundant": false,
+      "dv": [
+        "顔い",
+        "頑い"
+      ],
+      "dr": [
+        "ねーがい",
+        "ねかい"
+      ],
+      "dm": [
+        "Refusal",
+        "Disgust"
+      ]
+    },
+    {
+      "v": "張る",
+      "r": "はる",
+      "m": "To affix/stick",
+      "isReadingRedundant": false,
+      "dv": [
+        "長る",
+        "帳る"
+      ],
+      "dr": [
+        "ばる",
+        "はーる"
+      ],
+      "dm": [
+        "To detach",
+        "To peel"
+      ]
+    },
+    {
+      "v": "踊る",
+      "r": "おどる",
+      "m": "To dance",
+      "isReadingRedundant": false,
+      "dv": [
+        "踏る",
+        "躍る"
+      ],
+      "dr": [
+        "おとる",
+        "おーどる"
+      ],
+      "dm": [
+        "To sing",
+        "To sleep"
+      ]
+    },
+    {
+      "v": "雲",
+      "r": "くも",
+      "m": "Cloud",
+      "isReadingRedundant": false,
+      "dv": [
+        "雪",
+        "雷"
+      ],
+      "dr": [
+        "ぐも",
+        "くーも"
+      ],
+      "dm": [
+        "Sun",
+        "Star"
+      ]
+    },
+    {
+      "v": "寺",
+      "r": "てら",
+      "m": "Temple",
+      "isReadingRedundant": false,
+      "dv": [
+        "待",
+        "持"
+      ],
+      "dr": [
+        "でら",
+        "てーら"
+      ],
+      "dm": [
+        "Shrine",
+        "Church"
+      ]
+    },
+    {
+      "v": "まあまあ",
+      "r": "-",
+      "m": "So-so/meh",
+      "isReadingRedundant": true,
+      "dv": [
+        "おおまあ",
+        "まあおお"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Excellent",
+        "Terrible"
+      ]
+    },
+    {
+      "v": "お姉さん",
+      "r": "おねえさん",
+      "m": "Elder sister",
+      "isReadingRedundant": false,
+      "dv": [
+        "お妹さん",
+        "お娘さん"
+      ],
+      "dr": [
+        "おねさん",
+        "おーねえさん"
+      ],
+      "dm": [
+        "Younger sister",
+        "Mother"
+      ]
+    },
+    {
+      "v": "軽い",
+      "r": "かるい",
+      "m": "Lightweight/light",
+      "isReadingRedundant": false,
+      "dv": [
+        "車い",
+        "斬い"
+      ],
+      "dr": [
+        "がるい",
+        "かーるい"
+      ],
+      "dm": [
+        "Heavy",
+        "Massive"
+      ]
+    },
+    {
+      "v": "多分",
+      "r": "たぶん",
+      "m": "Perhaps/maybe",
+      "isReadingRedundant": false,
+      "dv": [
+        "夕分",
+        "多刀"
+      ],
+      "dr": [
+        "だぶん",
+        "たぷん"
+      ],
+      "dm": [
+        "Definitely",
+        "Certainly"
+      ]
+    },
+    {
+      "v": "後で",
+      "r": "あとで",
+      "m": "Afterwards",
+      "isReadingRedundant": false,
+      "dv": [
+        "復で",
+        "俊で"
+      ],
+      "dr": [
+        "あどで",
+        "あーとで"
+      ],
+      "dm": [
+        "Before",
+        "Previously"
+      ]
+    },
+    {
+      "v": "男の子",
+      "r": "おとこのこ",
+      "m": "Boy",
+      "isReadingRedundant": false,
+      "dv": [
+        "田の子",
+        "女の子"
+      ],
+      "dr": [
+        "おどこのこ",
+        "おとごsのこ"
+      ],
+      "dm": [
+        "Girl",
+        "Man"
+      ]
+    },
+    {
+      "v": "彼氏",
+      "r": "かれし",
+      "m": "Boyfriend",
+      "isReadingRedundant": false,
+      "dv": [
+        "波氏",
+        "彼民"
+      ],
+      "dr": [
+        "がれし",
+        "かれじ"
+      ],
+      "dm": [
+        "Girlfriend",
+        "Wife"
+      ]
+    },
+    {
+      "v": "いらっしゃいませ",
+      "r": "-",
+      "m": "Welcome",
+      "isReadingRedundant": true,
+      "dv": [
+        "いらっしやいませ",
+        "いらつしゃいませ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Goodbye",
+        "Go away"
+      ]
+    },
+    {
+      "v": "お兄さん",
+      "r": "おにいさん",
+      "m": "Older brother",
+      "isReadingRedundant": false,
+      "dv": [
+        "お弟さん",
+        "お見さん"
+      ],
+      "dr": [
+        "おにさん",
+        "おにーさん"
+      ],
+      "dm": [
+        "Younger brother",
+        "Father"
+      ]
+    },
+    {
+      "v": "いい子",
+      "r": "いいこ",
+      "m": "Good boy/child",
+      "isReadingRedundant": false,
+      "dv": [
+        "いい了",
+        "いし子"
+      ],
+      "dr": [
+        "いーこ",
+        "いいご"
+      ],
+      "dm": [
+        "Bad boy",
+        "Adult"
+      ]
+    },
+    {
+      "v": "赤ちゃん",
+      "r": "あかちゃん",
+      "m": "Baby",
+      "isReadingRedundant": false,
+      "dv": [
+        "亦ちゃん",
+        "赤ちやん"
+      ],
+      "dr": [
+        "あgaちゃん",
+        "あかじぁん"
+      ],
+      "dm": [
+        "Elder",
+        "Teenager"
+      ]
+    },
+    {
+      "v": "指",
+      "r": "ゆび",
+      "m": "Finger",
+      "isReadingRedundant": false,
+      "dv": [
+        "脂",
+        "旨"
+      ],
+      "dr": [
+        "ゆぴ",
+        "ゆーび"
+      ],
+      "dm": [
+        "Toe",
+        "Arm"
+      ]
+    },
+    {
+      "v": "少ない",
+      "r": "すかない",
+      "m": "Few/little",
+      "isReadingRedundant": false,
+      "dv": [
+        "歩ない",
+        "小ない"
+      ],
+      "dr": [
+        "ずくない",
+        "すぐない"
+      ],
+      "dm": [
+        "Many",
+        "Numerous"
+      ]
+    },
+    {
+      "v": "角",
+      "r": "かど",
+      "m": "Corner",
+      "isReadingRedundant": false,
+      "dv": [
+        "魚",
+        "触"
+      ],
+      "dr": [
+        "がど",
+        "かと"
+      ],
+      "dm": [
+        "Middle",
+        "Center"
+      ]
+    },
+    {
+      "v": "緊張",
+      "r": "きんちょう",
+      "m": "Tension/nervousness",
+      "isReadingRedundant": false,
+      "dv": [
+        "緊帳",
+        "堅張"
+      ],
+      "dr": [
+        "giんちょう",
+        "きんじょう"
+      ],
+      "dm": [
+        "Relaxation",
+        "Calm"
+      ]
+    },
+    {
+      "v": "案内",
+      "r": "あんない",
+      "m": "Guidance",
+      "isReadingRedundant": false,
+      "dv": [
+        "案肉",
+        "安内"
+      ],
+      "dr": [
+        "あーんない",
+        "あんまい"
+      ],
+      "dm": [
+        "Confusion",
+        "Lost"
+      ]
+    },
+    {
+      "v": "卵",
+      "r": "たまご",
+      "m": "Eggs",
+      "isReadingRedundant": false,
+      "dv": [
+        "卯",
+        "印"
+      ],
+      "dr": [
+        "だまご",
+        "たまこ"
+      ],
+      "dm": [
+        "Meat",
+        "Vegetable"
+      ]
+    },
+    {
+      "v": "さようなら",
+      "r": "-",
+      "m": "Farewell/goodbye",
+      "isReadingRedundant": true,
+      "dv": [
+        "さよラなら",
+        "ちようなら"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Hello",
+        "Welcome"
+      ]
+    },
+    {
+      "v": "お腹",
+      "r": "おなか",
+      "m": "Stomach",
+      "isReadingRedundant": false,
+      "dv": [
+        "お復",
+        "お服"
+      ],
+      "dr": [
+        "おなが",
+        "おーなか"
+      ],
+      "dm": [
+        "Chest",
+        "Head"
+      ]
+    }
+  ]
+}

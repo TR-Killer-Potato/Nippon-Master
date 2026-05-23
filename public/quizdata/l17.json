@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 17",
+  "vocabulary": [
+    {
+      "v": "出身",
+      "r": "しゅっしん",
+      "m": "Person's origin/hometown",
+      "isReadingRedundant": false,
+      "dv": [
+        "出信",
+        "出新"
+      ],
+      "dr": [
+        "しゅっじん",
+        "じゅっしん"
+      ],
+      "dm": [
+        "Destination",
+        "Future"
+      ]
+    },
+    {
+      "v": "主婦",
+      "r": "しゅふ",
+      "m": "Housewife",
+      "isReadingRedundant": false,
+      "dv": [
+        "主帰",
+        "生婦"
+      ],
+      "dr": [
+        "しゅぶ",
+        "じゅふ"
+      ],
+      "dm": [
+        "Husband",
+        "Student"
+      ]
+    },
+    {
+      "v": "夕飯",
+      "r": "ゆうはん",
+      "m": "Evening meal",
+      "isReadingRedundant": false,
+      "dv": [
+        "夕飲",
+        "夕反"
+      ],
+      "dr": [
+        "ゆうばん",
+        "ゆはん"
+      ],
+      "dm": [
+        "Breakfast",
+        "Lunch"
+      ]
+    },
+    {
+      "v": "釣り",
+      "r": "つり",
+      "m": "Fishing",
+      "isReadingRedundant": false,
+      "dv": [
+        "釣リ",
+        "鈎り"
+      ],
+      "dr": [
+        "づり",
+        "つれ"
+      ],
+      "dm": [
+        "Hunting",
+        "Swimming"
+      ]
+    },
+    {
+      "v": "運動",
+      "r": "うんどう",
+      "m": "Exercise",
+      "isReadingRedundant": false,
+      "dv": [
+        "運働",
+        "連動"
+      ],
+      "dr": [
+        "おんどう",
+        "うんどお"
+      ],
+      "dm": [
+        "Resting",
+        "Sleeping"
+      ]
+    },
+    {
+      "v": "上る",
+      "r": "のぼる",
+      "m": "To ascend",
+      "isReadingRedundant": false,
+      "dv": [
+        "止る",
+        "下る"
+      ],
+      "dr": [
+        "ぬぼる",
+        "のぽる"
+      ],
+      "dm": [
+        "To descend",
+        "To fall"
+      ]
+    },
+    {
+      "v": "着物",
+      "r": "きもの",
+      "m": "Kimono/clothing",
+      "isReadingRedundant": false,
+      "dv": [
+        "看物",
+        "着吻"
+      ],
+      "dr": [
+        "giもの",
+        "きmoぬ"
+      ],
+      "dm": [
+        "Shoes",
+        "Hat"
+      ]
+    },
+    {
+      "v": "引き出す",
+      "r": "ひきだす",
+      "m": "To pull out",
+      "isReadingRedundant": false,
+      "dv": [
+        "引キ出す",
+        "弓き出す"
+      ],
+      "dr": [
+        "びきだす",
+        "ひきだず"
+      ],
+      "dm": [
+        "To push",
+        "To insert"
+      ]
+    },
+    {
+      "v": "叶う",
+      "r": "かなう",
+      "m": "To come true",
+      "isReadingRedundant": false,
+      "dv": [
+        "吐う",
+        "汁う"
+      ],
+      "dr": [
+        "がなう",
+        "かのう"
+      ],
+      "dm": [
+        "To leave",
+        "To fail"
+      ]
+    },
+    {
+      "v": "今月",
+      "r": "こんげつ",
+      "m": "This month",
+      "isReadingRedundant": false,
+      "dv": [
+        "令月",
+        "今目"
+      ],
+      "dr": [
+        "ごんげつ",
+        "こんけつ"
+      ],
+      "dm": [
+        "Next month",
+        "Last year"
+      ]
+    },
+    {
+      "v": "ストレス",
+      "r": "-",
+      "m": "Stress",
+      "isReadingRedundant": true,
+      "dv": [
+        "ヌトレス",
+        "ス卜レス"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Relaxation",
+        "Comfort"
+      ]
+    },
+    {
+      "v": "中国",
+      "r": "ちゅうごく",
+      "m": "China",
+      "isReadingRedundant": false,
+      "dv": [
+        "申国",
+        "中図"
+      ],
+      "dr": [
+        "じゅうごく",
+        "ちゅごく"
+      ],
+      "dm": [
+        "Japan",
+        "Korea"
+      ]
+    },
+    {
+      "v": "作家",
+      "r": "さっか",
+      "m": "Author/writer",
+      "isReadingRedundant": false,
+      "dv": [
+        "昨家",
+        "作室"
+      ],
+      "dr": [
+        "ざっか",
+        "さか"
+      ],
+      "dm": [
+        "Reader",
+        "Publisher"
+      ]
+    },
+    {
+      "v": "外科",
+      "r": "げか",
+      "m": "Surgery",
+      "isReadingRedundant": false,
+      "dv": [
+        "処科",
+        "外料"
+      ],
+      "dr": [
+        "けか",
+        "げが"
+      ],
+      "dm": [
+        "Internal medicine",
+        "Dentistry"
+      ]
+    },
+    {
+      "v": "テーブル",
+      "r": "-",
+      "m": "Table",
+      "isReadingRedundant": true,
+      "dv": [
+        "テ一ブル",
+        "テープル"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Chair",
+        "Sofa"
+      ]
+    },
+    {
+      "v": "お祭り",
+      "r": "おまつり",
+      "m": "Festival",
+      "isReadingRedundant": false,
+      "dv": [
+        "お察り",
+        "お際り"
+      ],
+      "dr": [
+        "おまづり",
+        "おまつれ"
+      ],
+      "dm": [
+        "Funeral",
+        "Meeting"
+      ]
+    },
+    {
+      "v": "サボる",
+      "r": "-",
+      "m": "To be lazy/slack off",
+      "isReadingRedundant": true,
+      "dv": [
+        "ザボる",
+        "サポる"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "To do",
+        "To act"
+      ]
+    },
+    {
+      "v": "留学",
+      "r": "りゅうがく",
+      "m": "Studying abroad",
+      "isReadingRedundant": false,
+      "dv": [
+        "留字",
+        "溜学"
+      ],
+      "dr": [
+        "りゅがく",
+        "りゅうかく"
+      ],
+      "dm": [
+        "Traveling",
+        "Working"
+      ]
+    },
+    {
+      "v": "いい事",
+      "r": "いいこと",
+      "m": "Good thing",
+      "isReadingRedundant": false,
+      "dv": [
+        "いい専",
+        "いい車"
+      ],
+      "dr": [
+        "ええこと",
+        "いいごと"
+      ],
+      "dm": [
+        "Bad thing",
+        "Mistake"
+      ]
+    },
+    {
+      "v": "ポケット",
+      "r": "-",
+      "m": "Pocket",
+      "isReadingRedundant": true,
+      "dv": [
+        "ポケツト",
+        "ボケット"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Bag",
+        "Backpack"
+      ]
+    },
+    {
+      "v": "金持ち",
+      "r": "かねもち",
+      "m": "Rich person",
+      "isReadingRedundant": false,
+      "dv": [
+        "全持ち",
+        "金特ち"
+      ],
+      "dr": [
+        "がねもち",
+        "かねもじ"
+      ],
+      "dm": [
+        "Poor person",
+        "Beggar"
+      ]
+    },
+    {
+      "v": "シャワー",
+      "r": "-",
+      "m": "Shower",
+      "isReadingRedundant": true,
+      "dv": [
+        "ツャワー",
+        "シャワ一"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Bath",
+        "Sink"
+      ]
+    },
+    {
+      "v": "等",
+      "r": "など",
+      "m": "Et cetera",
+      "isReadingRedundant": false,
+      "dv": [
+        "寺",
+        "詩"
+      ],
+      "dr": [
+        "なと",
+        "なぬ"
+      ],
+      "dm": [
+        "Only",
+        "Exactly"
+      ]
+    },
+    {
+      "v": "ゴロゴロ",
+      "r": "-",
+      "m": "Thundering/lying around",
+      "isReadingRedundant": true,
+      "dv": [
+        "コロゴロ",
+        "ゴロゴロ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Shining",
+        "Squeaking"
+      ]
+    },
+    {
+      "v": "方面",
+      "r": "ほうめん",
+      "m": "Direction/area",
+      "isReadingRedundant": false,
+      "dv": [
+        "万面",
+        "方而"
+      ],
+      "dr": [
+        "ほおめん",
+        "ほうべん"
+      ],
+      "dm": [
+        "Center",
+        "Point"
+      ]
+    },
+    {
+      "v": "バンド",
+      "r": "-",
+      "m": "Band (music)",
+      "isReadingRedundant": true,
+      "dv": [
+        "パンド",
+        "バン卜"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Soloist",
+        "Choir"
+      ]
+    },
+    {
+      "v": "家賃",
+      "r": "やちん",
+      "m": "Rent",
+      "isReadingRedundant": false,
+      "dv": [
+        "豪賃",
+        "家貨"
+      ],
+      "dr": [
+        "ゆちん",
+        "やじん"
+      ],
+      "dm": [
+        "Mortgage",
+        "Utility bill"
+      ]
+    },
+    {
+      "v": "蜜柑",
+      "r": "みかん",
+      "m": "Mandarin orange",
+      "isReadingRedundant": false,
+      "dv": [
+        "密柑",
+        "蜜相"
+      ],
+      "dr": [
+        "びかん",
+        "みがん"
+      ],
+      "dm": [
+        "Apple",
+        "Banana"
+      ]
+    },
+    {
+      "v": "外国",
+      "r": "がいこく",
+      "m": "Foreign country",
+      "isReadingRedundant": false,
+      "dv": [
+        "処国",
+        "外図"
+      ],
+      "dr": [
+        "かいこく",
+        "がいごく"
+      ],
+      "dm": [
+        "Hometown",
+        "Capital city"
+      ]
+    },
+    {
+      "v": "政治",
+      "r": "せいじ",
+      "m": "Politics",
+      "isReadingRedundant": false,
+      "dv": [
+        "政冶",
+        "正治"
+      ],
+      "dr": [
+        "ぜいじ",
+        "せいし"
+      ],
+      "dm": [
+        "Religion",
+        "Economics"
+      ]
+    },
+    {
+      "v": "アルバイト",
+      "r": "-",
+      "m": "Part-time job",
+      "isReadingRedundant": true,
+      "dv": [
+        "アノレバイト",
+        "アルパイト"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Full-time job",
+        "Retirement"
+      ]
+    },
+    {
+      "v": "日記",
+      "r": "にっき",
+      "m": "Diary",
+      "isReadingRedundant": false,
+      "dv": [
+        "目記",
+        "日紀"
+      ],
+      "dr": [
+        "みっき",
+        "にき"
+      ],
+      "dm": [
+        "Novel",
+        "Newspaper"
+      ]
+    },
+    {
+      "v": "グリーン",
+      "r": "-",
+      "m": "Green",
+      "isReadingRedundant": true,
+      "dv": [
+        "グリ一ン",
+        "クリ一ン"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Red",
+        "Blue"
+      ]
+    },
+    {
+      "v": "トマト",
+      "r": "-",
+      "m": "Tomato",
+      "isReadingRedundant": true,
+      "dv": [
+        "卜マト",
+        "トマ卜"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Potato",
+        "Onion"
+      ]
+    },
+    {
+      "v": "タバコ",
+      "r": "-",
+      "m": "Tobacco/cigarette",
+      "isReadingRedundant": true,
+      "dv": [
+        "夕バコ",
+        "タパコ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Alcohol",
+        "Coffee"
+      ]
+    },
+    {
+      "v": "意地悪",
+      "r": "いじわる",
+      "m": "Malicious/mean",
+      "isReadingRedundant": false,
+      "dv": [
+        "意池悪",
+        "意地亜"
+      ],
+      "dr": [
+        "えじわる",
+        "いしわる"
+      ],
+      "dm": [
+        "Friendly",
+        "Generous"
+      ]
+    },
+    {
+      "v": "今晩",
+      "r": "こんばん",
+      "m": "Tonight",
+      "isReadingRedundant": false,
+      "dv": [
+        "令晩",
+        "今免"
+      ],
+      "dr": [
+        "ごんばん",
+        "こんぱん"
+      ],
+      "dm": [
+        "Tomorrow morning",
+        "Last night"
+      ]
+    },
+    {
+      "v": "下着",
+      "r": "したぎ",
+      "m": "Underwear",
+      "isReadingRedundant": false,
+      "dv": [
+        "卜着",
+        "下看"
+      ],
+      "dr": [
+        "じだぎ",
+        "したき"
+      ],
+      "dm": [
+        "Outerwear",
+        "Shoes"
+      ]
+    },
+    {
+      "v": "フォーク",
+      "r": "-",
+      "m": "Fork",
+      "isReadingRedundant": true,
+      "dv": [
+        "フオーク",
+        "フォーム"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Spoon",
+        "Knife"
+      ]
+    },
+    {
+      "v": "毎朝",
+      "r": "まいあさ",
+      "m": "Every morning",
+      "isReadingRedundant": false,
+      "dv": [
+        "海朝",
+        "毎期"
+      ],
+      "dr": [
+        "baiあさ",
+        "まいあざ"
+      ],
+      "dm": [
+        "Every night",
+        "Every week"
+      ]
+    },
+    {
+      "v": "語",
+      "r": "ご",
+      "m": "Language/suffixes",
+      "isReadingRedundant": false,
+      "dv": [
+        "悟",
+        "記"
+      ],
+      "dr": [
+        "こ",
+        "ぐ"
+      ],
+      "dm": [
+        "Silence",
+        "Action"
+      ]
+    },
+    {
+      "v": "食堂",
+      "r": "しょくどう",
+      "m": "Dining room/canteen",
+      "isReadingRedundant": false,
+      "dv": [
+        "飲堂",
+        "食党"
+      ],
+      "dr": [
+        "じょくどう",
+        "しょぐどう"
+      ],
+      "dm": [
+        "Bedroom",
+        "Bathroom"
+      ]
+    },
+    {
+      "v": "キャンプ",
+      "r": "-",
+      "m": "Camp",
+      "isReadingRedundant": true,
+      "dv": [
+        "キヤンプ",
+        "ギャンプ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Hotel",
+        "Resort"
+      ]
+    },
+    {
+      "v": "イタリア",
+      "r": "-",
+      "m": "Italy",
+      "isReadingRedundant": true,
+      "dv": [
+        "イ夕リア",
+        "イタリヤ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "France",
+        "Spain"
+      ]
+    },
+    {
+      "v": "コレクション",
+      "r": "-",
+      "m": "Collection",
+      "isReadingRedundant": true,
+      "dv": [
+        "ゴレクション",
+        "コレクショソ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Donation",
+        "Dispersal"
+      ]
+    },
+    {
+      "v": "ツアー",
+      "r": "-",
+      "m": "Tour",
+      "isReadingRedundant": true,
+      "dv": [
+        "ツア一",
+        "シアー"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Commute",
+        "Errands"
+      ]
+    },
+    {
+      "v": "スイカ",
+      "r": "-",
+      "m": "Watermelon",
+      "isReadingRedundant": true,
+      "dv": [
+        "ヌイカ",
+        "ズイカ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Apple",
+        "Peach"
+      ]
+    },
+    {
+      "v": "くしゃみ",
+      "r": "-",
+      "m": "Sneeze",
+      "isReadingRedundant": true,
+      "dv": [
+        "くしやみ",
+        "ぐしゃみ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Cough",
+        "Yawn"
+      ]
+    },
+    {
+      "v": "被る",
+      "r": "かぶる",
+      "m": "To put on hat/wear",
+      "isReadingRedundant": false,
+      "dv": [
+        "波る",
+        "破る"
+      ],
+      "dr": [
+        "がぶる",
+        "かぷる"
+      ],
+      "dm": [
+        "To take off",
+        "To discard"
+      ]
+    },
+    {
+      "v": "手袋",
+      "r": "てぶくろ",
+      "m": "Glove",
+      "isReadingRedundant": false,
+      "dv": [
+        "芋袋",
+        "手装"
+      ],
+      "dr": [
+        "でぶくろ",
+        "てふくろ"
+      ],
+      "dm": [
+        "Socks",
+        "Hat"
+      ]
+    }
+  ]
+}

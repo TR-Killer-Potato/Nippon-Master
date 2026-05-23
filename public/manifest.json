@@ -1,0 +1,92 @@
+{
+  "lessons": [
+    {
+      "id": "Lesson 1",
+      "file": "quizdata/l01.json"
+    },
+    {
+      "id": "Lesson 2",
+      "file": "quizdata/l02.json"
+    },
+    {
+      "id": "Lesson 3",
+      "file": "quizdata/l03.json"
+    },
+    {
+      "id": "Lesson 4",
+      "file": "quizdata/l04.json"
+    },
+    {
+      "id": "Lesson 5",
+      "file": "quizdata/l05.json"
+    },
+    {
+      "id": "Lesson 6",
+      "file": "quizdata/l06.json"
+    },
+    {
+      "id": "Lesson 7",
+      "file": "quizdata/l07.json"
+    },
+    {
+      "id": "Lesson 8",
+      "file": "quizdata/l08.json"
+    },
+    {
+      "id": "Lesson 9",
+      "file": "quizdata/l09.json"
+    },
+    {
+      "id": "Lesson 10",
+      "file": "quizdata/l10.json"
+    },
+    {
+      "id": "Lesson 11",
+      "file": "quizdata/l11.json"
+    },
+    {
+      "id": "Lesson 12",
+      "file": "quizdata/l12.json"
+    },
+    {
+      "id": "Lesson 13",
+      "file": "quizdata/l13.json"
+    },
+    {
+      "id": "Lesson 14",
+      "file": "quizdata/l14.json"
+    },
+    {
+      "id": "Lesson 15",
+      "file": "quizdata/l15.json"
+    },
+    {
+      "id": "Lesson 16",
+      "file": "quizdata/l16.json"
+    },
+    {
+      "id": "Lesson 17",
+      "file": "quizdata/l17.json"
+    },
+    {
+      "id": "Lesson 18",
+      "file": "quizdata/l18.json"
+    },
+    {
+      "id": "Lesson 19",
+      "file": "quizdata/l19.json"
+    },
+    {
+      "id": "Lesson 20",
+      "file": "quizdata/l20.json"
+    },
+    {
+      "id": "Lesson 21",
+      "file": "quizdata/l21.json"
+    },
+    {
+      "id": "Lesson 22",
+      "file": "quizdata/l22.json"
+    }
+  ]
+}

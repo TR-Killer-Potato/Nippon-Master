@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 20",
+  "vocabulary": [
+    {
+      "v": "レジ",
+      "r": "-",
+      "m": "Cash register",
+      "isReadingRedundant": true,
+      "dv": [
+        "レンジ",
+        "シジ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Checkout counter",
+        "Receipt"
+      ]
+    },
+    {
+      "v": "グレー",
+      "r": "-",
+      "m": "Grey",
+      "isReadingRedundant": true,
+      "dv": [
+        "グノー",
+        "ワレー"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "White",
+        "Black"
+      ]
+    },
+    {
+      "v": "入口",
+      "r": "いりぐち",
+      "m": "Entrance",
+      "isReadingRedundant": false,
+      "dv": [
+        "人口",
+        "入日"
+      ],
+      "dr": [
+        "いりくち",
+        "いーりぐち"
+      ],
+      "dm": [
+        "Exit",
+        "Window"
+      ]
+    },
+    {
+      "v": "飴",
+      "r": "あめ",
+      "m": "Hard candy",
+      "isReadingRedundant": false,
+      "dv": [
+        "飾",
+        "餅"
+      ],
+      "dr": [
+        "あーめ",
+        "あめー"
+      ],
+      "dm": [
+        "Chocolate",
+        "Chewing gum"
+      ]
+    },
+    {
+      "v": "水色",
+      "r": "みずいろ",
+      "m": "Light blue",
+      "isReadingRedundant": false,
+      "dv": [
+        "氷色",
+        "木色"
+      ],
+      "dr": [
+        "みすいろ",
+        "みずーいろ"
+      ],
+      "dm": [
+        "Dark blue",
+        "Green"
+      ]
+    },
+    {
+      "v": "会社員",
+      "r": "かいしゃいん",
+      "m": "Company employee",
+      "isReadingRedundant": false,
+      "dv": [
+        "会杜員",
+        "社会員"
+      ],
+      "dr": [
+        "がいしゃいん",
+        "かいじゃいん"
+      ],
+      "dm": [
+        "Manager",
+        "Freelancer"
+      ]
+    },
+    {
+      "v": "お酒",
+      "r": "おさけ",
+      "m": "Alcohol/sake",
+      "isReadingRedundant": false,
+      "dv": [
+        "お洒",
+        "お酸"
+      ],
+      "dr": [
+        "おざけ",
+        "おさーけ"
+      ],
+      "dm": [
+        "Water",
+        "Juice"
+      ]
+    },
+    {
+      "v": "ご馳走",
+      "r": "ごちそう",
+      "m": "Feast",
+      "isReadingRedundant": false,
+      "dv": [
+        "ご駄走",
+        "ご騎走"
+      ],
+      "dr": [
+        "ごじそう",
+        "ごちぞう"
+      ],
+      "dm": [
+        "Light snack",
+        "Appetizer"
+      ]
+    },
+    {
+      "v": "ジャンル",
+      "r": "-",
+      "m": "Genre",
+      "isReadingRedundant": true,
+      "dv": [
+        "ジヌル",
+        "ジャナル"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Category",
+        "Type"
+      ]
+    },
+    {
+      "v": "昼ご飯",
+      "r": "ひるごはん",
+      "m": "Lunch",
+      "isReadingRedundant": false,
+      "dv": [
+        "尽ご飯",
+        "昼こ飯"
+      ],
+      "dr": [
+        "びるごはん",
+        "ひるこはん"
+      ],
+      "dm": [
+        "Breakfast",
+        "Dinner"
+      ]
+    },
+    {
+      "v": "万年筆",
+      "r": "まんねんひつ",
+      "m": "Fountain pen",
+      "isReadingRedundant": false,
+      "dv": [
+        "方年筆",
+        "万年律"
+      ],
+      "dr": [
+        "まんねんぴつ",
+        "まんねんびつ"
+      ],
+      "dm": [
+        "Pencil",
+        "Eraser"
+      ]
+    },
+    {
+      "v": "この頃",
+      "r": "このごろ",
+      "m": "These days",
+      "isReadingRedundant": false,
+      "dv": [
+        "この頂",
+        "この傾"
+      ],
+      "dr": [
+        "ごのごろ",
+        "このころ"
+      ],
+      "dm": [
+        "In the past",
+        "In the future"
+      ]
+    },
+    {
+      "v": "カナダ",
+      "r": "-",
+      "m": "Canada",
+      "isReadingRedundant": true,
+      "dv": [
+        "力ナダ",
+        "カチダ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "America",
+        "Mexico"
+      ]
+    },
+    {
+      "v": "発音",
+      "r": "はつおん",
+      "m": "Pronunciation",
+      "isReadingRedundant": false,
+      "dv": [
+        "廃音",
+        "発意"
+      ],
+      "dr": [
+        "ばつおん",
+        "はづおん"
+      ],
+      "dm": [
+        "Grammar",
+        "Vocabulary"
+      ]
+    },
+    {
+      "v": "研究者",
+      "r": "けんきゅうしゃ",
+      "m": "Researcher",
+      "isReadingRedundant": false,
+      "dv": [
+        "研空者",
+        "研修者"
+      ],
+      "dr": [
+        "げんきゅうしゃ",
+        "けんきゅしゃ"
+      ],
+      "dm": [
+        "Student",
+        "Teacher"
+      ]
+    },
+    {
+      "v": "格好いい",
+      "r": "かっこういい",
+      "m": "Attractive/cool",
+      "isReadingRedundant": false,
+      "dv": [
+        "枯好いい",
+        "格好しし"
+      ],
+      "dr": [
+        "gぁっこういい",
+        "かっこいい"
+      ],
+      "dm": [
+        "Ugly",
+        "Average looking"
+      ]
+    },
+    {
+      "v": "単語",
+      "r": "たんご",
+      "m": "Word",
+      "isReadingRedundant": false,
+      "dv": [
+        "巣語",
+        "単詰"
+      ],
+      "dr": [
+        "だんご",
+        "たんこ"
+      ],
+      "dm": [
+        "Sentence",
+        "Paragraph"
+      ]
+    },
+    {
+      "v": "無くす",
+      "r": "なくす",
+      "m": "To lose",
+      "isReadingRedundant": false,
+      "dv": [
+        "舞くす",
+        "無ぐす"
+      ],
+      "dr": [
+        "なーくす",
+        "なぐす"
+      ],
+      "dm": [
+        "To find",
+        "To search"
+      ]
+    },
+    {
+      "v": "売店",
+      "r": "ばいてん",
+      "m": "Stand/stall",
+      "isReadingRedundant": false,
+      "dv": [
+        "売占",
+        "買店"
+      ],
+      "dr": [
+        "ぱいてん",
+        "ばいーてん"
+      ],
+      "dm": [
+        "Supermarket",
+        "Mall"
+      ]
+    },
+    {
+      "v": "平日",
+      "r": "へいじつ",
+      "m": "Weekday",
+      "isReadingRedundant": false,
+      "dv": [
+        "半日",
+        "早日"
+      ],
+      "dr": [
+        "べいじつ",
+        "へいしつ"
+      ],
+      "dm": [
+        "Weekend",
+        "Public holiday"
+      ]
+    },
+    {
+      "v": "リットル",
+      "r": "-",
+      "m": "Litre",
+      "isReadingRedundant": true,
+      "dv": [
+        "リツトル",
+        "ソットル"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Gram",
+        "Meter"
+      ]
+    },
+    {
+      "v": "銀色",
+      "r": "ぎんいろ",
+      "m": "Silver color",
+      "isReadingRedundant": false,
+      "dv": [
+        "鉄色",
+        "金色"
+      ],
+      "dr": [
+        "きんいろ",
+        "ぎんーいろ"
+      ],
+      "dm": [
+        "Gold",
+        "Bronze"
+      ]
+    },
+    {
+      "v": "火傷",
+      "r": "やけど",
+      "m": "Burn",
+      "isReadingRedundant": false,
+      "dv": [
+        "大傷",
+        "火湯"
+      ],
+      "dr": [
+        "やげど",
+        "やけと"
+      ],
+      "dm": [
+        "Cut",
+        "Bruise"
+      ]
+    },
+    {
+      "v": "一号車",
+      "r": "いちごうしゃ",
+      "m": "Car No.1",
+      "isReadingRedundant": false,
+      "dv": [
+        "二号車",
+        "一号軍"
+      ],
+      "dr": [
+        "いじごうしゃ",
+        "いちこうしゃ"
+      ],
+      "dm": [
+        "Train station",
+        "Bus stop"
+      ]
+    },
+    {
+      "v": "天の川",
+      "r": "あまのがわ",
+      "m": "Milky Way",
+      "isReadingRedundant": false,
+      "dv": [
+        "大の川",
+        "天の州"
+      ],
+      "dr": [
+        "あまのかわ",
+        "あーまのがわ"
+      ],
+      "dm": [
+        "Solar system",
+        "Galaxy"
+      ]
+    },
+    {
+      "v": "黒板",
+      "r": "こくばん",
+      "m": "Blackboard",
+      "isReadingRedundant": false,
+      "dv": [
+        "黒坂",
+        "里板"
+      ],
+      "dr": [
+        "ごくばん",
+        "こくぱん"
+      ],
+      "dm": [
+        "Whiteboard",
+        "Chalk"
+      ]
+    },
+    {
+      "v": "ストーブ",
+      "r": "-",
+      "m": "Stove/(room) heater",
+      "isReadingRedundant": true,
+      "dv": [
+        "スドーブ",
+        "ストーラ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Air conditioner",
+        "Fan"
+      ]
+    },
+    {
+      "v": "山道",
+      "r": "やまみち",
+      "m": "Mountain road",
+      "isReadingRedundant": false,
+      "dv": [
+        "位置",
+        "山通"
+      ],
+      "dr": [
+        "やまーみち",
+        "やまみじ"
+      ],
+      "dm": [
+        "Highway",
+        "City street"
+      ]
+    },
+    {
+      "v": "産婦人科",
+      "r": "さんふじんか",
+      "m": "Maternity/gynaecology",
+      "isReadingRedundant": false,
+      "dv": [
+        "産婦入科",
+        "産業人科"
+      ],
+      "dr": [
+        "ざんふじんか",
+        "さんぶじんか"
+      ],
+      "dm": [
+        "Paediatrics",
+        "Orthopaedics"
+      ]
+    },
+    {
+      "v": "保険証",
+      "r": "ほけんしょう",
+      "m": "Insurance card",
+      "isReadingRedundant": false,
+      "dv": [
+        "保検証",
+        "保険症"
+      ],
+      "dr": [
+        "ぼけんしょう",
+        "ほげんしょう"
+      ],
+      "dm": [
+        "Driver's license",
+        "Passport"
+      ]
+    },
+    {
+      "v": "特急",
+      "r": "とっきゅう",
+      "m": "Limited express train",
+      "isReadingRedundant": false,
+      "dv": [
+        "持急",
+        "特及"
+      ],
+      "dr": [
+        "どっきゅう",
+        "とっぎゅう"
+      ],
+      "dm": [
+        "Local train",
+        "Bullet train"
+      ]
+    },
+    {
+      "v": "サーフィン",
+      "r": "-",
+      "m": "Surfing",
+      "isReadingRedundant": true,
+      "dv": [
+        "サ一フィン",
+        "ザーフィン"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Swimming",
+        "Scuba diving"
+      ]
+    },
+    {
+      "v": "消防士",
+      "r": "しょうぼうし",
+      "m": "Firefighter",
+      "isReadingRedundant": false,
+      "dv": [
+        "消坊士",
+        "清防士"
+      ],
+      "dr": [
+        "じょうぼうし",
+        "しょうぽうし"
+      ],
+      "dm": [
+        "Police officer",
+        "Paramedic"
+      ]
+    },
+    {
+      "v": "アボカド",
+      "r": "-",
+      "m": "Avocado",
+      "isReadingRedundant": true,
+      "dv": [
+        "アポカド",
+        "アボガド"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Banana",
+        "Apple"
+      ]
+    },
+    {
+      "v": "番線",
+      "r": "ばんせん",
+      "m": "Track number",
+      "isReadingRedundant": false,
+      "dv": [
+        "番糸",
+        "審線"
+      ],
+      "dr": [
+        "ぱんせん",
+        "ばんぜん"
+      ],
+      "dm": [
+        "Ticket gate",
+        "Train carriage"
+      ]
+    },
+    {
+      "v": "方言",
+      "r": "ほうげん",
+      "m": "Dialect",
+      "isReadingRedundant": false,
+      "dv": [
+        "万言",
+        "方信"
+      ],
+      "dr": [
+        "ぼうげん",
+        "ほうけん"
+      ],
+      "dm": [
+        "Standard language",
+        "Slang"
+      ]
+    },
+    {
+      "v": "乗り換え",
+      "r": "のりかえ",
+      "m": "Transfer (train)",
+      "isReadingRedundant": false,
+      "dv": [
+        "乗リ換え",
+        "乗り替え"
+      ],
+      "dr": [
+        "のりーかえ",
+        "のりがえ"
+      ],
+      "dm": [
+        "Boarding",
+        "Disembarking"
+      ]
+    },
+    {
+      "v": "玉ねぎ",
+      "r": "たまねぎ",
+      "m": "Onion",
+      "isReadingRedundant": false,
+      "dv": [
+        "王ねぎ",
+        "玉わぎ"
+      ],
+      "dr": [
+        "だまねぎ",
+        "たまねき"
+      ],
+      "dm": [
+        "Garlic",
+        "Potato"
+      ]
+    },
+    {
+      "v": "インフルエンザ",
+      "r": "-",
+      "m": "Influenza",
+      "isReadingRedundant": true,
+      "dv": [
+        "インフルエンサ",
+        "イソフルエンザ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Common cold",
+        "Stomach bug"
+      ]
+    },
+    {
+      "v": "コンセント",
+      "r": "-",
+      "m": "Electrical outlet",
+      "isReadingRedundant": true,
+      "dv": [
+        "コンセソト",
+        "ユンセント"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Light switch",
+        "Extension cord"
+      ]
+    },
+    {
+      "v": "背広",
+      "r": "せびろ",
+      "m": "Business suit",
+      "isReadingRedundant": false,
+      "dv": [
+        "脊広",
+        "背拡"
+      ],
+      "dr": [
+        "ぜびろ",
+        "せぴろ"
+      ],
+      "dm": [
+        "Casual wear",
+        "Uniform"
+      ]
+    },
+    {
+      "v": "温い",
+      "r": "ぬるい",
+      "m": "Lukewarm",
+      "isReadingRedundant": false,
+      "dv": [
+        "湿い",
+        "湯い"
+      ],
+      "dr": [
+        "ぬーるい",
+        "ぬるーい"
+      ],
+      "dm": [
+        "Boiling",
+        "Freezing"
+      ]
+    },
+    {
+      "v": "下痢",
+      "r": "げり",
+      "m": "Diarrhoea",
+      "isReadingRedundant": false,
+      "dv": [
+        "下利",
+        "上痢"
+      ],
+      "dr": [
+        "けり",
+        "げーり"
+      ],
+      "dm": [
+        "Headache",
+        "Fever"
+      ]
+    },
+    {
+      "v": "沢山",
+      "r": "たくさん",
+      "m": "A lot",
+      "isReadingRedundant": false,
+      "dv": [
+        "尺山",
+        "沢出"
+      ],
+      "dr": [
+        "だくさん",
+        "たぐさん"
+      ],
+      "dm": [
+        "A little",
+        "Nothing"
+      ]
+    },
+    {
+      "v": "被せる",
+      "r": "かぶせる",
+      "m": "To cover",
+      "isReadingRedundant": false,
+      "dv": [
+        "波せる",
+        "破せる"
+      ],
+      "dr": [
+        "gぁぶせる",
+        "かぷせる"
+      ],
+      "dm": [
+        "To reveal",
+        "To remove"
+      ]
+    },
+    {
+      "v": "茶色い",
+      "r": "ちゃいろい",
+      "m": "Light brown",
+      "isReadingRedundant": false,
+      "dv": [
+        "草色い",
+        "茶巴い"
+      ],
+      "dr": [
+        "ぢゃいろい",
+        "ちゃーいろい"
+      ],
+      "dm": [
+        "Dark brown",
+        "Yellow"
+      ]
+    },
+    {
+      "v": "玩具",
+      "r": "おもちゃ",
+      "m": "Toy",
+      "isReadingRedundant": false,
+      "dv": [
+        "玩貝",
+        "完具"
+      ],
+      "dr": [
+        "おもじゃ",
+        "おーもちゃ"
+      ],
+      "dm": [
+        "Tool",
+        "Appliance"
+      ]
+    },
+    {
+      "v": "真っ直ぐ",
+      "r": "まっすぐ",
+      "m": "Straight",
+      "isReadingRedundant": false,
+      "dv": [
+        "真つ直ぐ",
+        "真っ道ぐ"
+      ],
+      "dr": [
+        "まーっすぐ",
+        "まっずぐ"
+      ],
+      "dm": [
+        "Crooked",
+        "Curved"
+      ]
+    },
+    {
+      "v": "二つ目",
+      "r": "ふたつめ",
+      "m": "Second",
+      "isReadingRedundant": false,
+      "dv": [
+        "ニつ目",
+        "三つ目"
+      ],
+      "dr": [
+        "ぶたつめ",
+        "ふだつめ"
+      ],
+      "dm": [
+        "First",
+        "Third"
+      ]
+    },
+    {
+      "v": "葉書",
+      "r": "はがき",
+      "m": "Postcard",
+      "isReadingRedundant": false,
+      "dv": [
+        "乗書",
+        "菓書"
+      ],
+      "dr": [
+        "ばがき",
+        "はかき"
+      ],
+      "dm": [
+        "Letter",
+        "Package"
+      ]
+    }
+  ]
+}

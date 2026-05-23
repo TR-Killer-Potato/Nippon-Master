@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 6",
+  "vocabulary": [
+    {
+      "v": "勉強",
+      "r": "べんきょう",
+      "m": "Study",
+      "isReadingRedundant": false,
+      "dv": [
+        "勉弓",
+        "勉弦"
+      ],
+      "dr": [
+        "ぺんきょう",
+        "べんぎょう"
+      ],
+      "dm": [
+        "Work",
+        "Exercise"
+      ]
+    },
+    {
+      "v": "灰皿",
+      "r": "はいざら",
+      "m": "Ashtray",
+      "isReadingRedundant": false,
+      "dv": [
+        "炭皿",
+        "炎皿"
+      ],
+      "dr": [
+        "ばいざら",
+        "はいさら"
+      ],
+      "dm": [
+        "Trash can",
+        "Cup"
+      ]
+    },
+    {
+      "v": "使う",
+      "r": "つかう",
+      "m": "To use",
+      "isReadingRedundant": false,
+      "dv": [
+        "吏う",
+        "便う"
+      ],
+      "dr": [
+        "づかう",
+        "つがう"
+      ],
+      "dm": [
+        "To throw away",
+        "To keep"
+      ]
+    },
+    {
+      "v": "誰",
+      "r": "だれ",
+      "m": "Who",
+      "isReadingRedundant": false,
+      "dv": [
+        "唯",
+        "雅"
+      ],
+      "dr": [
+        "たれ",
+        "だーれ"
+      ],
+      "dm": [
+        "What",
+        "Where"
+      ]
+    },
+    {
+      "v": "プール",
+      "r": "-",
+      "m": "Swimming pool",
+      "isReadingRedundant": true,
+      "dv": [
+        "ブール",
+        "プ一ル"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Ocean",
+        "River"
+      ]
+    },
+    {
+      "v": "する",
+      "r": "-",
+      "m": "To do",
+      "isReadingRedundant": true,
+      "dv": [
+        "ずる",
+        "すろ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "To be",
+        "To stop"
+      ]
+    },
+    {
+      "v": "先輩",
+      "r": "せんぱい",
+      "m": "Senior",
+      "isReadingRedundant": false,
+      "dv": [
+        "失輩",
+        "先生"
+      ],
+      "dr": [
+        "ぜんぱい",
+        "せんばい"
+      ],
+      "dm": [
+        "Junior",
+        "Teacher"
+      ]
+    },
+    {
+      "v": "ピザ",
+      "r": "-",
+      "m": "Pizza",
+      "isReadingRedundant": true,
+      "dv": [
+        "ビザ",
+        "ヒザ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Pasta",
+        "Burger"
+      ]
+    },
+    {
+      "v": "小さい",
+      "r": "ちいさい",
+      "m": "Small",
+      "isReadingRedundant": false,
+      "dv": [
+        "少さい",
+        "歩さい"
+      ],
+      "dr": [
+        "ぢいさい",
+        "ちーさい"
+      ],
+      "dm": [
+        "Large",
+        "Tall"
+      ]
+    },
+    {
+      "v": "親切",
+      "r": "しんせつ",
+      "m": "Kind",
+      "isReadingRedundant": false,
+      "dv": [
+        "新切",
+        "親折"
+      ],
+      "dr": [
+        "じんせつ",
+        "しんぜつ"
+      ],
+      "dm": [
+        "Mean",
+        "Angry"
+      ]
+    },
+    {
+      "v": "簡単",
+      "r": "かんたん",
+      "m": "Simple",
+      "isReadingRedundant": false,
+      "dv": [
+        "筒単",
+        "簡卓"
+      ],
+      "dr": [
+        "gぁんたん",
+        "かんだん"
+      ],
+      "dm": [
+        "Difficult",
+        "Complex"
+      ]
+    },
+    {
+      "v": "夏",
+      "r": "なつ",
+      "m": "Summer",
+      "isReadingRedundant": false,
+      "dv": [
+        "麦",
+        "憂"
+      ],
+      "dr": [
+        "なづ",
+        "nanつ"
+      ],
+      "dm": [
+        "Winter",
+        "Spring"
+      ]
+    },
+    {
+      "v": "楽しむ",
+      "r": "たのしむ",
+      "m": "To enjoy",
+      "isReadingRedundant": false,
+      "dv": [
+        "薬しむ",
+        "栄しむ"
+      ],
+      "dr": [
+        "だのしむ",
+        "たーのしむ"
+      ],
+      "dm": [
+        "To suffer",
+        "To bore"
+      ]
+    },
+    {
+      "v": "色",
+      "r": "いろ",
+      "m": "Colour",
+      "isReadingRedundant": false,
+      "dv": [
+        "巴",
+        "絶"
+      ],
+      "dr": [
+        "いーろ",
+        "いど"
+      ],
+      "dm": [
+        "Shape",
+        "Size"
+      ]
+    },
+    {
+      "v": "言葉",
+      "r": "ことば",
+      "m": "Language",
+      "isReadingRedundant": false,
+      "dv": [
+        "信葉",
+        "言草"
+      ],
+      "dr": [
+        "ごとば",
+        "こどば"
+      ],
+      "dm": [
+        "Culture",
+        "History"
+      ]
+    },
+    {
+      "v": "道",
+      "r": "みち",
+      "m": "Road",
+      "isReadingRedundant": false,
+      "dv": [
+        "導",
+        "達"
+      ],
+      "dr": [
+        "みーち",
+        "みじ"
+      ],
+      "dm": [
+        "Bridge",
+        "Tunnel"
+      ]
+    },
+    {
+      "v": "山",
+      "r": "やま",
+      "m": "Mountain",
+      "isReadingRedundant": false,
+      "dv": [
+        "出",
+        "仙"
+      ],
+      "dr": [
+        "やーま",
+        "やば"
+      ],
+      "dm": [
+        "Ocean",
+        "River"
+      ]
+    },
+    {
+      "v": "会社",
+      "r": "かいしゃ",
+      "m": "Company",
+      "isReadingRedundant": false,
+      "dv": [
+        "会杜",
+        "合社"
+      ],
+      "dr": [
+        "がいしゃ",
+        "かいじゃ"
+      ],
+      "dm": [
+        "School",
+        "Hospital"
+      ]
+    },
+    {
+      "v": "掃除",
+      "r": "そうじ",
+      "m": "Cleaning",
+      "isReadingRedundant": false,
+      "dv": [
+        "帰除",
+        "掃余"
+      ],
+      "dr": [
+        "ぞうじ",
+        "そーじ"
+      ],
+      "dm": [
+        "Cooking",
+        "Washing"
+      ]
+    },
+    {
+      "v": "パーティー",
+      "r": "-",
+      "m": "Party",
+      "isReadingRedundant": true,
+      "dv": [
+        "バーティー",
+        "パーチー"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Meeting",
+        "Seminar"
+      ]
+    },
+    {
+      "v": "話をする",
+      "r": "はなしをする",
+      "m": "To talk/tell story",
+      "isReadingRedundant": false,
+      "dv": [
+        "語をする",
+        "活をする"
+      ],
+      "dr": [
+        "ばなしをする",
+        "はなじをする"
+      ],
+      "dm": [
+        "To write a letter",
+        "To read a book"
+      ]
+    },
+    {
+      "v": "日本",
+      "r": "にほん",
+      "m": "Japan",
+      "isReadingRedundant": false,
+      "dv": [
+        "曰本",
+        "目本"
+      ],
+      "dr": [
+        "にぽん",
+        "にぼん"
+      ],
+      "dm": [
+        "China",
+        "Korea"
+      ]
+    },
+    {
+      "v": "電気",
+      "r": "でんき",
+      "m": "Electricity",
+      "isReadingRedundant": false,
+      "dv": [
+        "雪気",
+        "電気分"
+      ],
+      "dr": [
+        "てんき",
+        "でんぎ"
+      ],
+      "dm": [
+        "Gas",
+        "Water"
+      ]
+    },
+    {
+      "v": "疲れる",
+      "r": "つかれる",
+      "m": "To get tired",
+      "isReadingRedundant": false,
+      "dv": [
+        "病れる",
+        "疾れる"
+      ],
+      "dr": [
+        "づかれる",
+        "つがれる"
+      ],
+      "dm": [
+        "To lose",
+        "To give"
+      ]
+    },
+    {
+      "v": "子供",
+      "r": "こども",
+      "m": "Child",
+      "isReadingRedundant": false,
+      "dv": [
+        "孑供",
+        "子共"
+      ],
+      "dr": [
+        "ごども",
+        "ことも"
+      ],
+      "dm": [
+        "Adult",
+        "Parent"
+      ]
+    },
+    {
+      "v": "私たち",
+      "r": "わたしたち",
+      "m": "We",
+      "isReadingRedundant": false,
+      "dv": [
+        "仏たち",
+        "弘たち"
+      ],
+      "dr": [
+        "わだしたち",
+        "わたしだち"
+      ],
+      "dm": [
+        "They",
+        "You all"
+      ]
+    },
+    {
+      "v": "大学",
+      "r": "だいがく",
+      "m": "Post-secondary education",
+      "isReadingRedundant": false,
+      "dv": [
+        "太学",
+        "犬学"
+      ],
+      "dr": [
+        "たいがく",
+        "だいがぐ"
+      ],
+      "dm": [
+        "Kindergarten",
+        "High school"
+      ]
+    },
+    {
+      "v": "カフェ",
+      "r": "-",
+      "m": "Café",
+      "isReadingRedundant": true,
+      "dv": [
+        "ガフェ",
+        "カフォ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Restaurant",
+        "Bar"
+      ]
+    },
+    {
+      "v": "脱ぐ",
+      "r": "ぬぐ",
+      "m": "To take off (clothes)",
+      "isReadingRedundant": false,
+      "dv": [
+        "悦ぐ",
+        "説ぐ"
+      ],
+      "dr": [
+        "ぬーぐ",
+        "ぬく"
+      ],
+      "dm": [
+        "To wear",
+        "To put on"
+      ]
+    },
+    {
+      "v": "うん",
+      "r": "-",
+      "m": "Yes",
+      "isReadingRedundant": true,
+      "dv": [
+        "ぅん",
+        "うお"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "No",
+        "Maybe"
+      ]
+    },
+    {
+      "v": "はい",
+      "r": "-",
+      "m": "Yes",
+      "isReadingRedundant": true,
+      "dv": [
+        "ばい",
+        "ぱい"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "No",
+        "Later"
+      ]
+    },
+    {
+      "v": "緑",
+      "r": "みどり",
+      "m": "Green",
+      "isReadingRedundant": false,
+      "dv": [
+        "縁",
+        "録"
+      ],
+      "dr": [
+        "みーどり",
+        "みとり"
+      ],
+      "dm": [
+        "Blue",
+        "Yellow"
+      ]
+    },
+    {
+      "v": "大嫌い",
+      "r": "だいきらい",
+      "m": "Detest/loathe",
+      "isReadingRedundant": false,
+      "dv": [
+        "太嫌い",
+        "大兼い"
+      ],
+      "dr": [
+        "たいきらい",
+        "だいぎらい"
+      ],
+      "dm": [
+        "Love",
+        "Like"
+      ]
+    },
+    {
+      "v": "嫌い",
+      "r": "きらい",
+      "m": "Dislike",
+      "isReadingRedundant": false,
+      "dv": [
+        "兼い",
+        "嫉い"
+      ],
+      "dr": [
+        "ぎらい",
+        "きーらい"
+      ],
+      "dm": [
+        "Love",
+        "Adore"
+      ]
+    },
+    {
+      "v": "作る",
+      "r": "つくる",
+      "m": "To make",
+      "isReadingRedundant": false,
+      "dv": [
+        "昨る",
+        "詐る"
+      ],
+      "dr": [
+        "づくる",
+        "つぐる"
+      ],
+      "dm": [
+        "To break",
+        "To destroy"
+      ]
+    },
+    {
+      "v": "乗る",
+      "r": "のる",
+      "m": "To board",
+      "isReadingRedundant": false,
+      "dv": [
+        "剰る",
+        "乖る"
+      ],
+      "dr": [
+        "のーる",
+        "のうる"
+      ],
+      "dm": [
+        "To disembark",
+        "To alight"
+      ]
+    },
+    {
+      "v": "ベッド",
+      "r": "-",
+      "m": "Bed",
+      "isReadingRedundant": true,
+      "dv": [
+        "ベット",
+        "ペッド"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Couch",
+        "Desk"
+      ]
+    },
+    {
+      "v": "休み",
+      "r": "やすみ",
+      "m": "Rest",
+      "isReadingRedundant": false,
+      "dv": [
+        "体み",
+        "木み"
+      ],
+      "dr": [
+        "やずみ",
+        "やーすみ"
+      ],
+      "dm": [
+        "Work",
+        "Shift"
+      ]
+    },
+    {
+      "v": "冷蔵庫",
+      "r": "れいぞうこ",
+      "m": "Refrigerator",
+      "isReadingRedundant": false,
+      "dv": [
+        "冶蔵庫",
+        "冷臓庫"
+      ],
+      "dr": [
+        "れいそうこ",
+        "れーぞうこ"
+      ],
+      "dm": [
+        "Oven",
+        "Microwave"
+      ]
+    },
+    {
+      "v": "花",
+      "r": "はな",
+      "m": "Flower",
+      "isReadingRedundant": false,
+      "dv": [
+        "草",
+        "苑"
+      ],
+      "dr": [
+        "ばな",
+        "はーな"
+      ],
+      "dm": [
+        "Tree",
+        "Grass"
+      ]
+    },
+    {
+      "v": "コンピューター",
+      "r": "-",
+      "m": "Computer",
+      "isReadingRedundant": true,
+      "dv": [
+        "ゴンピューター",
+        "コンピューダー"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Smartphone",
+        "Tablet"
+      ]
+    },
+    {
+      "v": "鉛筆",
+      "r": "えんぴつ",
+      "m": "Pencil",
+      "isReadingRedundant": false,
+      "dv": [
+        "船筆",
+        "沿筆"
+      ],
+      "dr": [
+        "えんびつ",
+        "えんひつ"
+      ],
+      "dm": [
+        "Pen",
+        "Eraser"
+      ]
+    },
+    {
+      "v": "甘い",
+      "r": "あまい",
+      "m": "Sweet-tasting",
+      "isReadingRedundant": false,
+      "dv": [
+        "某い",
+        "廿い"
+      ],
+      "dr": [
+        "あばい",
+        "あーまい"
+      ],
+      "dm": [
+        "Bitter",
+        "Sour"
+      ]
+    },
+    {
+      "v": "タクシー",
+      "r": "-",
+      "m": "Taxi",
+      "isReadingRedundant": true,
+      "dv": [
+        "ダクシー",
+        "タクジー"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Bus",
+        "Train"
+      ]
+    },
+    {
+      "v": "分かる",
+      "r": "わかる",
+      "m": "To understand",
+      "isReadingRedundant": false,
+      "dv": [
+        "刀る",
+        "八る"
+      ],
+      "dr": [
+        "わがる",
+        "わーかる"
+      ],
+      "dm": [
+        "To misunderstand",
+        "To forget"
+      ]
+    },
+    {
+      "v": "新幹線",
+      "r": "しんかんせん",
+      "m": "Shinkansen",
+      "isReadingRedundant": false,
+      "dv": [
+        "親幹線",
+        "新幹泉"
+      ],
+      "dr": [
+        "じんかんせん",
+        "しんがんせん"
+      ],
+      "dm": [
+        "Airplane",
+        "Bus"
+      ]
+    },
+    {
+      "v": "飛行機",
+      "r": "ひこうき",
+      "m": "Aeroplane",
+      "isReadingRedundant": false,
+      "dv": [
+        "非行機",
+        "飛航機"
+      ],
+      "dr": [
+        "びこうき",
+        "ひごうき"
+      ],
+      "dm": [
+        "Helicopter",
+        "Ship"
+      ]
+    },
+    {
+      "v": "行き",
+      "r": "いき",
+      "m": "The way there",
+      "isReadingRedundant": false,
+      "dv": [
+        "打き",
+        "朽き"
+      ],
+      "dr": [
+        "いーき",
+        "いぎ"
+      ],
+      "dm": [
+        "The way back",
+        "Stay"
+      ]
+    },
+    {
+      "v": "一月",
+      "r": "いちがつ",
+      "m": "January",
+      "isReadingRedundant": false,
+      "dv": [
+        "二月",
+        "一日"
+      ],
+      "dr": [
+        "いじがつ",
+        "いちかつ"
+      ],
+      "dm": [
+        "February",
+        "March"
+      ]
+    },
+    {
+      "v": "太い",
+      "r": "ふとい",
+      "m": "Fat/thick",
+      "isReadingRedundant": false,
+      "dv": [
+        "大い",
+        "犬い"
+      ],
+      "dr": [
+        "ぶとい",
+        "ふどい"
+      ],
+      "dm": [
+        "Thin",
+        "Skinny"
+      ]
+    }
+  ]
+}

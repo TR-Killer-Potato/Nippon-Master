@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 13",
+  "vocabulary": [
+    {
+      "v": "城",
+      "r": "しろ",
+      "m": "Castle",
+      "isReadingRedundant": false,
+      "dv": [
+        "域",
+        "誠"
+      ],
+      "dr": [
+        "じろ",
+        "しーろ"
+      ],
+      "dm": [
+        "Palace",
+        "Fortress"
+      ]
+    },
+    {
+      "v": "船",
+      "r": "ふね",
+      "m": "Ship",
+      "isReadingRedundant": false,
+      "dv": [
+        "舶",
+        "舟"
+      ],
+      "dr": [
+        "ぶね",
+        "ふーね"
+      ],
+      "dm": [
+        "Car",
+        "Airplane"
+      ]
+    },
+    {
+      "v": "点",
+      "r": "てん",
+      "m": "Dot",
+      "isReadingRedundant": false,
+      "dv": [
+        "店",
+        "占"
+      ],
+      "dr": [
+        "でん",
+        "てーん"
+      ],
+      "dm": [
+        "Line",
+        "Circle"
+      ]
+    },
+    {
+      "v": "月",
+      "r": "つき",
+      "m": "Moon",
+      "isReadingRedundant": false,
+      "dv": [
+        "目",
+        "日"
+      ],
+      "dr": [
+        "づき",
+        "つーき"
+      ],
+      "dm": [
+        "Sun",
+        "Star"
+      ]
+    },
+    {
+      "v": "について",
+      "r": "-",
+      "m": "Concerning",
+      "isReadingRedundant": true,
+      "dv": [
+        "につして",
+        "びついて"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Excluding",
+        "Ignoring"
+      ]
+    },
+    {
+      "v": "こんにちは",
+      "r": "-",
+      "m": "Hello",
+      "isReadingRedundant": true,
+      "dv": [
+        "こんみちは",
+        "こにんちは"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Goodbye",
+        "See you later"
+      ]
+    },
+    {
+      "v": "天",
+      "r": "てん",
+      "m": "Sky",
+      "isReadingRedundant": false,
+      "dv": [
+        "夫",
+        "矢"
+      ],
+      "dr": [
+        "でん",
+        "てーん"
+      ],
+      "dm": [
+        "Ground",
+        "Earth"
+      ]
+    },
+    {
+      "v": "続く",
+      "r": "つづく",
+      "m": "To continue",
+      "isReadingRedundant": false,
+      "dv": [
+        "読く",
+        "経く"
+      ],
+      "dr": [
+        "づづく",
+        "つつく"
+      ],
+      "dm": [
+        "To stop",
+        "To end"
+      ]
+    },
+    {
+      "v": "貸す",
+      "r": "かす",
+      "m": "To lend",
+      "isReadingRedundant": false,
+      "dv": [
+        "貨す",
+        "賃す"
+      ],
+      "dr": [
+        "がす",
+        "かーす"
+      ],
+      "dm": [
+        "To borrow",
+        "To steal"
+      ]
+    },
+    {
+      "v": "ううん",
+      "r": "-",
+      "m": "No/um/er",
+      "isReadingRedundant": true,
+      "dv": [
+        "ぅうん",
+        "うおん"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Yes",
+        "Absolutely"
+      ]
+    },
+    {
+      "v": "楽しみ",
+      "r": "たのしみ",
+      "m": "Enjoyment",
+      "isReadingRedundant": false,
+      "dv": [
+        "薬しみ",
+        "楽おみ"
+      ],
+      "dr": [
+        "だのしみ",
+        "たーのしみ"
+      ],
+      "dm": [
+        "Suffering",
+        "Boredom"
+      ]
+    },
+    {
+      "v": "手伝う",
+      "r": "てつだう",
+      "m": "To help",
+      "isReadingRedundant": false,
+      "dv": [
+        "毛伝う",
+        "手転う"
+      ],
+      "dr": [
+        "でつだう",
+        "てづだう"
+      ],
+      "dm": [
+        "To hinder",
+        "To ignore"
+      ]
+    },
+    {
+      "v": "近く",
+      "r": "ちかく",
+      "m": "Near/neighbourhood",
+      "isReadingRedundant": false,
+      "dv": [
+        "辺く",
+        "迎く"
+      ],
+      "dr": [
+        "ぢかく",
+        "ちがく"
+      ],
+      "dm": [
+        "Far",
+        "Distant"
+      ]
+    },
+    {
+      "v": "毎日",
+      "r": "まいにち",
+      "m": "Every day",
+      "isReadingRedundant": false,
+      "dv": [
+        "母日",
+        "毎曰"
+      ],
+      "dr": [
+        "ばいにち",
+        "まーいにち"
+      ],
+      "dm": [
+        "Every week",
+        "Every month"
+      ]
+    },
+    {
+      "v": "上げる",
+      "r": "あげる",
+      "m": "To raise/elevate",
+      "isReadingRedundant": false,
+      "dv": [
+        "止げる",
+        "下げる"
+      ],
+      "dr": [
+        "あける",
+        "あーげる"
+      ],
+      "dm": [
+        "To lower",
+        "To drop"
+      ]
+    },
+    {
+      "v": "久しぶり",
+      "r": "ひさしぶり",
+      "m": "A long time",
+      "isReadingRedundant": false,
+      "dv": [
+        "欠しぶり",
+        "夂しぶり"
+      ],
+      "dr": [
+        "びさしぶり",
+        "ひざしぶり"
+      ],
+      "dm": [
+        "A short time",
+        "Recently"
+      ]
+    },
+    {
+      "v": "向こう",
+      "r": "むこう",
+      "m": "Opposite side",
+      "isReadingRedundant": false,
+      "dv": [
+        "同こう",
+        "司こう"
+      ],
+      "dr": [
+        "むごう",
+        "むーこう"
+      ],
+      "dm": [
+        "This side",
+        "Same side"
+      ]
+    },
+    {
+      "v": "春",
+      "r": "はる",
+      "m": "Spring",
+      "isReadingRedundant": false,
+      "dv": [
+        "青",
+        "麦"
+      ],
+      "dr": [
+        "ばる",
+        "ہーる"
+      ],
+      "dm": [
+        "Autumn",
+        "Winter"
+      ]
+    },
+    {
+      "v": "止まる",
+      "r": "とまる",
+      "m": "To stop",
+      "isReadingRedundant": false,
+      "dv": [
+        "上まる",
+        "正まる"
+      ],
+      "dr": [
+        "どまる",
+        "tおーまる"
+      ],
+      "dm": [
+        "To start",
+        "To continue"
+      ]
+    },
+    {
+      "v": "それから",
+      "r": "-",
+      "m": "And then/after",
+      "isReadingRedundant": true,
+      "dv": [
+        "そわから",
+        "どれから"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Before",
+        "Previously"
+      ]
+    },
+    {
+      "v": "集める",
+      "r": "あつめる",
+      "m": "To collect/gather",
+      "isReadingRedundant": false,
+      "dv": [
+        "焦める",
+        "隼める"
+      ],
+      "dr": [
+        "あづめる",
+        "あーつめる"
+      ],
+      "dm": [
+        "To scatter",
+        "To distribute"
+      ]
+    },
+    {
+      "v": "酒",
+      "r": "さけ",
+      "m": "Alcohol",
+      "isReadingRedundant": false,
+      "dv": [
+        "洒",
+        "酉"
+      ],
+      "dr": [
+        "ざけ",
+        "さーけ"
+      ],
+      "dm": [
+        "Water",
+        "Juice"
+      ]
+    },
+    {
+      "v": "ただいま",
+      "r": "-",
+      "m": "I'm home",
+      "isReadingRedundant": true,
+      "dv": [
+        "たタイま",
+        "だだいま"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "I'm leaving",
+        "Goodbye"
+      ]
+    },
+    {
+      "v": "落とす",
+      "r": "おとす",
+      "m": "To drop",
+      "isReadingRedundant": false,
+      "dv": [
+        "洛とす",
+        "絡とす"
+      ],
+      "dr": [
+        "おどす",
+        "おーとす"
+      ],
+      "dm": [
+        "To pick up",
+        "To catch"
+      ]
+    },
+    {
+      "v": "火",
+      "r": "ひ",
+      "m": "Fire",
+      "isReadingRedundant": false,
+      "dv": [
+        "大",
+        "犬"
+      ],
+      "dr": [
+        "び",
+        "ひー"
+      ],
+      "dm": [
+        "Water",
+        "Ice"
+      ]
+    },
+    {
+      "v": "歌",
+      "r": "うた",
+      "m": "Song",
+      "isReadingRedundant": false,
+      "dv": [
+        "飲",
+        "歓"
+      ],
+      "dr": [
+        "うだ",
+        "うーた"
+      ],
+      "dm": [
+        "Dance",
+        "Poem"
+      ]
+    },
+    {
+      "v": "胸",
+      "r": "むね",
+      "m": "Chest",
+      "isReadingRedundant": false,
+      "dv": [
+        "脇",
+        "脳"
+      ],
+      "dr": [
+        "むーね",
+        "むめ"
+      ],
+      "dm": [
+        "Back",
+        "Stomach"
+      ]
+    },
+    {
+      "v": "説明",
+      "r": "せつめい",
+      "m": "Explanation",
+      "isReadingRedundant": false,
+      "dv": [
+        "説朋",
+        "記明"
+      ],
+      "dr": [
+        "ぜつめい",
+        "せづめい"
+      ],
+      "dm": [
+        "Question",
+        "Confusion"
+      ]
+    },
+    {
+      "v": "森",
+      "r": "もり",
+      "m": "Forest",
+      "isReadingRedundant": false,
+      "dv": [
+        "林",
+        "木"
+      ],
+      "dr": [
+        "もーり",
+        "ぼり"
+      ],
+      "dm": [
+        "Desert",
+        "Ocean"
+      ]
+    },
+    {
+      "v": "鍵",
+      "r": "かぎ",
+      "m": "Key",
+      "isReadingRedundant": false,
+      "dv": [
+        "健",
+        "建"
+      ],
+      "dr": [
+        "がぎ",
+        "かき"
+      ],
+      "dm": [
+        "Lock",
+        "Door"
+      ]
+    },
+    {
+      "v": "丸",
+      "r": "まる",
+      "m": "Circle",
+      "isReadingRedundant": false,
+      "dv": [
+        "九",
+        "凡"
+      ],
+      "dr": [
+        "まーる",
+        "ばる"
+      ],
+      "dm": [
+        "Square",
+        "Triangle"
+      ]
+    },
+    {
+      "v": "そうですね",
+      "r": "-",
+      "m": "That's it/I see",
+      "isReadingRedundant": true,
+      "dv": [
+        "ぞうですね",
+        "そうてすね"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "I disagree",
+        "That's wrong"
+      ]
+    },
+    {
+      "v": "紹介",
+      "r": "しょうかい",
+      "m": "Introduction",
+      "isReadingRedundant": false,
+      "dv": [
+        "招介",
+        "紹界"
+      ],
+      "dr": [
+        "じょうかい",
+        "しょうがい"
+      ],
+      "dm": [
+        "Conclusion",
+        "Ending"
+      ]
+    },
+    {
+      "v": "弱い",
+      "r": "よわい",
+      "m": "Weak",
+      "isReadingRedundant": false,
+      "dv": [
+        "強い",
+        "溺い"
+      ],
+      "dr": [
+        "よーわい",
+        "よばい"
+      ],
+      "dm": [
+        "Strong",
+        "Powerful"
+      ]
+    },
+    {
+      "v": "手術",
+      "r": "しゅじゅつ",
+      "m": "Surgery",
+      "isReadingRedundant": false,
+      "dv": [
+        "毛術",
+        "手木"
+      ],
+      "dr": [
+        "じゅじゅつ",
+        "しゅしゅつ"
+      ],
+      "dm": [
+        "Medicine",
+        "Diagnosis"
+      ]
+    },
+    {
+      "v": "代",
+      "r": "だい",
+      "m": "Charge/fee",
+      "isReadingRedundant": false,
+      "dv": [
+        "伐",
+        "氏"
+      ],
+      "dr": [
+        "たい",
+        "だーい"
+      ],
+      "dm": [
+        "Free",
+        "Discount"
+      ]
+    },
+    {
+      "v": "皆",
+      "r": "みな",
+      "m": "All",
+      "isReadingRedundant": false,
+      "dv": [
+        "階",
+        "比"
+      ],
+      "dr": [
+        "みーな",
+        "biな"
+      ],
+      "dm": [
+        "None",
+        "Some"
+      ]
+    },
+    {
+      "v": "左",
+      "r": "ひだり",
+      "m": "Left",
+      "isReadingRedundant": false,
+      "dv": [
+        "右",
+        "在"
+      ],
+      "dr": [
+        "びだり",
+        "ひたり"
+      ],
+      "dm": [
+        "Right",
+        "Center"
+      ]
+    },
+    {
+      "v": "付く",
+      "r": "つく",
+      "m": "To be attached",
+      "isReadingRedundant": false,
+      "dv": [
+        "村く",
+        "符く"
+      ],
+      "dr": [
+        "づく",
+        "つぐ"
+      ],
+      "dm": [
+        "To detach",
+        "To separate"
+      ]
+    },
+    {
+      "v": "集まる",
+      "r": "あつまる",
+      "m": "To gather",
+      "isReadingRedundant": false,
+      "dv": [
+        "焦まる",
+        "隼まる"
+      ],
+      "dr": [
+        "あづまる",
+        "あーつまる"
+      ],
+      "dm": [
+        "To scatter",
+        "To disperse"
+      ]
+    },
+    {
+      "v": "感謝",
+      "r": "かんしゃ",
+      "m": "Thanks",
+      "isReadingRedundant": false,
+      "dv": [
+        "感身",
+        "減謝"
+      ],
+      "dr": [
+        "gぁんしゃ",
+        "かんじゃ"
+      ],
+      "dm": [
+        "Apology",
+        "Complaint"
+      ]
+    },
+    {
+      "v": "メール",
+      "r": "-",
+      "m": "Email",
+      "isReadingRedundant": true,
+      "dv": [
+        "メ一ル",
+        "メノル"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Letter",
+        "Phone call"
+      ]
+    },
+    {
+      "v": "びっくり",
+      "r": "-",
+      "m": "To be surprised",
+      "isReadingRedundant": true,
+      "dv": [
+        "ひっくり",
+        "びつくり"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "To be calm",
+        "To expect"
+      ]
+    },
+    {
+      "v": "門",
+      "r": "もん",
+      "m": "Gate",
+      "isReadingRedundant": false,
+      "dv": [
+        "問",
+        "間"
+      ],
+      "dr": [
+        "もーん",
+        "ぽん"
+      ],
+      "dm": [
+        "Window",
+        "Wall"
+      ]
+    },
+    {
+      "v": "人々",
+      "r": "ひとびと",
+      "m": "People",
+      "isReadingRedundant": false,
+      "dv": [
+        "入々",
+        "八々"
+      ],
+      "dr": [
+        "びとびと",
+        "ひとぴと"
+      ],
+      "dm": [
+        "Animals",
+        "Objects"
+      ]
+    },
+    {
+      "v": "着く",
+      "r": "つく",
+      "m": "To arrive",
+      "isReadingRedundant": false,
+      "dv": [
+        "看く",
+        "羊く"
+      ],
+      "dr": [
+        "づく",
+        "つぐ"
+      ],
+      "dm": [
+        "To depart",
+        "To leave"
+      ]
+    },
+    {
+      "v": "興味",
+      "r": "きょうみ",
+      "m": "Interest",
+      "isReadingRedundant": false,
+      "dv": [
+        "興未",
+        "与味"
+      ],
+      "dr": [
+        "giょうみ",
+        "きょうび"
+      ],
+      "dm": [
+        "Boredom",
+        "Apathy"
+      ]
+    },
+    {
+      "v": "後ろ",
+      "r": "うしろ",
+      "m": "Back/behind",
+      "isReadingRedundant": false,
+      "dv": [
+        "復ろ",
+        "俊ろ"
+      ],
+      "dr": [
+        "うじろ",
+        "うーしろ"
+      ],
+      "dm": [
+        "Front",
+        "Ahead"
+      ]
+    },
+    {
+      "v": "生活",
+      "r": "せいかつ",
+      "m": "Living/life",
+      "isReadingRedundant": false,
+      "dv": [
+        "主活",
+        "牛活"
+      ],
+      "dr": [
+        "ぜいかつ",
+        "せいがつ"
+      ],
+      "dm": [
+        "Death",
+        "Dying"
+      ]
+    },
+    {
+      "v": "自信",
+      "r": "じしん",
+      "m": "Self-confidence",
+      "isReadingRedundant": false,
+      "dv": [
+        "目信",
+        "白信"
+      ],
+      "dr": [
+        "ししん",
+        "じじん"
+      ],
+      "dm": [
+        "Insecurity",
+        "Doubt"
+      ]
+    }
+  ]
+}

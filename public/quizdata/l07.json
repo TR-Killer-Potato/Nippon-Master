@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 7",
+  "vocabulary": [
+    {
+      "v": "撮る",
+      "r": "とる",
+      "m": "To take (photo)",
+      "isReadingRedundant": false,
+      "dv": [
+        "提る",
+        "撤る"
+      ],
+      "dr": [
+        "どる",
+        "とーる"
+      ],
+      "dm": [
+        "To draw",
+        "To paint"
+      ]
+    },
+    {
+      "v": "昼",
+      "r": "ひる",
+      "m": "Noon",
+      "isReadingRedundant": false,
+      "dv": [
+        "尽",
+        "尺"
+      ],
+      "dr": [
+        "びる",
+        "ひーる"
+      ],
+      "dm": [
+        "Midnight",
+        "Morning"
+      ]
+    },
+    {
+      "v": "点ける",
+      "r": "つける",
+      "m": "To switch on",
+      "isReadingRedundant": false,
+      "dv": [
+        "店ける",
+        "占ける"
+      ],
+      "dr": [
+        "づける",
+        "つげる"
+      ],
+      "dm": [
+        "To switch off",
+        "To unplug"
+      ]
+    },
+    {
+      "v": "冬",
+      "r": "ふゆ",
+      "m": "Winter",
+      "isReadingRedundant": false,
+      "dv": [
+        "各",
+        "麦"
+      ],
+      "dr": [
+        "ぶゆ",
+        "ふーゆ"
+      ],
+      "dm": [
+        "Summer",
+        "Spring"
+      ]
+    },
+    {
+      "v": "歌う",
+      "r": "うたう",
+      "m": "To sing",
+      "isReadingRedundant": false,
+      "dv": [
+        "飲う",
+        "歓う"
+      ],
+      "dr": [
+        "うだう",
+        "うーたう"
+      ],
+      "dm": [
+        "To dance",
+        "To perform"
+      ]
+    },
+    {
+      "v": "カラオケ",
+      "r": "-",
+      "m": "Karaoke",
+      "isReadingRedundant": true,
+      "dv": [
+        "ガラオケ",
+        "カテオケ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Cinema",
+        "Concert"
+      ]
+    },
+    {
+      "v": "お菓子",
+      "r": "おかし",
+      "m": "Confections",
+      "isReadingRedundant": false,
+      "dv": [
+        "お巣子",
+        "お果子"
+      ],
+      "dr": [
+        "おがし",
+        "おかーし"
+      ],
+      "dm": [
+        "Beverages",
+        "Main dish"
+      ]
+    },
+    {
+      "v": "アメリカ",
+      "r": "-",
+      "m": "America",
+      "isReadingRedundant": true,
+      "dv": [
+        "アメメカ",
+        "アメリ力"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Japan",
+        "China"
+      ]
+    },
+    {
+      "v": "靴",
+      "r": "くつ",
+      "m": "Shoes",
+      "isReadingRedundant": false,
+      "dv": [
+        "鞄",
+        "鞨"
+      ],
+      "dr": [
+        "ぐつ",
+        "くづ"
+      ],
+      "dm": [
+        "Socks",
+        "Hat"
+      ]
+    },
+    {
+      "v": "始まる",
+      "r": "はじまる",
+      "m": "To begin",
+      "isReadingRedundant": false,
+      "dv": [
+        "治まる",
+        "胎まる"
+      ],
+      "dr": [
+        "ばじまる",
+        "はしまる"
+      ],
+      "dm": [
+        "To end",
+        "To finish"
+      ]
+    },
+    {
+      "v": "買い物",
+      "r": "かいもの",
+      "m": "Shopping",
+      "isReadingRedundant": false,
+      "dv": [
+        "具い物",
+        "員い物"
+      ],
+      "dr": [
+        "がいもの",
+        "かーいもの"
+      ],
+      "dm": [
+        "Cleaning",
+        "Cooking"
+      ]
+    },
+    {
+      "v": "西",
+      "r": "にし",
+      "m": "West",
+      "isReadingRedundant": false,
+      "dv": [
+        "酉",
+        "四"
+      ],
+      "dr": [
+        "にじ",
+        "にーし"
+      ],
+      "dm": [
+        "East",
+        "South"
+      ]
+    },
+    {
+      "v": "風",
+      "r": "かぜ",
+      "m": "Wind",
+      "isReadingRedundant": false,
+      "dv": [
+        "凧",
+        "凩"
+      ],
+      "dr": [
+        "がぜ",
+        "かせ"
+      ],
+      "dm": [
+        "Rain",
+        "Snow"
+      ]
+    },
+    {
+      "v": "シャワーを浴びる",
+      "r": "シャワーをあびる",
+      "m": "Take a shower",
+      "isReadingRedundant": false,
+      "dv": [
+        "シャワーを沿びる",
+        "シヤワーを治びる"
+      ],
+      "dr": [
+        "ジャワーをあびる",
+        "シャワーをあぴる"
+      ],
+      "dm": [
+        "Take a bath",
+        "Wash face"
+      ]
+    },
+    {
+      "v": "豚肉",
+      "r": "ぶたにく",
+      "m": "Pork",
+      "isReadingRedundant": false,
+      "dv": [
+        "隊肉",
+        "豚内"
+      ],
+      "dr": [
+        "ぷたにく",
+        "ぶだにく"
+      ],
+      "dm": [
+        "Beef",
+        "Chicken"
+      ]
+    },
+    {
+      "v": "秋",
+      "r": "あき",
+      "m": "Autumn",
+      "isReadingRedundant": false,
+      "dv": [
+        "秒",
+        "萩"
+      ],
+      "dr": [
+        "あぎ",
+        "あーき"
+      ],
+      "dm": [
+        "Spring",
+        "Winter"
+      ]
+    },
+    {
+      "v": "野菜",
+      "r": "やさい",
+      "m": "Vegetable",
+      "isReadingRedundant": false,
+      "dv": [
+        "野葉",
+        "里菜"
+      ],
+      "dr": [
+        "やざい",
+        "やーさい"
+      ],
+      "dm": [
+        "Fruit",
+        "Meat"
+      ]
+    },
+    {
+      "v": "意味",
+      "r": "いみ",
+      "m": "Meaning",
+      "isReadingRedundant": false,
+      "dv": [
+        "意未",
+        "竟味"
+      ],
+      "dr": [
+        "いーみ",
+        "いび"
+      ],
+      "dm": [
+        "Pronunciation",
+        "Spelling"
+      ]
+    },
+    {
+      "v": "危ない",
+      "r": "あぶない",
+      "m": "Dangerous",
+      "isReadingRedundant": false,
+      "dv": [
+        "厄ない",
+        "犯ない"
+      ],
+      "dr": [
+        "あぷない",
+        "あーぶない"
+      ],
+      "dm": [
+        "Safe",
+        "Secure"
+      ]
+    },
+    {
+      "v": "日曜日",
+      "r": "にちようび",
+      "m": "Sunday",
+      "isReadingRedundant": false,
+      "dv": [
+        "曰曜日",
+        "目曜日"
+      ],
+      "dr": [
+        "にじようび",
+        "にちよーび"
+      ],
+      "dm": [
+        "Saturday",
+        "Monday"
+      ]
+    },
+    {
+      "v": "バス停",
+      "r": "バスてい",
+      "m": "Bus stop",
+      "isReadingRedundant": false,
+      "dv": [
+        "パス停",
+        "バス亭"
+      ],
+      "dr": [
+        "ばすてい",
+        "ばずてい"
+      ],
+      "dm": [
+        "Train station",
+        "Airport"
+      ]
+    },
+    {
+      "v": "降りる",
+      "r": "おりる",
+      "m": "To descend",
+      "isReadingRedundant": false,
+      "dv": [
+        "降る",
+        "陣りる"
+      ],
+      "dr": [
+        "おーりる",
+        "おぢる"
+      ],
+      "dm": [
+        "To ascend",
+        "To climb"
+      ]
+    },
+    {
+      "v": "警察",
+      "r": "けいさつ",
+      "m": "Police",
+      "isReadingRedundant": false,
+      "dv": [
+        "警際",
+        "驚察"
+      ],
+      "dr": [
+        "げいさつ",
+        "けいざつ"
+      ],
+      "dm": [
+        "Firefighter",
+        "Hospital"
+      ]
+    },
+    {
+      "v": "呼ぶ",
+      "r": "よぶ",
+      "m": "To call",
+      "isReadingRedundant": false,
+      "dv": [
+        "吸ぶ",
+        "呼吸"
+      ],
+      "dr": [
+        "よーぶ",
+        "よぷ"
+      ],
+      "dm": [
+        "To text",
+        "To message"
+      ]
+    },
+    {
+      "v": "洗う",
+      "r": "あらう",
+      "m": "To wash",
+      "isReadingRedundant": false,
+      "dv": [
+        "先う",
+        "浩う"
+      ],
+      "dr": [
+        "あーらう",
+        "あだう"
+      ],
+      "dm": [
+        "To dry",
+        "To dirty"
+      ]
+    },
+    {
+      "v": "待つ",
+      "r": "まつ",
+      "m": "To wait",
+      "isReadingRedundant": false,
+      "dv": [
+        "持つ",
+        "特つ"
+      ],
+      "dr": [
+        "まづ",
+        "まーつ"
+      ],
+      "dm": [
+        "To hurry",
+        "To leave"
+      ]
+    },
+    {
+      "v": "男の人",
+      "r": "おとこのひと",
+      "m": "Man",
+      "isReadingRedundant": false,
+      "dv": [
+        "田の人",
+        "男の入"
+      ],
+      "dr": [
+        "おどこのひと",
+        "おとごのひと"
+      ],
+      "dm": [
+        "Woman",
+        "Child"
+      ]
+    },
+    {
+      "v": "遊び",
+      "r": "あそび",
+      "m": "Playing",
+      "isReadingRedundant": false,
+      "dv": [
+        "旅び",
+        "遊ひ"
+      ],
+      "dr": [
+        "あぞび",
+        "あそーび"
+      ],
+      "dm": [
+        "Working",
+        "Studying"
+      ]
+    },
+    {
+      "v": "音楽",
+      "r": "おんがく",
+      "m": "Music",
+      "isReadingRedundant": false,
+      "dv": [
+        "音学",
+        "意楽"
+      ],
+      "dr": [
+        "おんかく",
+        "おーんがく"
+      ],
+      "dm": [
+        "Art",
+        "Literature"
+      ]
+    },
+    {
+      "v": "切手",
+      "r": "きって",
+      "m": "Stamp",
+      "isReadingRedundant": false,
+      "dv": [
+        "一切",
+        "切毛"
+      ],
+      "dr": [
+        "ぎって",
+        "きっで"
+      ],
+      "dm": [
+        "Envelope",
+        "Postcard"
+      ]
+    },
+    {
+      "v": "スーパー",
+      "r": "-",
+      "m": "Supermarket",
+      "isReadingRedundant": true,
+      "dv": [
+        "ズーパー",
+        "ス一パー"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Convenience store",
+        "Department store"
+      ]
+    },
+    {
+      "v": "賑やか",
+      "r": "にぎやか",
+      "m": "Bustling",
+      "isReadingRedundant": false,
+      "dv": [
+        "賑やが",
+        "賑や力"
+      ],
+      "dr": [
+        "niきやか",
+        "にーぎやか"
+      ],
+      "dm": [
+        "Quiet",
+        "Peaceful"
+      ]
+    },
+    {
+      "v": "先週",
+      "r": "せんしゅう",
+      "m": "Last week",
+      "isReadingRedundant": false,
+      "dv": [
+        "失週",
+        "先周"
+      ],
+      "dr": [
+        "ぜんしゅう",
+        "せんじゅう"
+      ],
+      "dm": [
+        "This week",
+        "Next week"
+      ]
+    },
+    {
+      "v": "電話",
+      "r": "でんわ",
+      "m": "Telephone call",
+      "isReadingRedundant": false,
+      "dv": [
+        "電語",
+        "雪話"
+      ],
+      "dr": [
+        "てんわ",
+        "でんぱ"
+      ],
+      "dm": [
+        "Email",
+        "Letter"
+      ]
+    },
+    {
+      "v": "牛肉",
+      "r": "ぎゅうにく",
+      "m": "Beef",
+      "isReadingRedundant": false,
+      "dv": [
+        "午肉",
+        "牛内"
+      ],
+      "dr": [
+        "きゅうにく",
+        "ぎゅにく"
+      ],
+      "dm": [
+        "Pork",
+        "Chicken"
+      ]
+    },
+    {
+      "v": "午前",
+      "r": "ごぜん",
+      "m": "Morning",
+      "isReadingRedundant": false,
+      "dv": [
+        "牛前",
+        "午煎"
+      ],
+      "dr": [
+        "こぜん",
+        "ごせん"
+      ],
+      "dm": [
+        "Afternoon",
+        "Evening"
+      ]
+    },
+    {
+      "v": "牛",
+      "r": "うし",
+      "m": "Cattle",
+      "isReadingRedundant": false,
+      "dv": [
+        "午",
+        "ヰ"
+      ],
+      "dr": [
+        "うじ",
+        "うーし"
+      ],
+      "dm": [
+        "Pig",
+        "Horse"
+      ]
+    },
+    {
+      "v": "宿題",
+      "r": "しゅくだい",
+      "m": "Homework",
+      "isReadingRedundant": false,
+      "dv": [
+        "縮題",
+        "宿顔"
+      ],
+      "dr": [
+        "じゅくだい",
+        "しゅぐだい"
+      ],
+      "dm": [
+        "Classwork",
+        "Examination"
+      ]
+    },
+    {
+      "v": "漫画",
+      "r": "まんが",
+      "m": "Manga",
+      "isReadingRedundant": false,
+      "dv": [
+        "漫両",
+        "漫画面"
+      ],
+      "dr": [
+        "まんか",
+        "まーんが"
+      ],
+      "dm": [
+        "Novel",
+        "Magazine"
+      ]
+    },
+    {
+      "v": "言う",
+      "r": "いう",
+      "m": "To say",
+      "isReadingRedundant": false,
+      "dv": [
+        "信う",
+        "舌う"
+      ],
+      "dr": [
+        "いーう",
+        "ゆう"
+      ],
+      "dm": [
+        "To write",
+        "To hear"
+      ]
+    },
+    {
+      "v": "南",
+      "r": "みなみ",
+      "m": "South",
+      "isReadingRedundant": false,
+      "dv": [
+        "献",
+        "商"
+      ],
+      "dr": [
+        "みーなみ",
+        "みなび"
+      ],
+      "dm": [
+        "North",
+        "West"
+      ]
+    },
+    {
+      "v": "おはよう",
+      "r": "-",
+      "m": "Good morning",
+      "isReadingRedundant": true,
+      "dv": [
+        "おはよラ",
+        "おぱよう"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Good evening",
+        "Good night"
+      ]
+    },
+    {
+      "v": "降る",
+      "r": "ふる",
+      "m": "To fall",
+      "isReadingRedundant": false,
+      "dv": [
+        "陣る",
+        "隆る"
+      ],
+      "dr": [
+        "ぶる",
+        "ふーる"
+      ],
+      "dm": [
+        "To rise",
+        "To ascend"
+      ]
+    },
+    {
+      "v": "捨てる",
+      "r": "すてる",
+      "m": "To throw",
+      "isReadingRedundant": false,
+      "dv": [
+        "拾てる",
+        "打てる"
+      ],
+      "dr": [
+        "ずてる",
+        "すでる"
+      ],
+      "dm": [
+        "To catch",
+        "To pick up"
+      ]
+    },
+    {
+      "v": "乾杯",
+      "r": "かんぱい",
+      "m": "Cheers",
+      "isReadingRedundant": false,
+      "dv": [
+        "朝杯",
+        "乾林"
+      ],
+      "dr": [
+        "gぁんぱい",
+        "かんばい"
+      ],
+      "dm": [
+        "Congratulations",
+        "Greetings"
+      ]
+    },
+    {
+      "v": "毎週",
+      "r": "まいしゅう",
+      "m": "Every week",
+      "isReadingRedundant": false,
+      "dv": [
+        "母週",
+        "毎周"
+      ],
+      "dr": [
+        "ばいしゅう",
+        "まいじゅう"
+      ],
+      "dm": [
+        "Every month",
+        "Every day"
+      ]
+    },
+    {
+      "v": "鳥",
+      "r": "とり",
+      "m": "Bird",
+      "isReadingRedundant": false,
+      "dv": [
+        "烏",
+        "鳴"
+      ],
+      "dr": [
+        "どり",
+        "とーり"
+      ],
+      "dm": [
+        "Fish",
+        "Mammal"
+      ]
+    },
+    {
+      "v": "来週",
+      "r": "らいしゅう",
+      "m": "Next week",
+      "isReadingRedundant": false,
+      "dv": [
+        "釆週",
+        "来周"
+      ],
+      "dr": [
+        "だいしゅう",
+        "らいじゅう"
+      ],
+      "dm": [
+        "Last week",
+        "This week"
+      ]
+    },
+    {
+      "v": "結婚",
+      "r": "けっこん",
+      "m": "Marriage",
+      "isReadingRedundant": false,
+      "dv": [
+        "結魂",
+        "結紺"
+      ],
+      "dr": [
+        "げっこん",
+        "けっごん"
+      ],
+      "dm": [
+        "Divorce",
+        "Engagement"
+      ]
+    },
+    {
+      "v": "時々",
+      "r": "ときどき",
+      "m": "Sometimes",
+      "isReadingRedundant": false,
+      "dv": [
+        "寺々",
+        "時夕"
+      ],
+      "dr": [
+        "どきどき",
+        "ときとき"
+      ],
+      "dm": [
+        "Always",
+        "Never"
+      ]
+    }
+  ]
+}

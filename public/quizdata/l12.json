@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 12",
+  "vocabulary": [
+    {
+      "v": "円",
+      "r": "えん",
+      "m": "Yen",
+      "isReadingRedundant": false,
+      "dv": [
+        "丹",
+        "冊"
+      ],
+      "dr": [
+        "えーん",
+        "ぇん"
+      ],
+      "dm": [
+        "Dollar",
+        "Euro"
+      ]
+    },
+    {
+      "v": "動く",
+      "r": "うごく",
+      "m": "To move",
+      "isReadingRedundant": false,
+      "dv": [
+        "働く",
+        "重く"
+      ],
+      "dr": [
+        "うこく",
+        "うーごく"
+      ],
+      "dm": [
+        "To stop",
+        "To stay"
+      ]
+    },
+    {
+      "v": "王",
+      "r": "おう",
+      "m": "King",
+      "isReadingRedundant": false,
+      "dv": [
+        "玉",
+        "主"
+      ],
+      "dr": [
+        "おー",
+        "おうう"
+      ],
+      "dm": [
+        "Queen",
+        "Prince"
+      ]
+    },
+    {
+      "v": "もちろん",
+      "r": "-",
+      "m": "Of course",
+      "isReadingRedundant": true,
+      "dv": [
+        "もちるん",
+        "むちろん"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Never",
+        "Unlikely"
+      ]
+    },
+    {
+      "v": "度",
+      "r": "ど",
+      "m": "Degree",
+      "isReadingRedundant": false,
+      "dv": [
+        "席",
+        "庫"
+      ],
+      "dr": [
+        "と",
+        "どー"
+      ],
+      "dm": [
+        "Percent",
+        "Centimeter"
+      ]
+    },
+    {
+      "v": "幸せ",
+      "r": "しあわせ",
+      "m": "Happiness",
+      "isReadingRedundant": false,
+      "dv": [
+        "辛せ",
+        "幸ぜ"
+      ],
+      "dr": [
+        "じあわせ",
+        "しあわぜ"
+      ],
+      "dm": [
+        "Sadness",
+        "Anger"
+      ]
+    },
+    {
+      "v": "感じ",
+      "r": "かんじ",
+      "m": "Feeling",
+      "isReadingRedundant": false,
+      "dv": [
+        "惑じ",
+        "咸じ"
+      ],
+      "dr": [
+        "gぁんじ",
+        "かんし"
+      ],
+      "dm": [
+        "Thought",
+        "Logic"
+      ]
+    },
+    {
+      "v": "家族",
+      "r": "かぞく",
+      "m": "Family",
+      "isReadingRedundant": false,
+      "dv": [
+        "稼族",
+        "家族"
+      ],
+      "dr": [
+        "gぁぞく",
+        "かそく"
+      ],
+      "dm": [
+        "Friends",
+        "Colleagues"
+      ]
+    },
+    {
+      "v": "消える",
+      "r": "きえる",
+      "m": "To go/vanish",
+      "isReadingRedundant": false,
+      "dv": [
+        "削える",
+        "宵える"
+      ],
+      "dr": [
+        "giえる",
+        "きーえる"
+      ],
+      "dm": [
+        "To appear",
+        "To stay"
+      ]
+    },
+    {
+      "v": "急ぐ",
+      "r": "いそぐ",
+      "m": "To hurry",
+      "isReadingRedundant": false,
+      "dv": [
+        "息ぐ",
+        "忘ぐ"
+      ],
+      "dr": [
+        "いぞぐ",
+        "いそく"
+      ],
+      "dm": [
+        "To slow down",
+        "To pause"
+      ]
+    },
+    {
+      "v": "最初",
+      "r": "さいしょ",
+      "m": "Beginning",
+      "isReadingRedundant": false,
+      "dv": [
+        "最初",
+        "最所"
+      ],
+      "dr": [
+        "ざいしょ",
+        "さいじょ"
+      ],
+      "dm": [
+        "End",
+        "Middle"
+      ]
+    },
+    {
+      "v": "止める",
+      "r": "やめる",
+      "m": "To stop (activity)",
+      "isReadingRedundant": false,
+      "dv": [
+        "正める",
+        "上める"
+      ],
+      "dr": [
+        "やーめる",
+        "やめーる"
+      ],
+      "dm": [
+        "To start",
+        "To continue"
+      ]
+    },
+    {
+      "v": "止める",
+      "r": "とめる",
+      "m": "To stop/turn off",
+      "isReadingRedundant": false,
+      "dv": [
+        "正める",
+        "企める"
+      ],
+      "dr": [
+        "どめる",
+        "とーめる"
+      ],
+      "dm": [
+        "To turn on",
+        "To activate"
+      ]
+    },
+    {
+      "v": "間",
+      "r": "あいだ",
+      "m": "Space/interval",
+      "isReadingRedundant": false,
+      "dv": [
+        "問",
+        "門"
+      ],
+      "dr": [
+        "あーいだ",
+        "あいた"
+      ],
+      "dm": [
+        "Time",
+        "Object"
+      ]
+    },
+    {
+      "v": "約束",
+      "r": "やくそく",
+      "m": "Promise",
+      "isReadingRedundant": false,
+      "dv": [
+        "的束",
+        "約東"
+      ],
+      "dr": [
+        "やぐそく",
+        "やくぞく"
+      ],
+      "dm": [
+        "Threat",
+        "Lie"
+      ]
+    },
+    {
+      "v": "残る",
+      "r": "のこる",
+      "m": "To remain",
+      "isReadingRedundant": false,
+      "dv": [
+        "浅る",
+        "銭る"
+      ],
+      "dr": [
+        "のごる",
+        "のーこる"
+      ],
+      "dm": [
+        "To leave",
+        "To vanish"
+      ]
+    },
+    {
+      "v": "枚",
+      "r": "まい",
+      "m": "Counter for flat structures",
+      "isReadingRedundant": false,
+      "dv": [
+        "牧",
+        "枝"
+      ],
+      "dr": [
+        "まーい",
+        "ばい"
+      ],
+      "dm": [
+        "Unit",
+        "Weight"
+      ]
+    },
+    {
+      "v": "困る",
+      "r": "こまる",
+      "m": "To be worried/troubled",
+      "isReadingRedundant": false,
+      "dv": [
+        "因る",
+        "固る"
+      ],
+      "dr": [
+        "ごまる",
+        "こーまる"
+      ],
+      "dm": [
+        "To be relieved",
+        "To be happy"
+      ]
+    },
+    {
+      "v": "口",
+      "r": "くち",
+      "m": "Mouth",
+      "isReadingRedundant": false,
+      "dv": [
+        "日",
+        "曰"
+      ],
+      "dr": [
+        "gぅち",
+        "kuーchi"
+      ],
+      "dm": [
+        "Eye",
+        "Nose"
+      ]
+    },
+    {
+      "v": "普通",
+      "r": "ふつう",
+      "m": "Normal",
+      "isReadingRedundant": false,
+      "dv": [
+        "並通",
+        "普道"
+      ],
+      "dr": [
+        "ぶつう",
+        "ふづう"
+      ],
+      "dm": [
+        "Abnormal",
+        "Special"
+      ]
+    },
+    {
+      "v": "村",
+      "r": "むら",
+      "m": "Village",
+      "isReadingRedundant": false,
+      "dv": [
+        "材",
+        "討"
+      ],
+      "dr": [
+        "むーら",
+        "ぶら"
+      ],
+      "dm": [
+        "City",
+        "Town"
+      ]
+    },
+    {
+      "v": "落ちる",
+      "r": "おちる",
+      "m": "To fall/drop",
+      "isReadingRedundant": false,
+      "dv": [
+        "洛ちる",
+        "絡ちる"
+      ],
+      "dr": [
+        "おじる",
+        "おーちる"
+      ],
+      "dm": [
+        "To rise",
+        "To float"
+      ]
+    },
+    {
+      "v": "番",
+      "r": "ばん",
+      "m": "Number",
+      "isReadingRedundant": false,
+      "dv": [
+        "審",
+        "翻"
+      ],
+      "dr": [
+        "ぱん",
+        "はん"
+      ],
+      "dm": [
+        "Letter",
+        "Symbol"
+      ]
+    },
+    {
+      "v": "別に",
+      "r": "べつに",
+      "m": "Not particularly",
+      "isReadingRedundant": false,
+      "dv": [
+        "列に",
+        "刈に"
+      ],
+      "dr": [
+        "ぺつに",
+        "べづに"
+      ],
+      "dm": [
+        "Very much",
+        "Especially"
+      ]
+    },
+    {
+      "v": "見つかる",
+      "r": "みつかる",
+      "m": "To be found",
+      "isReadingRedundant": false,
+      "dv": [
+        "貝つかる",
+        "具つかる"
+      ],
+      "dr": [
+        "みづかる",
+        "みーつかる"
+      ],
+      "dm": [
+        "To be lost",
+        "To be hidden"
+      ]
+    },
+    {
+      "v": "笑う",
+      "r": "わらう",
+      "m": "To laugh",
+      "isReadingRedundant": false,
+      "dv": [
+        "咲う",
+        "笠う"
+      ],
+      "dr": [
+        "わだう",
+        "わーらう"
+      ],
+      "dm": [
+        "To cry",
+        "To scream"
+      ]
+    },
+    {
+      "v": "送る",
+      "r": "おくる",
+      "m": "To send",
+      "isReadingRedundant": false,
+      "dv": [
+        "咲る",
+        "達る"
+      ],
+      "dr": [
+        "おぐる",
+        "おーくる"
+      ],
+      "dm": [
+        "To receive",
+        "To keep"
+      ]
+    },
+    {
+      "v": "立つ",
+      "r": "たつ",
+      "m": "To stand",
+      "isReadingRedundant": false,
+      "dv": [
+        "音つ",
+        "泣つ"
+      ],
+      "dr": [
+        "だつ",
+        "たーつ"
+      ],
+      "dm": [
+        "To sit",
+        "To lie down"
+      ]
+    },
+    {
+      "v": "歳",
+      "r": "さい",
+      "m": "Years-old",
+      "isReadingRedundant": false,
+      "dv": [
+        "載",
+        "裁"
+      ],
+      "dr": [
+        "ざい",
+        "さーい"
+      ],
+      "dm": [
+        "Months-old",
+        "Days-old"
+      ]
+    },
+    {
+      "v": "最近",
+      "r": "さいきん",
+      "m": "Most recent",
+      "isReadingRedundant": false,
+      "dv": [
+        "最迎",
+        "最斤"
+      ],
+      "dr": [
+        "ざいきん",
+        "さいぎん"
+      ],
+      "dm": [
+        "Oldest",
+        "Farthest"
+      ]
+    },
+    {
+      "v": "頃",
+      "r": "ころ",
+      "m": "Approximate time",
+      "isReadingRedundant": false,
+      "dv": [
+        "傾",
+        "頂"
+      ],
+      "dr": [
+        "ごろ",
+        "こーろ"
+      ],
+      "dm": [
+        "Exact time",
+        "Location"
+      ]
+    },
+    {
+      "v": "下",
+      "r": "した",
+      "m": "Below/under",
+      "isReadingRedundant": false,
+      "dv": [
+        "上",
+        "卜"
+      ],
+      "dr": [
+        "じた",
+        "しだ"
+      ],
+      "dm": [
+        "Above",
+        "Inside"
+      ]
+    },
+    {
+      "v": "感じる",
+      "r": "かんじる",
+      "m": "To feel",
+      "isReadingRedundant": false,
+      "dv": [
+        "惑じる",
+        "減じる"
+      ],
+      "dr": [
+        "gぁんじる",
+        "かんしる"
+      ],
+      "dm": [
+        "To think",
+        "To ignore"
+      ]
+    },
+    {
+      "v": "終わり",
+      "r": "おわり",
+      "m": "The end",
+      "isReadingRedundant": false,
+      "dv": [
+        "絡わり",
+        "結わり"
+      ],
+      "dr": [
+        "おばり",
+        "おーわり"
+      ],
+      "dm": [
+        "The beginning",
+        "The middle"
+      ]
+    },
+    {
+      "v": "開ける",
+      "r": "あける",
+      "m": "To open",
+      "isReadingRedundant": false,
+      "dv": [
+        "閉ける",
+        "門ける"
+      ],
+      "dr": [
+        "あげる",
+        "あーける"
+      ],
+      "dm": [
+        "To close",
+        "To shut"
+      ]
+    },
+    {
+      "v": "足",
+      "r": "あし",
+      "m": "Foot/leg",
+      "isReadingRedundant": false,
+      "dv": [
+        "走",
+        "促"
+      ],
+      "dr": [
+        "あじ",
+        "あーし"
+      ],
+      "dm": [
+        "Hand",
+        "Head"
+      ]
+    },
+    {
+      "v": "生まれる",
+      "r": "うまれる",
+      "m": "To be born",
+      "isReadingRedundant": false,
+      "dv": [
+        "主まれる",
+        "牛まれる"
+      ],
+      "dr": [
+        "うばれる",
+        "うまーれる"
+      ],
+      "dm": [
+        "To die",
+        "To disappear"
+      ]
+    },
+    {
+      "v": "島",
+      "r": "しま",
+      "m": "Island",
+      "isReadingRedundant": false,
+      "dv": [
+        "鳥",
+        "烏"
+      ],
+      "dr": [
+        "じま",
+        "しーま"
+      ],
+      "dm": [
+        "Peninsula",
+        "Continent"
+      ]
+    },
+    {
+      "v": "もう一度",
+      "r": "もういちど",
+      "m": "Once more",
+      "isReadingRedundant": false,
+      "dv": [
+        "もラ一度",
+        "もう一席"
+      ],
+      "dr": [
+        "もういじど",
+        "もういちと"
+      ],
+      "dm": [
+        "Never again",
+        "First time"
+      ]
+    },
+    {
+      "v": "それでは",
+      "r": "-",
+      "m": "Well then",
+      "isReadingRedundant": true,
+      "dv": [
+        "それては",
+        "そわでは"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Goodbye",
+        "Wait"
+      ]
+    },
+    {
+      "v": "合う",
+      "r": "あう",
+      "m": "To come/match",
+      "isReadingRedundant": false,
+      "dv": [
+        "会う",
+        "台う"
+      ],
+      "dr": [
+        "あーう",
+        "あぽ"
+      ],
+      "dm": [
+        "To leave",
+        "To separate"
+      ]
+    },
+    {
+      "v": "理由",
+      "r": "りゆう",
+      "m": "Reason",
+      "isReadingRedundant": false,
+      "dv": [
+        "理田",
+        "科由"
+      ],
+      "dr": [
+        "りゅー",
+        "りゆー"
+      ],
+      "dm": [
+        "Result",
+        "Conclusion"
+      ]
+    },
+    {
+      "v": "もしもし",
+      "r": "-",
+      "m": "Hello (telephone)",
+      "isReadingRedundant": true,
+      "dv": [
+        "もレもし",
+        "めしもし"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Goodbye",
+        "Thank you"
+      ]
+    },
+    {
+      "v": "残念",
+      "r": "ざんねん",
+      "m": "Deplorable",
+      "isReadingRedundant": false,
+      "dv": [
+        "浅念",
+        "残今"
+      ],
+      "dr": [
+        "さんねん",
+        "ざんれん"
+      ],
+      "dm": [
+        "Excellent",
+        "Wonderful"
+      ]
+    },
+    {
+      "v": "選手",
+      "r": "せんしゅ",
+      "m": "Player/athlete",
+      "isReadingRedundant": false,
+      "dv": [
+        "選毛",
+        "遷手"
+      ],
+      "dr": [
+        "ぜんしゅ",
+        "せんじゅ"
+      ],
+      "dm": [
+        "Spectator",
+        "Referee"
+      ]
+    },
+    {
+      "v": "上がる",
+      "r": "あがる",
+      "m": "To rise/go up",
+      "isReadingRedundant": false,
+      "dv": [
+        "下がる",
+        "止がる"
+      ],
+      "dr": [
+        "あかる",
+        "あーがる"
+      ],
+      "dm": [
+        "To fall",
+        "To lower"
+      ]
+    },
+    {
+      "v": "聞こえる",
+      "r": "きこえる",
+      "m": "To be heard",
+      "isReadingRedundant": false,
+      "dv": [
+        "問こえる",
+        "間こえる"
+      ],
+      "dr": [
+        "giこえる",
+        "きごえる"
+      ],
+      "dm": [
+        "To be seen",
+        "To be hidden"
+      ]
+    },
+    {
+      "v": "切る",
+      "r": "きる",
+      "m": "To cut",
+      "isReadingRedundant": false,
+      "dv": [
+        "刀る",
+        "万る"
+      ],
+      "dr": [
+        "giる",
+        "きーる"
+      ],
+      "dm": [
+        "To paste",
+        "To join"
+      ]
+    },
+    {
+      "v": "大きな",
+      "r": "おおきな",
+      "m": "Big",
+      "isReadingRedundant": false,
+      "dv": [
+        "太きな",
+        "犬きな"
+      ],
+      "dr": [
+        "おおぎな",
+        "おーきな"
+      ],
+      "dm": [
+        "Small",
+        "Tiny"
+      ]
+    },
+    {
+      "v": "物",
+      "r": "もの",
+      "m": "Thing/object",
+      "isReadingRedundant": false,
+      "dv": [
+        "吻",
+        "勿"
+      ],
+      "dr": [
+        "もーの",
+        "ぼの"
+      ],
+      "dm": [
+        "Person",
+        "Animal"
+      ]
+    }
+  ]
+}

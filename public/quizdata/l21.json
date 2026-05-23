@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 21",
+  "vocabulary": [
+    {
+      "v": "再来週",
+      "r": "さらいしゅう",
+      "m": "Week after next",
+      "isReadingRedundant": false,
+      "dv": [
+        "両来週",
+        "再釆週"
+      ],
+      "dr": [
+        "ざらいしゅう",
+        "さらいじゅう"
+      ],
+      "dm": [
+        "Month after",
+        "Year after"
+      ]
+    },
+    {
+      "v": "飛行場",
+      "r": "ひきうじょう",
+      "m": "Airfield/airport",
+      "isReadingRedundant": false,
+      "dv": [
+        "非行場",
+        "飛工場"
+      ],
+      "dr": [
+        "びこうじょう",
+        "ひごうじょう"
+      ],
+      "dm": [
+        "Train station",
+        "Seaport"
+      ]
+    },
+    {
+      "v": "再来年",
+      "r": "さらいねん",
+      "m": "Year after next",
+      "isReadingRedundant": false,
+      "dv": [
+        "両来年",
+        "再釆年"
+      ],
+      "dr": [
+        "ざらいねん",
+        "さらいれん"
+      ],
+      "dm": [
+        "Next year",
+        "Last year"
+      ]
+    },
+    {
+      "v": "改札",
+      "r": "かいさつ",
+      "m": "Ticket gate",
+      "isReadingRedundant": false,
+      "dv": [
+        "政札",
+        "改礼"
+      ],
+      "dr": [
+        "がいさつ",
+        "かいざつ"
+      ],
+      "dm": [
+        "Ticket examination",
+        "Train carriage"
+      ]
+    },
+    {
+      "v": "片道",
+      "r": "かたみち",
+      "m": "One-way",
+      "isReadingRedundant": false,
+      "dv": [
+        "方道",
+        "片通"
+      ],
+      "dr": [
+        "がたみち",
+        "かだみち"
+      ],
+      "dm": [
+        "Round trip",
+        "Return ticket"
+      ]
+    },
+    {
+      "v": "豚カツ",
+      "r": "とんカツ",
+      "m": "Tonkatsu",
+      "isReadingRedundant": false,
+      "dv": [
+        "隊カツ",
+        "豚ガツ"
+      ],
+      "dr": [
+        "どんカツ",
+        "とんガツ"
+      ],
+      "dm": [
+        "Tempura",
+        "Sushi"
+      ]
+    },
+    {
+      "v": "一昨年",
+      "r": "おととし",
+      "m": "Year before last",
+      "isReadingRedundant": false,
+      "dv": [
+        "二昨年",
+        "一作年"
+      ],
+      "dr": [
+        "おどとし",
+        "おtおどし"
+      ],
+      "dm": [
+        "Last year",
+        "Next year"
+      ]
+    },
+    {
+      "v": "生物学",
+      "r": "せいぶつがく",
+      "m": "Biology",
+      "isReadingRedundant": false,
+      "dv": [
+        "主物学",
+        "牛物学"
+      ],
+      "dr": [
+        "ぜいぶつがく",
+        "せいぷつがく"
+      ],
+      "dm": [
+        "Chemistry",
+        "Physics"
+      ]
+    },
+    {
+      "v": "一つ目",
+      "r": "ひとつめ",
+      "m": "First",
+      "isReadingRedundant": false,
+      "dv": [
+        "二つ目",
+        "一っ目"
+      ],
+      "dr": [
+        "びとつめ",
+        "ひどつめ"
+      ],
+      "dm": [
+        "Second",
+        "Third"
+      ]
+    },
+    {
+      "v": "Ｙシャツ",
+      "r": "-",
+      "m": "Shirt",
+      "isReadingRedundant": true,
+      "dv": [
+        "Ｙシヤツ",
+        "Ｙツャツ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "T-shirt",
+        "Trousers"
+      ]
+    },
+    {
+      "v": "発疹",
+      "r": "ほっしん",
+      "m": "Rash",
+      "isReadingRedundant": false,
+      "dv": [
+        "廃疹",
+        "発病"
+      ],
+      "dr": [
+        "ぼっしん",
+        "ほっじん"
+      ],
+      "dm": [
+        "Bruise",
+        "Cut"
+      ]
+    },
+    {
+      "v": "アウトドア",
+      "r": "-",
+      "m": "Outdoor",
+      "isReadingRedundant": true,
+      "dv": [
+        "アウドドア",
+        "アワトドア"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Indoor",
+        "Living room"
+      ]
+    },
+    {
+      "v": "抗生物質",
+      "r": "こうせいぶっしつ",
+      "m": "Antibiotic",
+      "isReadingRedundant": false,
+      "dv": [
+        "坑生物質",
+        "抗生吻質"
+      ],
+      "dr": [
+        "ごうせいぶっしつ",
+        "こうぜいぶっしつ"
+      ],
+      "dm": [
+        "Painkiller",
+        "Vaccine"
+      ]
+    },
+    {
+      "v": "良く",
+      "r": "よく",
+      "m": "Nicely/properly",
+      "isReadingRedundant": false,
+      "dv": [
+        "艮く",
+        "食く"
+      ],
+      "dr": [
+        "よーく",
+        "よぐ"
+      ],
+      "dm": [
+        "Badly",
+        "Poorly"
+      ]
+    },
+    {
+      "v": "ご馳走様",
+      "r": "ごちそうさま",
+      "m": "Thank you (feast)",
+      "isReadingRedundant": false,
+      "dv": [
+        "ご駄走様",
+        "ご騎走様"
+      ],
+      "dr": [
+        "ごじそうさま",
+        "ごちぞうさま"
+      ],
+      "dm": [
+        "Good morning",
+        "Goodbye"
+      ]
+    },
+    {
+      "v": "ピーナッツ",
+      "r": "-",
+      "m": "Peanut",
+      "isReadingRedundant": true,
+      "dv": [
+        "ビーナッツ",
+        "ピーナツツ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Walnut",
+        "Almond"
+      ]
+    },
+    {
+      "v": "苺",
+      "r": "いちご",
+      "m": "Strawberry",
+      "isReadingRedundant": false,
+      "dv": [
+        "毒",
+        "毎"
+      ],
+      "dr": [
+        "いじご",
+        "いーちご"
+      ],
+      "dm": [
+        "Apple",
+        "Banana"
+      ]
+    },
+    {
+      "v": "指定席",
+      "r": "していせき",
+      "m": "Reserved seat",
+      "isReadingRedundant": false,
+      "dv": [
+        "指足席",
+        "指走席"
+      ],
+      "dr": [
+        "じていせき",
+        "しでいせき"
+      ],
+      "dm": [
+        "Unreserved seat",
+        "Window seat"
+      ]
+    },
+    {
+      "v": "易しい",
+      "r": "やさしい",
+      "m": "Easy/simple",
+      "isReadingRedundant": false,
+      "dv": [
+        "湯しい",
+        "場しい"
+      ],
+      "dr": [
+        "やざしい",
+        "やさーしい"
+      ],
+      "dm": [
+        "Difficult",
+        "Hard"
+      ]
+    },
+    {
+      "v": "眼科",
+      "r": "がんか",
+      "m": "Ophthalmology",
+      "isReadingRedundant": false,
+      "dv": [
+        "眠科",
+        "眼料"
+      ],
+      "dr": [
+        "かんか",
+        "がんが"
+      ],
+      "dm": [
+        "Dentistry",
+        "Surgery"
+      ]
+    },
+    {
+      "v": "餅",
+      "r": "もち",
+      "m": "Mochi",
+      "isReadingRedundant": false,
+      "dv": [
+        "飾",
+        "飯"
+      ],
+      "dr": [
+        "もじ",
+        "もーち"
+      ],
+      "dm": [
+        "Bread",
+        "Rice"
+      ]
+    },
+    {
+      "v": "大学院生",
+      "r": "だいがくいんせい",
+      "m": "Graduate student",
+      "isReadingRedundant": false,
+      "dv": [
+        "犬学院生",
+        "太学院生"
+      ],
+      "dr": [
+        "たいがくいんせい",
+        "だいがぐいんせい"
+      ],
+      "dm": [
+        "High school student",
+        "Professor"
+      ]
+    },
+    {
+      "v": "歯科",
+      "r": "しか",
+      "m": "Dentistry",
+      "isReadingRedundant": false,
+      "dv": [
+        "歯料",
+        "歯斗"
+      ],
+      "dr": [
+        "じか",
+        "しが"
+      ],
+      "dm": [
+        "Surgery",
+        "Internal medicine"
+      ]
+    },
+    {
+      "v": "青信号",
+      "r": "あおしんごう",
+      "m": "Green light",
+      "isReadingRedundant": false,
+      "dv": [
+        "春信号",
+        "表信号"
+      ],
+      "dr": [
+        "あおじんごう",
+        "あおしんこう"
+      ],
+      "dm": [
+        "Red light",
+        "Stop sign"
+      ]
+    },
+    {
+      "v": "乗車券",
+      "r": "じょうしゃけん",
+      "m": "Ticket (transport)",
+      "isReadingRedundant": false,
+      "dv": [
+        "乗庫券",
+        "乗車巻"
+      ],
+      "dr": [
+        "しょうしゃけん",
+        "じょうじゃけん"
+      ],
+      "dm": [
+        "Passport",
+        "Receipt"
+      ]
+    },
+    {
+      "v": "一年生",
+      "r": "いちねんせい",
+      "m": "First-year student",
+      "isReadingRedundant": false,
+      "dv": [
+        "二年生",
+        "一年性"
+      ],
+      "dr": [
+        "いじねんせい",
+        "いちねんぜい"
+      ],
+      "dm": [
+        "Second-year student",
+        "Teacher"
+      ]
+    },
+    {
+      "v": "再来月",
+      "r": "さらいげつ",
+      "m": "Month after next",
+      "isReadingRedundant": false,
+      "dv": [
+        "両来月",
+        "再釆月"
+      ],
+      "dr": [
+        "ざらいげつ",
+        "さらいけつ"
+      ],
+      "dm": [
+        "Next month",
+        "Last month"
+      ]
+    },
+    {
+      "v": "煩い",
+      "r": "うるさい",
+      "m": "Noisy/loud",
+      "isReadingRedundant": false,
+      "dv": [
+        "順い",
+        "項い"
+      ],
+      "dr": [
+        "うるざい",
+        "うーるさい"
+      ],
+      "dm": [
+        "Quiet",
+        "Silent"
+      ]
+    },
+    {
+      "v": "共通語",
+      "r": "きょうつうご",
+      "m": "Common language",
+      "isReadingRedundant": false,
+      "dv": [
+        "具通語",
+        "共道語"
+      ],
+      "dr": [
+        "giょうつうご",
+        "きょうづうご"
+      ],
+      "dm": [
+        "Dialect",
+        "Slang"
+      ]
+    },
+    {
+      "v": "テープレコーダー",
+      "r": "-",
+      "m": "Tape recorder",
+      "isReadingRedundant": true,
+      "dv": [
+        "テープレコーダー",
+        "テープンコーダー"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Radio",
+        "Television"
+      ]
+    },
+    {
+      "v": "定期券",
+      "r": "ていきけん",
+      "m": "Commuter pass",
+      "isReadingRedundant": false,
+      "dv": [
+        "走期券",
+        "定期巻"
+      ],
+      "dr": [
+        "でいきけん",
+        "ていぎけん"
+      ],
+      "dm": [
+        "One-way ticket",
+        "Bus token"
+      ]
+    },
+    {
+      "v": "自由席",
+      "r": "じゆうせき",
+      "m": "Unreserved seat",
+      "isReadingRedundant": false,
+      "dv": [
+        "目由席",
+        "自申席"
+      ],
+      "dr": [
+        "しゆうせき",
+        "じゆうぜき"
+      ],
+      "dm": [
+        "Reserved seat",
+        "Business class"
+      ]
+    },
+    {
+      "v": "学割",
+      "r": "がくわり",
+      "m": "Student discount",
+      "isReadingRedundant": false,
+      "dv": [
+        "字割",
+        "学剖"
+      ],
+      "dr": [
+        "かくわり",
+        "がぐわり"
+      ],
+      "dm": [
+        "Full price",
+        "Senior discount"
+      ]
+    },
+    {
+      "v": "直ぐ",
+      "r": "すぐ",
+      "m": "Immediately/soon",
+      "isReadingRedundant": false,
+      "dv": [
+        "真ぐ",
+        "植ぐ"
+      ],
+      "dr": [
+        "ずぐ",
+        "すく"
+      ],
+      "dm": [
+        "Later",
+        "Tomorrow"
+      ]
+    },
+    {
+      "v": "先ず",
+      "r": "まず",
+      "m": "First/firstly",
+      "isReadingRedundant": false,
+      "dv": [
+        "失ず",
+        "光ず"
+      ],
+      "dr": [
+        "ます",
+        "まーず"
+      ],
+      "dm": [
+        "Lastly",
+        "Secondly"
+      ]
+    },
+    {
+      "v": "切符売り場",
+      "r": "きっぷうりば",
+      "m": "Ticket office",
+      "isReadingRedundant": false,
+      "dv": [
+        "切符売リ場",
+        "切特売り場"
+      ],
+      "dr": [
+        "giっぷうりば",
+        "きっぷうりは"
+      ],
+      "dm": [
+        "Waiting room",
+        "Restroom"
+      ]
+    },
+    {
+      "v": "Ｌサイズ",
+      "r": "-",
+      "m": "Large size",
+      "isReadingRedundant": true,
+      "dv": [
+        "Ｌサイス",
+        "Ｌザイズ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Small size",
+        "Medium size"
+      ]
+    },
+    {
+      "v": "お祖父さん",
+      "r": "おじいさん",
+      "m": "Grandfather",
+      "isReadingRedundant": false,
+      "dv": [
+        "お祖母さん",
+        "お阻父さん"
+      ],
+      "dr": [
+        "おちいさん",
+        "おじーさん"
+      ],
+      "dm": [
+        "Grandmother",
+        "Uncle"
+      ]
+    },
+    {
+      "v": "楽しみにする",
+      "r": "たのしみにする",
+      "m": "To look forward to",
+      "isReadingRedundant": false,
+      "dv": [
+        "楽おみにする",
+        "薬しみにする"
+      ],
+      "dr": [
+        "だのしみにする",
+        "たのじみにする"
+      ],
+      "dm": [
+        "To dread",
+        "To ignore"
+      ]
+    },
+    {
+      "v": "他に",
+      "r": "ほかに",
+      "m": "In addition",
+      "isReadingRedundant": false,
+      "dv": [
+        "池に",
+        "地に"
+      ],
+      "dr": [
+        "ぼかに",
+        "ほがに"
+      ],
+      "dm": [
+        "Only",
+        "Excluding"
+      ]
+    },
+    {
+      "v": "元気がない",
+      "r": "げんきがない",
+      "m": "Don't look well",
+      "isReadingRedundant": false,
+      "dv": [
+        "无気がない",
+        "元気分がない"
+      ],
+      "dr": [
+        "けんきがない",
+        "げんぎがない"
+      ],
+      "dm": [
+        "Look healthy",
+        "Full of energy"
+      ]
+    },
+    {
+      "v": "お地蔵さん",
+      "r": "おじぞうさん",
+      "m": "Jizo statue",
+      "isReadingRedundant": false,
+      "dv": [
+        "お池蔵さん",
+        "お地臓さん"
+      ],
+      "dr": [
+        "おしぞうさん",
+        "おじそうさん"
+      ],
+      "dm": [
+        "Buddha",
+        "Shrine"
+      ]
+    },
+    {
+      "v": "ありがとうございます",
+      "r": "-",
+      "m": "Thank you very much",
+      "isReadingRedundant": true,
+      "dv": [
+        "あリがとうございます",
+        "ありがどうございます"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "You're welcome",
+        "Excuse me"
+      ]
+    },
+    {
+      "v": "直ぐに",
+      "r": "すぐに",
+      "m": "Instantly",
+      "isReadingRedundant": false,
+      "dv": [
+        "真ぐに",
+        "植ぐに"
+      ],
+      "dr": [
+        "ずぐに",
+        "すくに"
+      ],
+      "dm": [
+        "Slowly",
+        "Eventually"
+      ]
+    },
+    {
+      "v": "最後に",
+      "r": "さいごに",
+      "m": "Lastly",
+      "isReadingRedundant": false,
+      "dv": [
+        "最後に",
+        "最語に"
+      ],
+      "dr": [
+        "ざいごに",
+        "さいこに"
+      ],
+      "dm": [
+        "Firstly",
+        "Secondly"
+      ]
+    },
+    {
+      "v": "下さい",
+      "r": "ください",
+      "m": "Please give me",
+      "isReadingRedundant": false,
+      "dv": [
+        "下ちい",
+        "下きい"
+      ],
+      "dr": [
+        "ぐださい",
+        "くだざい"
+      ],
+      "dm": [
+        "Please take",
+        "No thank you"
+      ]
+    },
+    {
+      "v": "皆で",
+      "r": "みなで",
+      "m": "All together",
+      "isReadingRedundant": false,
+      "dv": [
+        "階で",
+        "比で"
+      ],
+      "dr": [
+        "みなて",
+        "みーなで"
+      ],
+      "dm": [
+        "Alone",
+        "Separately"
+      ]
+    },
+    {
+      "v": "行ってきます",
+      "r": "いってきます",
+      "m": "I'm off/see you",
+      "isReadingRedundant": false,
+      "dv": [
+        "打ってきます",
+        "行っこきます"
+      ],
+      "dr": [
+        "いっできます",
+        "いってぎます"
+      ],
+      "dm": [
+        "I'm home",
+        "Welcome back"
+      ]
+    },
+    {
+      "v": "砕けた言い方",
+      "r": "くだけたいいかた",
+      "m": "Colloquial/casual expression",
+      "isReadingRedundant": false,
+      "dv": [
+        "枠けた言い方",
+        "砕けた信い方"
+      ],
+      "dr": [
+        "gぅだけたいいかた",
+        "くだげたいいかた"
+      ],
+      "dm": [
+        "Formal expression",
+        "Polite speech"
+      ]
+    },
+    {
+      "v": "頭がいい",
+      "r": "あたまがいい",
+      "m": "Bright/smart/clever",
+      "isReadingRedundant": false,
+      "dv": [
+        "豆がいい",
+        "顔がいい"
+      ],
+      "dr": [
+        "あだまがいい",
+        "あたまかいい"
+      ],
+      "dm": [
+        "Stupid",
+        "Foolish"
+      ]
+    }
+  ]
+}

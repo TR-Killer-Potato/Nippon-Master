@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 16",
+  "vocabulary": [
+    {
+      "v": "用事",
+      "r": "ようじ",
+      "m": "Tasks/errands",
+      "isReadingRedundant": false,
+      "dv": [
+        "用車",
+        "用意"
+      ],
+      "dr": [
+        "ようし",
+        "よおじ"
+      ],
+      "dm": [
+        "Appointments",
+        "Plans"
+      ]
+    },
+    {
+      "v": "ピアノ",
+      "r": "-",
+      "m": "Piano",
+      "isReadingRedundant": true,
+      "dv": [
+        "ピヤノ",
+        "ピアナ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Guitar",
+        "Violin"
+      ]
+    },
+    {
+      "v": "選択",
+      "r": "せんたく",
+      "m": "Selection/choice",
+      "isReadingRedundant": false,
+      "dv": [
+        "選沢",
+        "撰択"
+      ],
+      "dr": [
+        "せんだく",
+        "ぜんたく"
+      ],
+      "dm": [
+        "Choice",
+        "Option"
+      ]
+    },
+    {
+      "v": "小学生",
+      "r": "しょうがくせい",
+      "m": "Elementary school student",
+      "isReadingRedundant": false,
+      "dv": [
+        "小字生",
+        "少学生"
+      ],
+      "dr": [
+        "しょうがくぜい",
+        "しょうかくせい"
+      ],
+      "dm": [
+        "Middle school student",
+        "High school student"
+      ]
+    },
+    {
+      "v": "塾",
+      "r": "じゅく",
+      "m": "Cram school",
+      "isReadingRedundant": false,
+      "dv": [
+        "熟",
+        "熱"
+      ],
+      "dr": [
+        "しゅく",
+        "じゅぐ"
+      ],
+      "dm": [
+        "Public school",
+        "University"
+      ]
+    },
+    {
+      "v": "ナイフ",
+      "r": "-",
+      "m": "Knife",
+      "isReadingRedundant": true,
+      "dv": [
+        "ナチフ",
+        "ナイフ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Fork",
+        "Spoon"
+      ]
+    },
+    {
+      "v": "草",
+      "r": "くさ",
+      "m": "Grass",
+      "isReadingRedundant": false,
+      "dv": [
+        "早",
+        "葉"
+      ],
+      "dr": [
+        "gぅさ",
+        "くざ"
+      ],
+      "dm": [
+        "Flower",
+        "Tree"
+      ]
+    },
+    {
+      "v": "林",
+      "r": "はやし",
+      "m": "Woods/grove",
+      "isReadingRedundant": false,
+      "dv": [
+        "森",
+        "木"
+      ],
+      "dr": [
+        "ばやし",
+        "はゆし"
+      ],
+      "dm": [
+        "Forest",
+        "Mountain"
+      ]
+    },
+    {
+      "v": "コーチ",
+      "r": "-",
+      "m": "Coach",
+      "isReadingRedundant": true,
+      "dv": [
+        "コーテ",
+        "コチ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Player",
+        "Manager"
+      ]
+    },
+    {
+      "v": "ワイン",
+      "r": "-",
+      "m": "Wine",
+      "isReadingRedundant": true,
+      "dv": [
+        "ワイソ",
+        "ウイン"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Beer",
+        "Juice"
+      ]
+    },
+    {
+      "v": "祭り",
+      "r": "まつり",
+      "m": "Festival",
+      "isReadingRedundant": false,
+      "dv": [
+        "察り",
+        "際り"
+      ],
+      "dr": [
+        "まづり",
+        "まつれ"
+      ],
+      "dm": [
+        "Party",
+        "Ceremony"
+      ]
+    },
+    {
+      "v": "地図",
+      "r": "ちず",
+      "m": "Map",
+      "isReadingRedundant": false,
+      "dv": [
+        "地池",
+        "池図"
+      ],
+      "dr": [
+        "ちす",
+        "じず"
+      ],
+      "dm": [
+        "Book",
+        "Picture"
+      ]
+    },
+    {
+      "v": "会話",
+      "r": "かいわ",
+      "m": "Conversation",
+      "isReadingRedundant": false,
+      "dv": [
+        "会語",
+        "回話"
+      ],
+      "dr": [
+        "がいわ",
+        "かいば"
+      ],
+      "dm": [
+        "Speech",
+        "Writing"
+      ]
+    },
+    {
+      "v": "警官",
+      "r": "けいかん",
+      "m": "Policeman",
+      "isReadingRedundant": false,
+      "dv": [
+        "驚官",
+        "警管"
+      ],
+      "dr": [
+        "げいsan",
+        "けいがん"
+      ],
+      "dm": [
+        "Firefighter",
+        "Doctor"
+      ]
+    },
+    {
+      "v": "成績",
+      "r": "せいせき",
+      "m": "Results/grades",
+      "isReadingRedundant": false,
+      "dv": [
+        "成積",
+        "星績"
+      ],
+      "dr": [
+        "ぜいせき",
+        "せいぜき"
+      ],
+      "dm": [
+        "Grades",
+        "Score"
+      ]
+    },
+    {
+      "v": "田舎",
+      "r": "いなか",
+      "m": "Rural area/countryside",
+      "isReadingRedundant": false,
+      "dv": [
+        "日舎",
+        "田舍"
+      ],
+      "dr": [
+        "いなが",
+        "えなか"
+      ],
+      "dm": [
+        "City",
+        "Town"
+      ]
+    },
+    {
+      "v": "弁当",
+      "r": "べんとう",
+      "m": "Bento",
+      "isReadingRedundant": false,
+      "dv": [
+        "弁答",
+        "弁当した"
+      ],
+      "dr": [
+        "べんどう",
+        "ぺんとう"
+      ],
+      "dm": [
+        "Lunchbox",
+        "Meal"
+      ]
+    },
+    {
+      "v": "建物",
+      "r": "たてもの",
+      "m": "Building",
+      "isReadingRedundant": false,
+      "dv": [
+        "健物",
+        "建吻"
+      ],
+      "dr": [
+        "だてもの",
+        "たてぼの"
+      ],
+      "dm": [
+        "House",
+        "Store"
+      ]
+    },
+    {
+      "v": "以内",
+      "r": "いない",
+      "m": "Within",
+      "isReadingRedundant": false,
+      "dv": [
+        "以外",
+        "已内"
+      ],
+      "dr": [
+        "えない",
+        "いだい"
+      ],
+      "dm": [
+        "Without",
+        "Outside"
+      ]
+    },
+    {
+      "v": "移る",
+      "r": "うつる",
+      "m": "To move/transfer",
+      "isReadingRedundant": false,
+      "dv": [
+        "多る",
+        "抄る"
+      ],
+      "dr": [
+        "おつる",
+        "うづる"
+      ],
+      "dm": [
+        "To stop",
+        "To stay"
+      ]
+    },
+    {
+      "v": "半",
+      "r": "はん",
+      "m": "Half",
+      "isReadingRedundant": false,
+      "dv": [
+        "伴",
+        "平"
+      ],
+      "dr": [
+        "ばん",
+        "ぱん"
+      ],
+      "dm": [
+        "Full",
+        "Quarter"
+      ]
+    },
+    {
+      "v": "要る",
+      "r": "いる",
+      "m": "To be needed",
+      "isReadingRedundant": false,
+      "dv": [
+        "重要",
+        "要"
+      ],
+      "dr": [
+        "える",
+        "おる"
+      ],
+      "dm": [
+        "To not be",
+        "To exist"
+      ]
+    },
+    {
+      "v": "コピー",
+      "r": "-",
+      "m": "Copy",
+      "isReadingRedundant": true,
+      "dv": [
+        "コビー",
+        "コピ一"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Original",
+        "Paste"
+      ]
+    },
+    {
+      "v": "塩",
+      "r": "しお",
+      "m": "Salt",
+      "isReadingRedundant": false,
+      "dv": [
+        "壇",
+        "温"
+      ],
+      "dr": [
+        "じお",
+        "しゅ"
+      ],
+      "dm": [
+        "Sugar",
+        "Pepper"
+      ]
+    },
+    {
+      "v": "運転",
+      "r": "うんてん",
+      "m": "Operation/driving",
+      "isReadingRedundant": false,
+      "dv": [
+        "運天",
+        "連転"
+      ],
+      "dr": [
+        "おんてん",
+        "うんでん"
+      ],
+      "dm": [
+        "Driving",
+        "Machine"
+      ]
+    },
+    {
+      "v": "メートル",
+      "r": "-",
+      "m": "Metre",
+      "isReadingRedundant": true,
+      "dv": [
+        "メ一トル",
+        "メートノレ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Inch",
+        "Foot"
+      ]
+    },
+    {
+      "v": "予約",
+      "r": "よやく",
+      "m": "Reservation",
+      "isReadingRedundant": false,
+      "dv": [
+        "予勺",
+        "予釣"
+      ],
+      "dr": [
+        "ゆやく",
+        "よやぐ"
+      ],
+      "dm": [
+        "Cancellation",
+        "Booking"
+      ]
+    },
+    {
+      "v": "居る",
+      "r": "いる",
+      "m": "To be/exist (animate)",
+      "isReadingRedundant": false,
+      "dv": [
+        "古る",
+        "店る"
+      ],
+      "dr": [
+        "おる",
+        "える"
+      ],
+      "dm": [
+        "To go",
+        "To come"
+      ]
+    },
+    {
+      "v": "夕方",
+      "r": "ゆうがた",
+      "m": "Evening",
+      "isReadingRedundant": false,
+      "dv": [
+        "夕万",
+        "夕法"
+      ],
+      "dr": [
+        "ゆがた",
+        "ゆうかた"
+      ],
+      "dm": [
+        "Morning",
+        "Noon"
+      ]
+    },
+    {
+      "v": "湖",
+      "r": "みずうみ",
+      "m": "Lake",
+      "isReadingRedundant": false,
+      "dv": [
+        "潮",
+        "池"
+      ],
+      "dr": [
+        "みずおみ",
+        "みすうみ"
+      ],
+      "dm": [
+        "River",
+        "Sea"
+      ]
+    },
+    {
+      "v": "晴れる",
+      "r": "はれる",
+      "m": "To clear up/be sunny",
+      "isReadingRedundant": false,
+      "dv": [
+        "清れる",
+        "睛れる"
+      ],
+      "dr": [
+        "ばれる",
+        "はれろ"
+      ],
+      "dm": [
+        "To rain",
+        "To cloud"
+      ]
+    },
+    {
+      "v": "神社",
+      "r": "じんじゃ",
+      "m": "Shinto shrine",
+      "isReadingRedundant": false,
+      "dv": [
+        "神土",
+        "社神"
+      ],
+      "dr": [
+        "しんじゃ",
+        "じんしゃ"
+      ],
+      "dm": [
+        "Temple",
+        "Church"
+      ]
+    },
+    {
+      "v": "景色",
+      "r": "けしき",
+      "m": "Scenery",
+      "isReadingRedundant": false,
+      "dv": [
+        "景包",
+        "影色"
+      ],
+      "dr": [
+        "げしき",
+        "けじき"
+      ],
+      "dm": [
+        "View",
+        "Landscape"
+      ]
+    },
+    {
+      "v": "背",
+      "r": "せ",
+      "m": "Back (body)",
+      "isReadingRedundant": false,
+      "dv": [
+        "脊",
+        "北"
+      ],
+      "dr": [
+        "ぜ",
+        "さ"
+      ],
+      "dm": [
+        "Front",
+        "Chest"
+      ]
+    },
+    {
+      "v": "季節",
+      "r": "きせつ",
+      "m": "Season",
+      "isReadingRedundant": false,
+      "dv": [
+        "李節",
+        "季折"
+      ],
+      "dr": [
+        "giせつ",
+        "きぜつ"
+      ],
+      "dm": [
+        "Weather",
+        "Climate"
+      ]
+    },
+    {
+      "v": "出口",
+      "r": "でぐち",
+      "m": "Exit",
+      "isReadingRedundant": false,
+      "dv": [
+        "出ロ",
+        "出日"
+      ],
+      "dr": [
+        "でくち",
+        "てぐち"
+      ],
+      "dm": [
+        "Entrance",
+        "Window"
+      ]
+    },
+    {
+      "v": "公開",
+      "r": "こうかい",
+      "m": "Opening to public",
+      "isReadingRedundant": false,
+      "dv": [
+        "公閉",
+        "広開"
+      ],
+      "dr": [
+        "ごうかい",
+        "こおかい"
+      ],
+      "dm": [
+        "Closing to",
+        "Ending to"
+      ]
+    },
+    {
+      "v": "ページ",
+      "r": "-",
+      "m": "Page",
+      "isReadingRedundant": true,
+      "dv": [
+        "ペーヅ",
+        "ベージ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Book",
+        "Chapter"
+      ]
+    },
+    {
+      "v": "ゴールド",
+      "r": "-",
+      "m": "Gold",
+      "isReadingRedundant": true,
+      "dv": [
+        "コーウルド",
+        "ゴルード"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Silver",
+        "Bronze"
+      ]
+    },
+    {
+      "v": "シリーズ",
+      "r": "-",
+      "m": "Series",
+      "isReadingRedundant": true,
+      "dv": [
+        "シリーヌ",
+        "ヅリーズ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Single",
+        "Episode"
+      ]
+    },
+    {
+      "v": "掛かる",
+      "r": "かかる",
+      "m": "To take (time/money)",
+      "isReadingRedundant": false,
+      "dv": [
+        "街かる",
+        "掛がる"
+      ],
+      "dr": [
+        "がかる",
+        "かがる"
+      ],
+      "dm": [
+        "To give",
+        "To drop"
+      ]
+    },
+    {
+      "v": "袋",
+      "r": "ふくろ",
+      "m": "Bag/sack",
+      "isReadingRedundant": false,
+      "dv": [
+        "衣",
+        "装"
+      ],
+      "dr": [
+        "ぶくろ",
+        "ふぐろ"
+      ],
+      "dm": [
+        "Box",
+        "Pocket"
+      ]
+    },
+    {
+      "v": "住所",
+      "r": "じゅうしょ",
+      "m": "Address",
+      "isReadingRedundant": false,
+      "dv": [
+        "住処",
+        "住折"
+      ],
+      "dr": [
+        "じゅうしよ",
+        "じゅしょ"
+      ],
+      "dm": [
+        "Name",
+        "Phone number"
+      ]
+    },
+    {
+      "v": "どなた",
+      "r": "-",
+      "m": "Who? (polite)",
+      "isReadingRedundant": true,
+      "dv": [
+        "どたな",
+        "となた"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "What?",
+        "Where?"
+      ]
+    },
+    {
+      "v": "エレベーター",
+      "r": "-",
+      "m": "Elevator",
+      "isReadingRedundant": true,
+      "dv": [
+        "エレペーター",
+        "ヱレベーター"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Stairs",
+        "Escalator"
+      ]
+    },
+    {
+      "v": "弾く",
+      "r": "ひく",
+      "m": "To play (string/piano)",
+      "isReadingRedundant": false,
+      "dv": [
+        "弓く",
+        "引く"
+      ],
+      "dr": [
+        "びく",
+        "ひぎ"
+      ],
+      "dm": [
+        "To sing",
+        "To listen"
+      ]
+    },
+    {
+      "v": "信号",
+      "r": "しんごう",
+      "m": "Signal/traffic light",
+      "isReadingRedundant": false,
+      "dv": [
+        "信合",
+        "申号"
+      ],
+      "dr": [
+        "じんごう",
+        "しんこう"
+      ],
+      "dm": [
+        "Sign",
+        "Stop"
+      ]
+    },
+    {
+      "v": "眼鏡",
+      "r": "めがね",
+      "m": "Spectacles/glasses",
+      "isReadingRedundant": false,
+      "dv": [
+        "眼境",
+        "眠鏡"
+      ],
+      "dr": [
+        "めがぬ",
+        "めかね"
+      ],
+      "dm": [
+        "Contacts",
+        "Sunglasses"
+      ]
+    },
+    {
+      "v": "体調",
+      "r": "たいちょう",
+      "m": "Physical condition",
+      "isReadingRedundant": false,
+      "dv": [
+        "体長",
+        "大調"
+      ],
+      "dr": [
+        "だいちょう",
+        "たいじょう"
+      ],
+      "dm": [
+        "Mental condition",
+        "Health"
+      ]
+    },
+    {
+      "v": "シェフ",
+      "r": "-",
+      "m": "Chef",
+      "isReadingRedundant": true,
+      "dv": [
+        "ツェフ",
+        "シエフ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Waiter",
+        "Customer"
+      ]
+    }
+  ]
+}

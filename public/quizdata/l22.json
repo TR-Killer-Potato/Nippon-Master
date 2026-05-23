@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 22",
+  "vocabulary": [
+    {
+      "v": "気分が悪い",
+      "r": "きぶんがわるい",
+      "m": "Feel sick/unwell",
+      "isReadingRedundant": false,
+      "dv": [
+        "気分が悪し",
+        "気分が悪り"
+      ],
+      "dr": [
+        "giぶんがわるい",
+        "きぶーんがわるい"
+      ],
+      "dm": [
+        "Feel tired",
+        "Feel hungry"
+      ]
+    },
+    {
+      "v": "タバコを吸う",
+      "r": "タバコをすう",
+      "m": "To smoke",
+      "isReadingRedundant": false,
+      "dv": [
+        "タバコを及う",
+        "タバコを収う"
+      ],
+      "dr": [
+        "タバコをずう",
+        "タバコをすーう"
+      ],
+      "dm": [
+        "To drink alcohol",
+        "To eat food"
+      ]
+    },
+    {
+      "v": "おはようございます",
+      "r": "-",
+      "m": "Good morning",
+      "isReadingRedundant": true,
+      "dv": [
+        "おばようございます",
+        "おはようごぎいます"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Good evening",
+        "Good night"
+      ]
+    },
+    {
+      "v": "お祖母さん",
+      "r": "おばあさん",
+      "m": "Grandmother",
+      "isReadingRedundant": false,
+      "dv": [
+        "お祖每さん",
+        "お祖毋さん"
+      ],
+      "dr": [
+        "おばさん",
+        "おばーあさん"
+      ],
+      "dm": [
+        "Grandfather",
+        "Aunt"
+      ]
+    },
+    {
+      "v": "二ヶ月前",
+      "r": "にげつまえ",
+      "m": "Two months ago",
+      "isReadingRedundant": false,
+      "dv": [
+        "一ヶ月前",
+        "三ヶ月前"
+      ],
+      "dr": [
+        "にがげつまえ",
+        "にヶかげづまえ"
+      ],
+      "dm": [
+        "Two weeks ago",
+        "Two days ago"
+      ]
+    },
+    {
+      "v": "お帰りなさい",
+      "r": "おかえりなさい",
+      "m": "Welcome home",
+      "isReadingRedundant": false,
+      "dv": [
+        "お帰りなさし",
+        "お帰リなさい"
+      ],
+      "dr": [
+        "おがえりなさい",
+        "おかえりなざい"
+      ],
+      "dm": [
+        "I'm leaving",
+        "Goodbye"
+      ]
+    },
+    {
+      "v": "交通系ＩＣカード",
+      "r": "-",
+      "m": "IC card",
+      "isReadingRedundant": true,
+      "dv": [
+        "交道系ＩＣカード",
+        "交痛系ＩＣカード"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Credit card",
+        "Debit card"
+      ]
+    },
+    {
+      "v": "今学期",
+      "r": "こんがっき",
+      "m": "This semester",
+      "isReadingRedundant": false,
+      "dv": [
+        "今学季",
+        "令学期"
+      ],
+      "dr": [
+        "gおんがっき",
+        "こんがっぎ"
+      ],
+      "dm": [
+        "Next semester",
+        "Last semester"
+      ]
+    },
+    {
+      "v": "ハラルフード",
+      "r": "-",
+      "m": "Halal food",
+      "isReadingRedundant": true,
+      "dv": [
+        "ハラノレフード",
+        "パラルフード"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Vegetarian food",
+        "Vegan food"
+      ]
+    },
+    {
+      "v": "お腹が空く",
+      "r": "おなかがあく",
+      "m": "To become hungry",
+      "isReadingRedundant": false,
+      "dv": [
+        "お復が空く",
+        "お服が空く"
+      ],
+      "dr": [
+        "おなががすく",
+        "おなかがずく"
+      ],
+      "dm": [
+        "To disappear",
+        "To appear"
+      ]
+    },
+    {
+      "v": "体に気をつける",
+      "r": "からだにきをつける",
+      "m": "To take care (oneself)",
+      "isReadingRedundant": false,
+      "dv": [
+        "休に気をつける",
+        "本に気をつける"
+      ],
+      "dr": [
+        "gぁらだにきをつける",
+        "からだにgiをつける"
+      ],
+      "dm": [
+        "To exercise",
+        "To sleep well"
+      ]
+    },
+    {
+      "v": "何も",
+      "r": "なにも",
+      "m": "Not anything/nothing",
+      "isReadingRedundant": false,
+      "dv": [
+        "向も",
+        "伺も"
+      ],
+      "dr": [
+        "なーにも",
+        "なにーも"
+      ],
+      "dm": [
+        "Everything",
+        "Something"
+      ]
+    },
+    {
+      "v": "お大事に",
+      "r": "おだいじに",
+      "m": "Take care",
+      "isReadingRedundant": false,
+      "dv": [
+        "お太事に",
+        "お犬事に"
+      ],
+      "dr": [
+        "おたいじに",
+        "おだいしに"
+      ],
+      "dm": [
+        "See you later",
+        "Good luck"
+      ]
+    },
+    {
+      "v": "嘘をつく",
+      "r": "うそをつく",
+      "m": "To tell a lie",
+      "isReadingRedundant": false,
+      "dv": [
+        "嘘をつぐ",
+        "嘘をつか"
+      ],
+      "dr": [
+        "うぞをつく",
+        "うそをづく"
+      ],
+      "dm": [
+        "To tell the truth",
+        "To keep a secret"
+      ]
+    },
+    {
+      "v": "お返事",
+      "r": "おへんじ",
+      "m": "Reply",
+      "isReadingRedundant": false,
+      "dv": [
+        "お反事",
+        "お返吏"
+      ],
+      "dr": [
+        "おべんじ",
+        "おへんし"
+      ],
+      "dm": [
+        "Question",
+        "Inquiry"
+      ]
+    },
+    {
+      "v": "どうやって",
+      "r": "-",
+      "m": "How/in what way",
+      "isReadingRedundant": true,
+      "dv": [
+        "とうやって",
+        "どうやっで"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Why/for what reason",
+        "When/at what time"
+      ]
+    },
+    {
+      "v": "速く",
+      "r": "はやく",
+      "m": "Early/fast",
+      "isReadingRedundant": false,
+      "dv": [
+        "遠く",
+        "束く"
+      ],
+      "dr": [
+        "ばやく",
+        "はーやく"
+      ],
+      "dm": [
+        "Late",
+        "Slow"
+      ]
+    },
+    {
+      "v": "出来るだけ",
+      "r": "できるだけ",
+      "m": "As much as possible",
+      "isReadingRedundant": false,
+      "dv": [
+        "出釆るだけ",
+        "凹来るだけ"
+      ],
+      "dr": [
+        "てきるだけ",
+        "できーるだけ"
+      ],
+      "dm": [
+        "As little as possible",
+        "Impossible"
+      ]
+    },
+    {
+      "v": "二三日",
+      "r": "にさんにち",
+      "m": "Two/three days",
+      "isReadingRedundant": false,
+      "dv": [
+        "一三日",
+        "二四日"
+      ],
+      "dr": [
+        "にざんにち",
+        "にさんにじ"
+      ],
+      "dm": [
+        "Four/five days",
+        "One/two weeks"
+      ]
+    },
+    {
+      "v": "どうですか",
+      "r": "-",
+      "m": "How about?",
+      "isReadingRedundant": true,
+      "dv": [
+        "とうですか",
+        "どうてすか"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Why is it?",
+        "Where is it?"
+      ]
+    },
+    {
+      "v": "二人ずつ",
+      "r": "ふたりずつ",
+      "m": "In pairs/couple",
+      "isReadingRedundant": false,
+      "dv": [
+        "一人ずつ",
+        "三人ずつ"
+      ],
+      "dr": [
+        "ぶたりずつ",
+        "ifぅだりずつ"
+      ],
+      "dm": [
+        "In groups of three",
+        "Alone"
+      ]
+    },
+    {
+      "v": "一人で",
+      "r": "ひとりで",
+      "m": "Alone",
+      "isReadingRedundant": false,
+      "dv": [
+        "二人で",
+        "三人で"
+      ],
+      "dr": [
+        "びとりで",
+        "ひとりでー"
+      ],
+      "dm": [
+        "Together",
+        "With family"
+      ]
+    },
+    {
+      "v": "初めまして",
+      "r": "はじめまして",
+      "m": "Nice to meet you",
+      "isReadingRedundant": false,
+      "dv": [
+        "祈めまして",
+        "祖めまして"
+      ],
+      "dr": [
+        "ばじめまして",
+        "はしめまして"
+      ],
+      "dm": [
+        "Goodbye",
+        "See you"
+      ]
+    },
+    {
+      "v": "咳が出る",
+      "r": "せきがでる",
+      "m": "To cough",
+      "isReadingRedundant": false,
+      "dv": [
+        "咳か出る",
+        "咳が出ろ"
+      ],
+      "dr": [
+        "ぜきがでる",
+        "せきがてる"
+      ],
+      "dm": [
+        "To sneeze",
+        "To yawn"
+      ]
+    },
+    {
+      "v": "来学期",
+      "r": "らいがっき",
+      "m": "Next semester",
+      "isReadingRedundant": false,
+      "dv": [
+        "釆学期",
+        "未学期"
+      ],
+      "dr": [
+        "だいがっき",
+        "らいかっき"
+      ],
+      "dm": [
+        "This semester",
+        "Last semester"
+      ]
+    },
+    {
+      "v": "そうですか",
+      "r": "-",
+      "m": "I see",
+      "isReadingRedundant": true,
+      "dv": [
+        "ぞうですか",
+        "そうてすか"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Is that so?",
+        "I disagree"
+      ]
+    },
+    {
+      "v": "人参",
+      "r": "にんじん",
+      "m": "Carrot",
+      "isReadingRedundant": false,
+      "dv": [
+        "入参",
+        "八参"
+      ],
+      "dr": [
+        "にんしん",
+        "じんじん"
+      ],
+      "dm": [
+        "Potato",
+        "Onion"
+      ]
+    },
+    {
+      "v": "ホストファミリー",
+      "r": "-",
+      "m": "Host family",
+      "isReadingRedundant": true,
+      "dv": [
+        "ポストファミリー",
+        "ホズトファミリー"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Guest room",
+        "Exchange student"
+      ]
+    },
+    {
+      "v": "もう直ぐ",
+      "r": "もうすぐ",
+      "m": "Soon/shortly",
+      "isReadingRedundant": false,
+      "dv": [
+        "もラ直ぐ",
+        "もう真ぐ"
+      ],
+      "dr": [
+        "もうずぐ",
+        "もーすぐ"
+      ],
+      "dm": [
+        "Later",
+        "Eventually"
+      ]
+    },
+    {
+      "v": "字引",
+      "r": "じびき",
+      "m": "Dictionary",
+      "isReadingRedundant": false,
+      "dv": [
+        "宇引",
+        "学引"
+      ],
+      "dr": [
+        "しびき",
+        "じひき"
+      ],
+      "dm": [
+        "Textbook",
+        "Novel"
+      ]
+    },
+    {
+      "v": "人気がある",
+      "r": "にんきがある",
+      "m": "To be popular",
+      "isReadingRedundant": false,
+      "dv": [
+        "入気がある",
+        "人気分ある"
+      ],
+      "dr": [
+        "にんぎがある",
+        "にんきがあーる"
+      ],
+      "dm": [
+        "To be hated",
+        "To be unknown"
+      ]
+    },
+    {
+      "v": "遅くなる",
+      "r": "おそくなる",
+      "m": "To be late",
+      "isReadingRedundant": false,
+      "dv": [
+        "達くなる",
+        "遠くなる"
+      ],
+      "dr": [
+        "おぞくなる",
+        "おそぐなる"
+      ],
+      "dm": [
+        "To be early",
+        "To be on time"
+      ]
+    },
+    {
+      "v": "一年に一度",
+      "r": "いちねんにいちど",
+      "m": "Once a year",
+      "isReadingRedundant": false,
+      "dv": [
+        "一季に一度",
+        "一年に一席"
+      ],
+      "dr": [
+        "いじねんにいちど",
+        "いちねんにいじど"
+      ],
+      "dm": [
+        "Twice a year",
+        "Once a month"
+      ]
+    },
+    {
+      "v": "遅く",
+      "r": "おそく",
+      "m": "Late",
+      "isReadingRedundant": false,
+      "dv": [
+        "達く",
+        "遠く"
+      ],
+      "dr": [
+        "おぞく",
+        "おーそく"
+      ],
+      "dm": [
+        "Early",
+        "On time"
+      ]
+    },
+    {
+      "v": "背が低い",
+      "r": "せがひくい",
+      "m": "Short (person)",
+      "isReadingRedundant": false,
+      "dv": [
+        "脊が低い",
+        "背が底い"
+      ],
+      "dr": [
+        "ぜがひくい",
+        "せがびくい"
+      ],
+      "dm": [
+        "Tall (person)",
+        "Average height"
+      ]
+    },
+    {
+      "v": "二週間前",
+      "r": "にしゅうかんまえ",
+      "m": "Two weeks ago",
+      "isReadingRedundant": false,
+      "dv": [
+        "一週間前",
+        "三週間前"
+      ],
+      "dr": [
+        "にじゅうかんまえ",
+        "にしゅかんまえ"
+      ],
+      "dm": [
+        "Two days ago",
+        "Two months ago"
+      ]
+    },
+    {
+      "v": "行目",
+      "r": "ぎょうめ",
+      "m": "Line number",
+      "isReadingRedundant": false,
+      "dv": [
+        "打目",
+        "朽目"
+      ],
+      "dr": [
+        "きょうめ",
+        "ぎょめ"
+      ],
+      "dm": [
+        "Page number",
+        "Chapter number"
+      ]
+    },
+    {
+      "v": "次発",
+      "r": "じhatす",
+      "m": "Second train",
+      "isReadingRedundant": false,
+      "dv": [
+        "吹発",
+        "欠発"
+      ],
+      "dr": [
+        "しはつ",
+        "じぱつ"
+      ],
+      "dm": [
+        "First train",
+        "Last train"
+      ]
+    },
+    {
+      "v": "行ってらっしゃい",
+      "r": "いってらっしゃい",
+      "m": "Have a good day",
+      "isReadingRedundant": false,
+      "dv": [
+        "打ってらっしゃい",
+        "行てらっしゃい"
+      ],
+      "dr": [
+        "いってらっじゃい",
+        "いってらしゃい"
+      ],
+      "dm": [
+        "Welcome back",
+        "Good night"
+      ]
+    },
+    {
+      "v": "硬い言い方",
+      "r": "かたいいいかた",
+      "m": "Stuffy/formal expression",
+      "isReadingRedundant": false,
+      "dv": [
+        "便い言い方",
+        "硬い信い方"
+      ],
+      "dr": [
+        "gぁたいいいかた",
+        "かたいいいがた"
+      ],
+      "dm": [
+        "Casual expression",
+        "Slang expression"
+      ]
+    },
+    {
+      "v": "興味がある",
+      "r": "きょうみがある",
+      "m": "To be interested (in)",
+      "isReadingRedundant": false,
+      "dv": [
+        "興未がある",
+        "与味がある"
+      ],
+      "dr": [
+        "giょうみがある",
+        "きょうびがある"
+      ],
+      "dm": [
+        "To be bored by",
+        "To be tired of"
+      ]
+    },
+    {
+      "v": "お元気で",
+      "r": "おげんきで",
+      "m": "Take care",
+      "isReadingRedundant": false,
+      "dv": [
+        "お元きで",
+        "お元気分で"
+      ],
+      "dr": [
+        "おけんきで",
+        "おげんぎで"
+      ],
+      "dm": [
+        "Good luck",
+        "Congratulations"
+      ]
+    },
+    {
+      "v": "二時半",
+      "r": "にじはん",
+      "m": "Half past two",
+      "isReadingRedundant": false,
+      "dv": [
+        "一時半",
+        "三時半"
+      ],
+      "dr": [
+        "にしはん",
+        "にじぱん"
+      ],
+      "dm": [
+        "Quarter past two",
+        "Half past one"
+      ]
+    },
+    {
+      "v": "よろしくお願いします",
+      "r": "よろしくおねがいします",
+      "m": "Please remember/nice to meet you",
+      "isReadingRedundant": false,
+      "dv": [
+        "よろしくお顔いします",
+        "よろしくお頑いします"
+      ],
+      "dr": [
+        "よろじくおねがいします",
+        "よろしくおねかいします"
+      ],
+      "dm": [
+        "Please forget",
+        "No thank you"
+      ]
+    },
+    {
+      "v": "熱がある",
+      "r": "ねつがある",
+      "m": "To have a fever",
+      "isReadingRedundant": false,
+      "dv": [
+        "熟がある",
+        "塾がある"
+      ],
+      "dr": [
+        "ねづがある",
+        "ねつがあーる"
+      ],
+      "dm": [
+        "To have a cough",
+        "To feel cold"
+      ]
+    },
+    {
+      "v": "詰らない",
+      "r": "つまらない",
+      "m": "Dull/boring",
+      "isReadingRedundant": false,
+      "dv": [
+        "結らない",
+        "話らない"
+      ],
+      "dr": [
+        "づまらない",
+        "つまらなーい"
+      ],
+      "dm": [
+        "Exciting",
+        "Interesting"
+      ]
+    },
+    {
+      "v": "凄く",
+      "r": "すごく",
+      "m": "Awfully/very",
+      "isReadingRedundant": false,
+      "dv": [
+        "妻く",
+        "凄ぐ"
+      ],
+      "dr": [
+        "ずごく",
+        "すごーく"
+      ],
+      "dm": [
+        "Slightly",
+        "Hardly"
+      ]
+    },
+    {
+      "v": "丁寧な言い方",
+      "r": "ていねいないいかた",
+      "m": "Polite expression",
+      "isReadingRedundant": false,
+      "dv": [
+        "丁字な言い方",
+        "丁寧な信い方"
+      ],
+      "dr": [
+        "だいねいないいかた",
+        "ていねいないいがた"
+      ],
+      "dm": [
+        "Rude expression",
+        "Casual expression"
+      ]
+    },
+    {
+      "v": "三つ目",
+      "r": "みっつめ",
+      "m": "Third",
+      "isReadingRedundant": false,
+      "dv": [
+        "二つ目",
+        "四つ目"
+      ],
+      "dr": [
+        "みっづめ",
+        "みーっつめ"
+      ],
+      "dm": [
+        "Second",
+        "Fourth"
+      ]
+    },
+    {
+      "v": "お願いします",
+      "r": "おねがいします",
+      "m": "Please (polite request)",
+      "isReadingRedundant": false,
+      "dv": [
+        "お顔いします",
+        "お頑いします"
+      ],
+      "dr": [
+        "おねかいします",
+        "おねーがいします"
+      ],
+      "dm": [
+        "Thank you",
+        "Excuse me"
+      ]
+    }
+  ]
+}

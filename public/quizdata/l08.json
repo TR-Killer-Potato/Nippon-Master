@@ -1,0 +1,905 @@
+{
+  "title": "Lesson 8",
+  "vocabulary": [
+    {
+      "v": "住む",
+      "r": "すむ",
+      "m": "To live",
+      "isReadingRedundant": false,
+      "dv": [
+        "往む",
+        "任む"
+      ],
+      "dr": [
+        "ずむ",
+        "すーむ"
+      ],
+      "dm": [
+        "To die",
+        "To visit"
+      ]
+    },
+    {
+      "v": "売る",
+      "r": "うる",
+      "m": "To sell",
+      "isReadingRedundant": false,
+      "dv": [
+        "壳る",
+        "読る"
+      ],
+      "dr": [
+        "うーる",
+        "うるー"
+      ],
+      "dm": [
+        "To buy",
+        "To rent"
+      ]
+    },
+    {
+      "v": "東",
+      "r": "ひがし",
+      "m": "East",
+      "isReadingRedundant": false,
+      "dv": [
+        "車",
+        "束"
+      ],
+      "dr": [
+        "びがし",
+        "ひかし"
+      ],
+      "dm": [
+        "West",
+        "South"
+      ]
+    },
+    {
+      "v": "前",
+      "r": "まえ",
+      "m": "Previously/ago",
+      "isReadingRedundant": false,
+      "dv": [
+        "剪",
+        "煎"
+      ],
+      "dr": [
+        "まーえ",
+        "ばえ"
+      ],
+      "dm": [
+        "Later/after",
+        "Currently"
+      ]
+    },
+    {
+      "v": "娘",
+      "r": "むすめ",
+      "m": "Daughter",
+      "isReadingRedundant": false,
+      "dv": [
+        "嬢",
+        "狼"
+      ],
+      "dr": [
+        "むずめ",
+        "むーすめ"
+      ],
+      "dm": [
+        "Son",
+        "Mother"
+      ]
+    },
+    {
+      "v": "泣く",
+      "r": "なく",
+      "m": "To cry",
+      "isReadingRedundant": false,
+      "dv": [
+        "泳く",
+        "注く"
+      ],
+      "dr": [
+        "なぐ",
+        "なーく"
+      ],
+      "dm": [
+        "To laugh",
+        "To smile"
+      ]
+    },
+    {
+      "v": "渡る",
+      "r": "わたる",
+      "m": "To cross",
+      "isReadingRedundant": false,
+      "dv": [
+        "度る",
+        "疲る"
+      ],
+      "dr": [
+        "わだる",
+        "わーたる"
+      ],
+      "dm": [
+        "To stay",
+        "To stop"
+      ]
+    },
+    {
+      "v": "入る",
+      "r": "はいる",
+      "m": "To enter",
+      "isReadingRedundant": false,
+      "dv": [
+        "人る",
+        "八る"
+      ],
+      "dr": [
+        "ばいる",
+        "はーいる"
+      ],
+      "dm": [
+        "To exit",
+        "To leave"
+      ]
+    },
+    {
+      "v": "だけ",
+      "r": "-",
+      "m": "Only",
+      "isReadingRedundant": true,
+      "dv": [
+        "たけ",
+        "だげ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "All",
+        "None"
+      ]
+    },
+    {
+      "v": "どれ",
+      "r": "-",
+      "m": "Which",
+      "isReadingRedundant": true,
+      "dv": [
+        "とれ",
+        "どわ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "That",
+        "This"
+      ]
+    },
+    {
+      "v": "どこ",
+      "r": "-",
+      "m": "Where",
+      "isReadingRedundant": true,
+      "dv": [
+        "とこ",
+        "どご"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Here",
+        "There"
+      ]
+    },
+    {
+      "v": "どの",
+      "r": "-",
+      "m": "Which",
+      "isReadingRedundant": true,
+      "dv": [
+        "との",
+        "どめ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "This",
+        "That"
+      ]
+    },
+    {
+      "v": "国",
+      "r": "くに",
+      "m": "Country",
+      "isReadingRedundant": false,
+      "dv": [
+        "囲",
+        "団"
+      ],
+      "dr": [
+        "ぐに",
+        "くーに"
+      ],
+      "dm": [
+        "City",
+        "Village"
+      ]
+    },
+    {
+      "v": "料理",
+      "r": "りょうり",
+      "m": "Cooking",
+      "isReadingRedundant": false,
+      "dv": [
+        "料埋",
+        "科理"
+      ],
+      "dr": [
+        "りょり",
+        "りょうーり"
+      ],
+      "dm": [
+        "Cleaning",
+        "Washing"
+      ]
+    },
+    {
+      "v": "もう",
+      "r": "-",
+      "m": "Now",
+      "isReadingRedundant": true,
+      "dv": [
+        "もら",
+        "ほう"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Later",
+        "Not yet"
+      ]
+    },
+    {
+      "v": "どうして",
+      "r": "-",
+      "m": "Why?",
+      "isReadingRedundant": true,
+      "dv": [
+        "とうして",
+        "どうじて"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "What",
+        "Where"
+      ]
+    },
+    {
+      "v": "怒る",
+      "r": "おこる",
+      "m": "To get angry",
+      "isReadingRedundant": false,
+      "dv": [
+        "恐る",
+        "努る"
+      ],
+      "dr": [
+        "おごる",
+        "おーこる"
+      ],
+      "dm": [
+        "To smile",
+        "To cry"
+      ]
+    },
+    {
+      "v": "太る",
+      "r": "ふとる",
+      "m": "Grow fat",
+      "isReadingRedundant": false,
+      "dv": [
+        "大る",
+        "犬る"
+      ],
+      "dr": [
+        "ぶとる",
+        "ふどる"
+      ],
+      "dm": [
+        "Lose weight",
+        "Get taller"
+      ]
+    },
+    {
+      "v": "なる",
+      "r": "-",
+      "m": "To become",
+      "isReadingRedundant": true,
+      "dv": [
+        "なろ",
+        "める"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "To remain",
+        "To disappear"
+      ]
+    },
+    {
+      "v": "ゆっくり",
+      "r": "-",
+      "m": "Slowly",
+      "isReadingRedundant": true,
+      "dv": [
+        "ゆっくリ",
+        "ゆつくり"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Fast",
+        "Hastily"
+      ]
+    },
+    {
+      "v": "雪",
+      "r": "ゆき",
+      "m": "Snow",
+      "isReadingRedundant": false,
+      "dv": [
+        "雲",
+        "雷"
+      ],
+      "dr": [
+        "ゆぎ",
+        "ゆーき"
+      ],
+      "dm": [
+        "Rain",
+        "Ice"
+      ]
+    },
+    {
+      "v": "スキー",
+      "r": "-",
+      "m": "Skiing",
+      "isReadingRedundant": true,
+      "dv": [
+        "ズキー",
+        "スギ一"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Snowboarding",
+        "Skating"
+      ]
+    },
+    {
+      "v": "お風呂に入る",
+      "r": "おふろにはいる",
+      "m": "Take a bath",
+      "isReadingRedundant": false,
+      "dv": [
+        "お風口に入る",
+        "お呂風に入る"
+      ],
+      "dr": [
+        "おぶろにはいる",
+        "おふろにはーいる"
+      ],
+      "dm": [
+        "Take a shower",
+        "Wash hands"
+      ]
+    },
+    {
+      "v": "涼しい",
+      "r": "すずしい",
+      "m": "Cool",
+      "isReadingRedundant": false,
+      "dv": [
+        "鯨しい",
+        "掠しい"
+      ],
+      "dr": [
+        "ずずしい",
+        "すすしい"
+      ],
+      "dm": [
+        "Hot",
+        "Humid"
+      ]
+    },
+    {
+      "v": "会議",
+      "r": "かいぎ",
+      "m": "Meeting",
+      "isReadingRedundant": false,
+      "dv": [
+        "会儀",
+        "会社"
+      ],
+      "dr": [
+        "がいぎ",
+        "かいき"
+      ],
+      "dm": [
+        "Party",
+        "Break"
+      ]
+    },
+    {
+      "v": "終わる",
+      "r": "おわる",
+      "m": "To finish",
+      "isReadingRedundant": false,
+      "dv": [
+        "絡わる",
+        "結わる"
+      ],
+      "dr": [
+        "おーわる",
+        "おばる"
+      ],
+      "dm": [
+        "To begin",
+        "To start"
+      ]
+    },
+    {
+      "v": "晩ご飯",
+      "r": "ばんごはん",
+      "m": "Dinner",
+      "isReadingRedundant": false,
+      "dv": [
+        "勉ご飯",
+        "晩ご館"
+      ],
+      "dr": [
+        "ぱんごはん",
+        "ばんごばん"
+      ],
+      "dm": [
+        "Lunch",
+        "Breakfast"
+      ]
+    },
+    {
+      "v": "歯",
+      "r": "は",
+      "m": "Tooth",
+      "isReadingRedundant": false,
+      "dv": [
+        "菌",
+        "画"
+      ],
+      "dr": [
+        "ば",
+        "はー"
+      ],
+      "dm": [
+        "Eye",
+        "Ear"
+      ]
+    },
+    {
+      "v": "一緒に",
+      "r": "いっしょに",
+      "m": "Together",
+      "isReadingRedundant": false,
+      "dv": [
+        "一猪に",
+        "一緒ご"
+      ],
+      "dr": [
+        "いっじょに",
+        "いーっしょに"
+      ],
+      "dm": [
+        "Alone",
+        "Separately"
+      ]
+    },
+    {
+      "v": "散歩",
+      "r": "さんぽ",
+      "m": "Walk",
+      "isReadingRedundant": false,
+      "dv": [
+        "散少",
+        "放歩"
+      ],
+      "dr": [
+        "ざんぽ",
+        "さんぼ"
+      ],
+      "dm": [
+        "Running",
+        "Driving"
+      ]
+    },
+    {
+      "v": "まだ",
+      "r": "-",
+      "m": "As yet",
+      "isReadingRedundant": true,
+      "dv": [
+        "また",
+        "ほだ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Already",
+        "Completed"
+      ]
+    },
+    {
+      "v": "痛い",
+      "r": "いたい",
+      "m": "Painful",
+      "isReadingRedundant": false,
+      "dv": [
+        "病い",
+        "疲い"
+      ],
+      "dr": [
+        "いだい",
+        "いーたい"
+      ],
+      "dm": [
+        "Pleasant",
+        "Comfortable"
+      ]
+    },
+    {
+      "v": "切符",
+      "r": "きっぷ",
+      "m": "Ticket",
+      "isReadingRedundant": false,
+      "dv": [
+        "切付",
+        "切府"
+      ],
+      "dr": [
+        "giっぷ",
+        "きっぶ"
+      ],
+      "dm": [
+        "Receipt",
+        "Passport"
+      ]
+    },
+    {
+      "v": "消す",
+      "r": "けす",
+      "m": "To erase",
+      "isReadingRedundant": false,
+      "dv": [
+        "肖す",
+        "哨す"
+      ],
+      "dr": [
+        "げす",
+        "けーす"
+      ],
+      "dm": [
+        "To write",
+        "To light"
+      ]
+    },
+    {
+      "v": "答える",
+      "r": "こたえる",
+      "m": "To answer",
+      "isReadingRedundant": false,
+      "dv": [
+        "塔える",
+        "筈える"
+      ],
+      "dr": [
+        "ごたえる",
+        "こだえる"
+      ],
+      "dm": [
+        "To ask",
+        "To question"
+      ]
+    },
+    {
+      "v": "曇り",
+      "r": "くもり",
+      "m": "Cloudiness",
+      "isReadingRedundant": false,
+      "dv": [
+        "雲り",
+        "震り"
+      ],
+      "dr": [
+        "ぐもり",
+        "くmoーri"
+      ],
+      "dm": [
+        "Sunny",
+        "Rainy"
+      ]
+    },
+    {
+      "v": "狭い",
+      "r": "せまい",
+      "m": "Narrow",
+      "isReadingRedundant": false,
+      "dv": [
+        "挟い",
+        "独い"
+      ],
+      "dr": [
+        "ぜまい",
+        "せーmai"
+      ],
+      "dm": [
+        "Wide",
+        "Spacious"
+      ]
+    },
+    {
+      "v": "来年",
+      "r": "らいねん",
+      "m": "Next year",
+      "isReadingRedundant": false,
+      "dv": [
+        "釆年",
+        "求年"
+      ],
+      "dr": [
+        "だいねん",
+        "らいれん"
+      ],
+      "dm": [
+        "Last year",
+        "This year"
+      ]
+    },
+    {
+      "v": "風呂",
+      "r": "ふろ",
+      "m": "Bath",
+      "isReadingRedundant": false,
+      "dv": [
+        "風口",
+        "呂風"
+      ],
+      "dr": [
+        "ぶろ",
+        "ふーろ"
+      ],
+      "dm": [
+        "Shower",
+        "Sink"
+      ]
+    },
+    {
+      "v": "洗濯",
+      "r": "せんたく",
+      "m": "Washing",
+      "isReadingRedundant": false,
+      "dv": [
+        "洗沢",
+        "先濯"
+      ],
+      "dr": [
+        "ぜんたく",
+        "せんだく"
+      ],
+      "dm": [
+        "Drying",
+        "Ironing"
+      ]
+    },
+    {
+      "v": "いいえ",
+      "r": "-",
+      "m": "No",
+      "isReadingRedundant": true,
+      "dv": [
+        "いしえ",
+        "いええ"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Yes",
+        "Absolutely"
+      ]
+    },
+    {
+      "v": "上手",
+      "r": "じょうず",
+      "m": "Skillful",
+      "isReadingRedundant": false,
+      "dv": [
+        "上毛",
+        "止手"
+      ],
+      "dr": [
+        "しょうず",
+        "じょうす"
+      ],
+      "dm": [
+        "Clumsy",
+        "Unskilled"
+      ]
+    },
+    {
+      "v": "上手い",
+      "r": "うまい",
+      "m": "Skillful/delicious",
+      "isReadingRedundant": false,
+      "dv": [
+        "上毛い",
+        "止手い"
+      ],
+      "dr": [
+        "うーまい",
+        "うばい"
+      ],
+      "dm": [
+        "Bad-tasting",
+        "Clumsy"
+      ]
+    },
+    {
+      "v": "去年",
+      "r": "きょねん",
+      "m": "Last year",
+      "isReadingRedundant": false,
+      "dv": [
+        "去季",
+        "法年"
+      ],
+      "dr": [
+        "giょねん",
+        "きょれん"
+      ],
+      "dm": [
+        "Next year",
+        "This year"
+      ]
+    },
+    {
+      "v": "いただきます",
+      "r": "-",
+      "m": "Thank you",
+      "isReadingRedundant": true,
+      "dv": [
+        "いたたきます",
+        "いだだきます"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "You're welcome",
+        "Goodbye"
+      ]
+    },
+    {
+      "v": "どのくらい",
+      "r": "-",
+      "m": "How long",
+      "isReadingRedundant": true,
+      "dv": [
+        "とのくらい",
+        "どのぐらい"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Who",
+        "Where"
+      ]
+    },
+    {
+      "v": "まで",
+      "r": "-",
+      "m": "Until",
+      "isReadingRedundant": true,
+      "dv": [
+        "まて",
+        "ほで"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "From",
+        "Because"
+      ]
+    },
+    {
+      "v": "来月",
+      "r": "らいげつ",
+      "m": "Next month",
+      "isReadingRedundant": false,
+      "dv": [
+        "釆月",
+        "求月"
+      ],
+      "dr": [
+        "だいげつ",
+        "らいけつ"
+      ],
+      "dm": [
+        "Last month",
+        "This month"
+      ]
+    },
+    {
+      "v": "ダイエット",
+      "r": "-",
+      "m": "Diet",
+      "isReadingRedundant": true,
+      "dv": [
+        "タイエット",
+        "ダイエツト"
+      ],
+      "dr": [
+        "-",
+        "-"
+      ],
+      "dm": [
+        "Feasting",
+        "Binge"
+      ]
+    },
+    {
+      "v": "先月",
+      "r": "せんげつ",
+      "m": "Last month",
+      "isReadingRedundant": false,
+      "dv": [
+        "失月",
+        "告月"
+      ],
+      "dr": [
+        "ぜんげつ",
+        "せんけつ"
+      ],
+      "dm": [
+        "Next month",
+        "This month"
+      ]
+    }
+  ]
+}
