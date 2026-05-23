@@ -20,7 +20,7 @@ export async function tryInitFirebase(): Promise<{ auth: Auth; db: Firestore } |
   }
 
   try {
-    const response = await fetch("/firebase-applet-config.json");
+    const response = await fetch("./firebase-applet-config.json");
     if (!response.ok) {
       throw new Error(`Config request failed: ${response.status}`);
     }
