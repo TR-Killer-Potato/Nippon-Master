@@ -299,6 +299,31 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
           <p className="text-gray-500 text-xs select-none">Select the option that matches the vocabulary word above.</p>
         </div>
 
+        {/* Dynamic status feedback (Moved above the choice buttons) */}
+        {isAnswered && (
+          <div className="pt-2 animate-fade-in" id="active-quiz-status">
+            <div className={`p-4 rounded-2xl flex items-start gap-3 border ${
+              selectedOption === currentQuestion.correctAnswer 
+                ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" 
+                : "bg-red-500/10 text-red-400 border-red-500/20"
+            }`}>
+              {selectedOption === currentQuestion.correctAnswer ? (
+                <CheckCircle className="w-5 h-5 shrink-0 text-emerald-400 mt-0.5" />
+              ) : (
+                <XCircle className="w-5 h-5 shrink-0 text-red-400 mt-0.5" />
+              )}
+              <div className="text-xs leading-normal font-sans" id="feedback-desc">
+                <span className="font-bold flex items-center">
+                  {selectedOption === currentQuestion.correctAnswer ? "Correct match!" : "Incorrect answer"}
+                </span>
+                <p className="mt-1 text-gray-300">
+                  Vocabulary word <strong className="font-bold text-gray-100">{currentQuestion.vocab.v}</strong> translates to <strong className="font-bold text-gray-100">{currentQuestion.vocab.h !== "-" ? currentQuestion.vocab.h : (currentQuestion.vocab.r !== "-" ? currentQuestion.vocab.r : "Katakana")}</strong> meaning <strong className="font-bold text-gray-100">"{currentQuestion.vocab.m}"</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Option list buttons */}
         <div className="grid grid-cols-1 gap-3 pt-2" id="options-block">
           {currentQuestion.options.map((option) => {
@@ -334,34 +359,14 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
           })}
         </div>
 
-        {/* Dynamic footer status feedback */}
+        {/* Next Question / Finish Quiz button (Maintains position at the bottom of the card) */}
         {isAnswered && (
-          <div className="pt-2 animate-fade-in" id="active-quiz-footer">
-            <div className={`p-4 rounded-2xl flex items-start gap-3 border ${
-              selectedOption === currentQuestion.correctAnswer 
-                ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" 
-                : "bg-red-500/10 text-red-400 border-red-500/20"
-            }`}>
-              {selectedOption === currentQuestion.correctAnswer ? (
-                <CheckCircle className="w-5 h-5 shrink-0 text-emerald-400 mt-0.5" />
-              ) : (
-                <XCircle className="w-5 h-5 shrink-0 text-red-400 mt-0.5" />
-              )}
-              <div className="text-xs leading-normal font-sans" id="feedback-desc">
-                <span className="font-bold flex items-center">
-                  {selectedOption === currentQuestion.correctAnswer ? "Correct match!" : "Incorrect answer"}
-                </span>
-                <p className="mt-1 text-gray-300">
-                  Vocabulary word <strong className="font-bold text-gray-100">{currentQuestion.vocab.v}</strong> translates to <strong className="font-bold text-gray-100">"{currentQuestion.vocab.h || currentQuestion.vocab.r}"</strong> meaning <strong className="font-bold text-gray-100">"{currentQuestion.vocab.m}"</strong>.
-                </p>
-              </div>
-            </div>
-
+          <div className="pt-2 animate-fade-in" id="active-quiz-next">
             <button
               type="button"
               id="btn-quiz-next"
               onClick={handleNext}
-              className="w-full mt-4 py-3 bg-amber-500 hover:bg-amber-600 text-black font-extrabold hover:text-black rounded-xl text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md shadow-amber-500/5 text-center"
+              className="w-full py-3 bg-amber-500 hover:bg-amber-600 text-black font-extrabold hover:text-black rounded-xl text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md shadow-amber-500/5 text-center"
             >
               {currentIndex + 1 === questions.length ? "Finish Quiz" : "Next Question"}
               <ArrowRight className="w-4 h-4" />
