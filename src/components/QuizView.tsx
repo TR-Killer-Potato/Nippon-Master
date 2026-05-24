@@ -299,30 +299,34 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
           <p className="text-gray-500 text-xs select-none">Select the option that matches the vocabulary word above.</p>
         </div>
 
-        {/* Dynamic status feedback (Moved above the choice buttons) */}
-        {isAnswered && (
-          <div className="pt-2 animate-fade-in" id="active-quiz-status">
-            <div className={`p-4 rounded-2xl flex items-start gap-3 border ${
-              selectedOption === currentQuestion.correctAnswer 
-                ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" 
-                : "bg-red-500/10 text-red-400 border-red-500/20"
-            }`}>
-              {selectedOption === currentQuestion.correctAnswer ? (
-                <CheckCircle className="w-5 h-5 shrink-0 text-emerald-400 mt-0.5" />
-              ) : (
-                <XCircle className="w-5 h-5 shrink-0 text-red-400 mt-0.5" />
-              )}
-              <div className="text-xs leading-normal font-sans" id="feedback-desc">
-                <span className="font-bold flex items-center">
-                  {selectedOption === currentQuestion.correctAnswer ? "Correct match!" : "Incorrect answer"}
-                </span>
-                <p className="mt-1 text-gray-300">
-                  Vocabulary word <strong className="font-bold text-gray-100">{currentQuestion.vocab.v}</strong> translates to <strong className="font-bold text-gray-100">{currentQuestion.vocab.h !== "-" ? currentQuestion.vocab.h : (currentQuestion.vocab.r !== "-" ? currentQuestion.vocab.r : "Katakana")}</strong> meaning <strong className="font-bold text-gray-100">"{currentQuestion.vocab.m}"</strong>.
-                </p>
+        {/* Dynamic status feedback (Occupies constant space to avoid button shifting) */}
+        <div className="min-h-[100px] flex flex-col justify-center" id="active-quiz-status-container">
+          {isAnswered ? (
+            <div className="animate-fade-in animate-duration-200" id="active-quiz-status">
+              <div className={`p-4 rounded-2xl flex items-start gap-3 border ${
+                selectedOption === currentQuestion.correctAnswer 
+                  ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" 
+                  : "bg-red-500/10 text-red-400 border-red-500/20"
+              }`}>
+                {selectedOption === currentQuestion.correctAnswer ? (
+                  <CheckCircle className="w-5 h-5 shrink-0 text-emerald-400 mt-0.5" />
+                ) : (
+                  <XCircle className="w-5 h-5 shrink-0 text-red-400 mt-0.5" />
+                )}
+                <div className="text-xs leading-normal font-sans" id="feedback-desc">
+                  <span className="font-bold flex items-center">
+                    {selectedOption === currentQuestion.correctAnswer ? "Correct match!" : "Incorrect answer"}
+                  </span>
+                  <p className="mt-1 text-gray-300">
+                    Vocabulary word <strong className="font-bold text-gray-100">{currentQuestion.vocab.v}</strong> translates to <strong className="font-bold text-gray-100">{currentQuestion.vocab.h !== "-" ? currentQuestion.vocab.h : (currentQuestion.vocab.r !== "-" ? currentQuestion.vocab.r : "Katakana")}</strong> meaning <strong className="font-bold text-gray-100">"{currentQuestion.vocab.m}"</strong>.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          ) : (
+            <div className="w-full h-full" aria-hidden="true" />
+          )}
+        </div>
 
         {/* Option list buttons */}
         <div className="grid grid-cols-1 gap-3 pt-2" id="options-block">
