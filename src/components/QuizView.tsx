@@ -17,8 +17,13 @@ interface Question {
 }
 
 export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps) {
-  const [quizLength, setQuizLength] = useState<10 | "all">("all");
+  const [quizLength, setQuizLength] = useState<10 | "all" | "custom">("all");
+  const [customTypes, setCustomTypes] = useState<string[]>(['Vocabulary-Meaning']);
   const [isConfiguring, setIsConfiguring] = useState(true);
+  
+  const toggleCustomType = (type: string) => {
+    setCustomTypes(prev => prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type]);
+  };
   
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,29 +42,41 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
     const targetedList = quizLength === 10 ? shuffledVocab.slice(0, 10) : shuffledVocab;
 
     const builtQuestions: Question[] = targetedList.map((item) => {
-      // Determine direction: reading or meaning
-      let testMode: "Reading" | "Meaning" = Math.random() > 0.5 ? "Reading" : "Meaning";
-      
-      // If reading matches vocabulary natively, always test meaning
-      if (item.isReadingRedundant || item.r === "-") {
-        testMode = "Meaning";
+      let testType: string;
+      if (quizLength === "custom") {
+        testType = customTypes[Math.floor(Math.random() * customTypes.length)];
+      } else {
+        testType = Math.random() > 0.5 ? "Vocabulary-Reading" : "Vocabulary-Meaning";
       }
 
-      const prompt = item.v;
-      const correctAnswer = testMode === "Reading" ? item.r : item.m;
-      
-      // Accumulate incorrect distractor options
-      const distractors = testMode === "Reading" ? item.dr : item.dm;
-      
-      // Filter out any duplicates and force lowercase/trimmed equals check
-      const cleanDistractors = distractors.filter(d => d !== correctAnswer && d !== "-");
+      // If reading/meaning not available, fallback
+      if ((testType.includes("Reading") && item.r === "-") || (testType.includes("Meaning") && item.m === "-")) {
+        testType = "Vocabulary-Meaning";
+      }
 
-      // Shuffle options (insert correct option randomly)
+      let prompt = "";
+      let correctAnswer = "";
+      let distractors: string[] = [];
+
+      const [type, answer] = testType.split("-");
+      if (type === "Vocabulary") prompt = item.v;
+      else if (type === "Meaning") prompt = item.m;
+      else if (type === "Reading") prompt = item.r;
+
+      if (answer === "Meaning") correctAnswer = item.m;
+      else if (answer === "Vocabulary") correctAnswer = item.v;
+      else if (answer === "Reading") correctAnswer = item.r;
+
+      if (answer === "Meaning") distractors = item.dm;
+      else if (answer === "Vocabulary") distractors = item.dv || []; // Assuming item.dv exists or needs to be generated
+      else if (answer === "Reading") distractors = item.dr;
+
+      const cleanDistractors = distractors.filter(d => d !== correctAnswer && d !== "-");
       const options = [correctAnswer, ...cleanDistractors.slice(0, 3)].sort(() => Math.random() - 0.5);
 
       return {
         vocab: item,
-        testMode,
+        testMode: (answer === "Reading" ? "Reading" : "Meaning"),
         prompt,
         correctAnswer,
         options
@@ -120,20 +137,19 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
         <div className="space-y-4 pt-2" id="quiz-config-form">
           {/* Length options */}
           <div className="space-y-2" id="length-radio-group">
-            <span className="text-xs font-semibold text-gray-400">Question Volume</span>
-            <div className="grid grid-cols-2 gap-3">
+            <span className="text-xs font-semibold text-gray-400">Test Configuration</span>
+            <div className="grid grid-cols-3 gap-3">
               <button
                 type="button"
                 id="btn-length-quick"
                 onClick={() => setQuizLength(10)}
                 className={`p-4 rounded-xl border text-left transition-all cursor-pointer ${
-                  quizLength === 10 
+                  quizLength === 10
                     ? "bg-amber-500/10 border-amber-500/40 text-amber-400 ring-2 ring-amber-500/10" 
                     : "bg-white/5 border-white/5 hover:border-white/20 text-gray-400"
                 }`}
               >
-                <div className="text-sm font-bold">Quick Deck</div>
-                <div className="text-[10px] text-gray-500 mt-1">10 random questions</div>
+                <div className="text-sm font-bold">Quick</div>
               </button>
               
               <button
@@ -141,24 +157,42 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
                 id="btn-length-all"
                 onClick={() => setQuizLength("all")}
                 className={`p-4 rounded-xl border text-left transition-all cursor-pointer ${
-                  quizLength === "all" 
+                  quizLength === "all"
                     ? "bg-amber-500/10 border-amber-500/40 text-amber-400 ring-2 ring-amber-500/10" 
                     : "bg-white/5 border-white/5 hover:border-white/20 text-gray-400"
                 }`}
               >
-                <div className="text-sm font-bold">Full Lesson</div>
-                <div className="text-[10px] text-gray-500 mt-1">{lesson.vocabulary.length} total vocabulary items</div>
+                <div className="text-sm font-bold">Full</div>
+              </button>
+
+              <button
+                type="button"
+                id="btn-length-custom"
+                onClick={() => setQuizLength("custom")}
+                className={`p-4 rounded-xl border text-left transition-all cursor-pointer ${
+                  quizLength === "custom"
+                    ? "bg-amber-500/10 border-amber-500/40 text-amber-400 ring-2 ring-amber-500/10" 
+                    : "bg-white/5 border-white/5 hover:border-white/20 text-gray-400"
+                }`}
+              >
+                <div className="text-sm font-bold">Custom</div>
               </button>
             </div>
-          </div>
-
-          <div className="space-y-2 pt-2" id="quiz-tips">
-            <h4 className="text-xs font-bold text-gray-300">Quiz Guidance</h4>
-            <ul className="text-[11px] text-gray-500 space-y-1 ml-4 list-disc">
-              <li>Skipping redundant reading tests for clean Katakana/Latin layouts.</li>
-              <li>Incorrect choices are dynamically registered in your scorecard.</li>
-              <li>Practice at your own pace; no timers are enforced.</li>
-            </ul>
+            
+            {quizLength === "custom" && (
+              <div className="grid grid-cols-2 gap-2 pt-2 animate-fade-in" id="custom-test-types">
+                {['Vocabulary-Meaning', 'Vocabulary-Reading', 'Meaning-Vocabulary', 'Meaning-Reading', 'Reading-Vocabulary', 'Reading-Meaning'].map(type => (
+                  <button 
+                    type="button"
+                    key={type}
+                    onClick={() => toggleCustomType(type)}
+                    className={`text-[10px] p-2 rounded-lg border text-left ${customTypes.includes(type) ? 'bg-amber-500/10 border-amber-500/40 text-amber-500' : 'bg-white/5 border-white/5 text-gray-400'}`}
+                  >
+                    {type}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="flex items-center gap-2 pt-4" id="config-actions">
@@ -275,7 +309,7 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
         <button
           type="button"
           id="btn-quiz-quit"
-          onClick={onBack}
+          onClick={() => setIsConfiguring(true)}
           className="inline-flex items-center gap-2 text-gray-400 hover:text-white text-xs font-semibold cursor-pointer transition-colors"
         >
           <ArrowLeft className="w-4 h-4 text-amber-500" />
@@ -318,7 +352,7 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
                     {selectedOption === currentQuestion.correctAnswer ? "Correct match!" : "Incorrect answer"}
                   </span>
                   <p className="mt-1 text-gray-300">
-                    Vocabulary word <strong className="font-bold text-gray-100">{currentQuestion.vocab.v}</strong> translates to <strong className="font-bold text-gray-100">{currentQuestion.vocab.h !== "-" ? currentQuestion.vocab.h : (currentQuestion.vocab.r !== "-" ? currentQuestion.vocab.r : "Katakana")}</strong> meaning <strong className="font-bold text-gray-100">"{currentQuestion.vocab.m}"</strong>.
+                    Vocabulary word <strong className="font-bold text-gray-100">{currentQuestion.vocab.v}</strong> ({currentQuestion.vocab.r}) {currentQuestion.vocab.m}.
                   </p>
                 </div>
               </div>
