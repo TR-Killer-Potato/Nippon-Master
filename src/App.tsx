@@ -4,6 +4,7 @@ import Dashboard from "./components/Dashboard";
 import ReaderView from "./components/ReaderView";
 import QuizView from "./components/QuizView";
 import ScorecardView from "./components/ScorecardView";
+import FlashcardDeck from "./components/FlashcardDeck";
 import { ExpandedLesson, allLessons } from "./data/lessons";
 import { 
   ScorecardData, 
@@ -15,7 +16,7 @@ import {
 } from "./lib/firebase";
 
 export default function App() {
-  const [currentView, setCurrentView] = useState<"dashboard" | "reader" | "quiz" | "scorecard">("dashboard");
+  const [currentView, setCurrentView] = useState<"dashboard" | "reader" | "quiz" | "scorecard" | "study">("dashboard");
   const [selectedLesson, setSelectedLesson] = useState<ExpandedLesson | null>(null);
   const [scorecard, setScorecard] = useState<ScorecardData>(getLocalScorecard());
   const [isCloudSynced, setIsCloudSynced] = useState(false);
@@ -246,6 +247,15 @@ export default function App() {
               setSelectedLesson(null);
             }}
             onLogMistake={handleLogMistake}
+          />
+        )}
+
+        {currentView === "study" && (
+          <FlashcardDeck 
+            onBack={() => {
+              setCurrentView("dashboard");
+              setSelectedLesson(null);
+            }}
           />
         )}
 

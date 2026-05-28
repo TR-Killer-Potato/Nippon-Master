@@ -1,0 +1,139 @@
+{
+  "N5-22-17": {
+    "vocabulary": "速く",
+    "reading": "はやく",
+    "meaning": "Early/fast",
+    "components": [
+      {
+        "kanji": "速",
+        "radical": "⻌",
+        "rad_name": "road",
+        "meaning": "fast / quick",
+        "structure": {
+          "operator": "⿺",
+          "children": [
+            { "glyph": "辶", "name": "road", "strokeIndices": [7, 8, 9, 10] },
+            { "glyph": "束", "name": "bundle", "strokeIndices": [0, 1, 2, 3, 4, 5, 6] }
+          ]
+        },
+        "strokes": [
+          "M 35,22 L 65,22",
+          "M 50,14 L 50,45",
+          "M 32,32 L 68,32",
+          "M 35,32 L 35,45",
+          "M 65,32 L 65,45",
+          "M 38,45 L 62,45",
+          "M 50,45 L 50,55",
+          "M 20,62 Q 22,50 30,55",
+          "M 15,75 Q 22,65 35,74",
+          "M 10,90 Q 25,75 55,80",
+          "M 8,94 L 88,94"
+        ]
+      },
+      "-"
+    ],
+    "phonetic_anchors": ["Hammer", "Yacht", "Cushion"],
+    "context_sentence": {
+      "sentence_ja": "朝<b>速く</b>起きて、散歩をしました。",
+      "sentence_en": "I woke up early in the morning and took a walk."
+    }
+  },
+  "N5-1-1": {
+    "vocabulary": "私",
+    "reading": "わたし",
+    "meaning": "I / Me",
+    "components": [
+      {
+        "kanji": "私",
+        "radical": "禾",
+        "rad_name": "grain",
+        "meaning": "myself / private",
+        "structure": {
+          "operator": "⿰",
+          "children": [
+            { "glyph": "禾", "name": "grain", "strokeIndices": [0, 1, 2, 3, 4] },
+            { "glyph": "ム", "name": "private", "strokeIndices": [5, 6] }
+          ]
+        },
+        "strokes": [
+          "M 40,20 Q 30,28 15,35",
+          "M 15,36 L 45,36",
+          "M 30,36 L 30,85",
+          "M 30,52 L 15,68",
+          "M 30,52 L 44,70",
+          "M 70,25 Q 70,45 54,60",
+          "M 54,60 L 80,60"
+        ]
+      }
+    ],
+    "phonetic_anchors": ["Water", "Tower", "Shield"],
+    "context_sentence": {
+      "sentence_ja": "<b>私</b>は毎日日本語を勉強します。",
+      "sentence_en": "I study Japanese every day."
+    }
+  },
+  "N5-1-2": {
+    "vocabulary": "あなた",
+    "reading": "-",
+    "meaning": "You",
+    "components": "-",
+    "phonetic_anchors": [],
+    "context_sentence": {
+      "sentence_ja": "<b>あなた</b>の趣味は何ですか。",
+      "sentence_en": "What is your hobby?"
+    }
+  },
+  "N5-1-3": {
+    "vocabulary": "学生",
+    "reading": "がくせい",
+    "meaning": "Student",
+    "components": [
+      {
+        "kanji": "学",
+        "radical": "子",
+        "rad_name": "child",
+        "meaning": "study / learn",
+        "structure": {
+          "operator": "⿱",
+          "children": [
+            { "glyph": "ツ", "name": "crown/points", "strokeIndices": [0, 1, 2] },
+            { "glyph": "子", "name": "child/radical", "strokeIndices": [3, 4, 5] }
+          ]
+        },
+        "strokes": [
+          "M 30,20 L 32,32",
+          "M 48,18 L 50,30",
+          "M 66,15 L 58,27",
+          "M 25,44 Q 50,38 75,44",
+          "M 50,44 L 50,75",
+          "M 28,60 L 72,60"
+        ]
+      },
+      {
+        "kanji": "生",
+        "radical": "生",
+        "rad_name": "life",
+        "meaning": "life / birth",
+        "structure": {
+          "operator": "⿳",
+          "children": [
+            { "glyph": "𠂉", "name": "diagonal", "strokeIndices": [0, 1] },
+            { "glyph": "土", "name": "earth", "strokeIndices": [2, 3, 4] }
+          ]
+        },
+        "strokes": [
+          "M 55,15 Q 40,24 25,36",
+          "M 25,37 L 75,37",
+          "M 50,37 L 50,82",
+          "M 30,58 L 70,58",
+          "M 15,82 L 85,82"
+        ]
+      }
+    ],
+    "phonetic_anchors": ["Glass", "Sword", "Sail"],
+    "context_sentence": {
+      "sentence_ja": "彼は東京大学の<b>学生</b>です。",
+      "sentence_en": "He is a student of the University of Tokyo."
+    }
+  }
+}
