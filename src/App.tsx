@@ -250,8 +250,9 @@ export default function App() {
           />
         )}
 
-        {currentView === "study" && (
+        {currentView === "study" && selectedLesson && (
           <FlashcardDeck 
+            lesson={selectedLesson}
             onBack={() => {
               setCurrentView("dashboard");
               setSelectedLesson(null);

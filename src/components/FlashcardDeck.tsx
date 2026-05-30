@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowLeft, ChevronLeft, ChevronRight, HelpCircle, Loader2, RefreshCw } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { ExpandedLesson } from "../data/lessons";
 
 interface StructureNode {
   glyph?: string;
@@ -36,6 +37,7 @@ interface VocabRecord {
 }
 
 interface FlashcardDeckProps {
+  lesson: ExpandedLesson;
   onBack: () => void;
 }
 
@@ -179,7 +181,7 @@ const FALLBACK_VOCAB_DATA: Record<string, Omit<VocabRecord, "id">> = {
   }
 };
 
-export default function FlashcardDeck({ onBack }: FlashcardDeckProps) {
+export default function FlashcardDeck({ lesson, onBack }: FlashcardDeckProps) {
   const [vocabList, setVocabList] = useState<VocabRecord[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -194,25 +196,97 @@ export default function FlashcardDeck({ onBack }: FlashcardDeckProps) {
     let active = true;
     async function loadSchema() {
       try {
-        const response = await fetch("/vocabulary_elements.txt");
+        const response = await fetch("/flashcards_data.txt");
         if (!response.ok) {
           throw new Error(`File loading status error: ${response.status}`);
         }
         const data = await response.json();
-        const records = Object.entries(data).map(([id, val]: [string, any]) => ({
-          id,
-          ...val,
-        }));
+        
+        // Map vocabulary dataset keying by vocabulary word
+        const datasetMap: Record<string, any> = {};
+        Object.entries(data).forEach(([id, val]: [string, any]) => {
+          if (val && val.vocabulary) {
+            datasetMap[val.vocabulary] = { id, ...val };
+          }
+        });
+
+        // Map all vocabulary words from the chosen Lesson
+        const records: VocabRecord[] = lesson.vocabulary.map((vocab, idx) => {
+          const matchedEntry = datasetMap[vocab.v];
+          if (matchedEntry) {
+            return {
+              id: matchedEntry.id,
+              vocabulary: vocab.v,
+              reading: vocab.r === "-" ? matchedEntry.reading : vocab.r,
+              meaning: vocab.m || matchedEntry.meaning,
+              components: matchedEntry.components,
+              phonetic_anchors: matchedEntry.phonetic_anchors || [],
+              context_sentence: matchedEntry.context_sentence || {
+                sentence_ja: `<b>${vocab.v}</b>`,
+                sentence_en: vocab.m
+              }
+            };
+          } else {
+            return {
+              id: `${lesson.id.replace(/\s+/g, "-")}-${idx + 1}`,
+              vocabulary: vocab.v,
+              reading: vocab.r,
+              meaning: vocab.m,
+              components: "-",
+              phonetic_anchors: [],
+              context_sentence: {
+                sentence_ja: `<b>${vocab.v}</b>`,
+                sentence_en: vocab.m
+              }
+            };
+          }
+        });
+
         if (active) {
           setVocabList(records);
           setLoading(false);
         }
       } catch (err) {
         console.warn("Using premium fallback mock schema due to fetch issue:", err);
-        const records = Object.entries(FALLBACK_VOCAB_DATA).map(([id, val]: [string, any]) => ({
-          id,
-          ...val,
-        }));
+        
+        const datasetMap: Record<string, any> = {};
+        Object.entries(FALLBACK_VOCAB_DATA).forEach(([id, val]: [string, any]) => {
+          if (val && val.vocabulary) {
+            datasetMap[val.vocabulary] = { id, ...val };
+          }
+        });
+
+        const records: VocabRecord[] = lesson.vocabulary.map((vocab, idx) => {
+          const matchedEntry = datasetMap[vocab.v];
+          if (matchedEntry) {
+            return {
+              id: matchedEntry.id,
+              vocabulary: vocab.v,
+              reading: vocab.r === "-" ? matchedEntry.reading : vocab.r,
+              meaning: vocab.m || matchedEntry.meaning,
+              components: matchedEntry.components,
+              phonetic_anchors: matchedEntry.phonetic_anchors || [],
+              context_sentence: matchedEntry.context_sentence || {
+                sentence_ja: `<b>${vocab.v}</b>`,
+                sentence_en: vocab.m
+              }
+            };
+          } else {
+            return {
+              id: `${lesson.id.replace(/\s+/g, "-")}-${idx + 1}`,
+              vocabulary: vocab.v,
+              reading: vocab.r,
+              meaning: vocab.m,
+              components: "-",
+              phonetic_anchors: [],
+              context_sentence: {
+                sentence_ja: `<b>${vocab.v}</b>`,
+                sentence_en: vocab.m
+              }
+            };
+          }
+        });
+
         if (active) {
           setVocabList(records);
           setLoading(false);
@@ -223,7 +297,7 @@ export default function FlashcardDeck({ onBack }: FlashcardDeckProps) {
     return () => {
       active = false;
     };
-  }, []);
+  }, [lesson]);
 
   // Automatically reset card flip state and selected kanji drilldown whenever index shifts
   useEffect(() => {
