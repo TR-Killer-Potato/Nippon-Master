@@ -1,12 +1,13 @@
 import { initializeApp, getApp, getApps, FirebaseApp } from "firebase/app";
 import { getFirestore, Firestore, doc, setDoc, getDoc } from "firebase/firestore";
-import { getAuth, Auth, signInAnonymously, onAuthStateChanged, User } from "firebase/auth";
+import { getAuth, Auth, signInAnonymously, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, User } from "firebase/auth";
 
 export interface ScorecardData {
   scores: Record<string, Record<string, Record<string, number>>>;
 }
 
 const APP_ID = "44fe43ff-804a-4758-b75a-7728048ab5b0";
+const provider = new GoogleAuthProvider();
 
 let firebaseApp: FirebaseApp | null = null;
 let firestoreDb: Firestore | null = null;
@@ -47,6 +48,12 @@ export async function tryInitFirebase(): Promise<{ auth: Auth; db: Firestore } |
   }
 }
 
+export async function signInWithGoogle() {
+  const connection = await tryInitFirebase();
+  if (!connection) return null;
+  return signInWithPopup(connection.auth, provider);
+}
+
 // Global score store interface
 export function getLocalScorecard(): ScorecardData {
   const local = localStorage.getItem("japanese_learning_scorecard");
@@ -72,11 +79,7 @@ export async function syncScorecardToCloud(data: ScorecardData): Promise<boolean
   const { db, auth } = connection;
 
   try {
-    let user = auth.currentUser;
-    if (!user) {
-      const credential = await signInAnonymously(auth);
-      user = credential.user;
-    }
+    const user = auth.currentUser;
     
     if (user) {
       const docRef = doc(db, "artifacts", APP_ID, "users", user.uid, "scorecard", "data");
@@ -84,6 +87,7 @@ export async function syncScorecardToCloud(data: ScorecardData): Promise<boolean
       console.log("Scorecard successfully synchronized with Firebase Cloud Storage.");
       return true;
     }
+    // Return false if not authenticated, remaining in offline-first mode
     return false;
   } catch (error: any) {
     console.error("Firestore synchronization failed, remaining offline-first. Details:", error.message);
@@ -99,11 +103,7 @@ export async function fetchScorecardFromCloud(): Promise<ScorecardData | null> {
   const { db, auth } = connection;
 
   try {
-    let user = auth.currentUser;
-    if (!user) {
-      const credential = await signInAnonymously(auth);
-      user = credential.user;
-    }
+    const user = auth.currentUser;
 
     if (user) {
       const docRef = doc(db, "artifacts", APP_ID, "users", user.uid, "scorecard", "data");
@@ -115,6 +115,7 @@ export async function fetchScorecardFromCloud(): Promise<ScorecardData | null> {
         }
       }
     }
+    // Return null if not authenticated, letting the app continue offline-first without an error
     return null;
   } catch (error: any) {
     console.error("Failed to fetch cloud scorecard:", error.message);

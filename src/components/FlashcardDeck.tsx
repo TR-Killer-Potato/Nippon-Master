@@ -104,8 +104,8 @@ const FALLBACK_VOCAB_DATA: Record<string, Omit<VocabRecord, "id">> = {
           "M 30,36 L 30,85",
           "M 30,52 L 15,68",
           "M 30,52 L 44,70",
-          "M 70,25 Q 70,45 54,60",
-          "M 54,60 L 80,60"
+          "M 70,25 Q 70,45 54,60 L 80,60",
+          "M 72,45 Q 75,53 77,55"
         ]
       }
     ],
@@ -173,10 +173,86 @@ const FALLBACK_VOCAB_DATA: Record<string, Omit<VocabRecord, "id">> = {
         ]
       }
     ],
-    "phonetic_anchors": ["Glass", "Sword", "Sail"],
+    "phonetic_anchors": ["Glass", "Cushion", "Sword", "Sail"],
     "context_sentence": {
       "sentence_ja": "彼は東京大学の<b>学生</b>です。",
       "sentence_en": "He is a student of the University of Tokyo."
+    }
+  },
+  "N5-1-4": {
+    "vocabulary": "本",
+    "reading": "ほん",
+    "meaning": "Book",
+    "components": [
+      {
+        "kanji": "本",
+        "radical": "木",
+        "rad_name": "tree",
+        "meaning": "book / source",
+        "structure": {
+          "operator": "⿱",
+          "children": [
+            { "glyph": "木", "name": "tree", "strokeIndices": [0, 1, 2, 3] },
+            { "glyph": "一", "name": "one", "strokeIndices": [4] }
+          ]
+        },
+        "strokes": [
+          "M 20,30 L 80,30",
+          "M 50,15 L 50,85",
+          "M 50,30 L 25,65",
+          "M 50,30 L 75,65",
+          "M 38,70 L 62,70"
+        ]
+      }
+    ],
+    "phonetic_anchors": ["Horn", "Net"],
+    "context_sentence": {
+      "sentence_ja": "私は毎日<b>本</b>を読みます。",
+      "sentence_en": "I read books every day."
+    }
+  },
+  "N5-1-5": {
+    "vocabulary": "猫",
+    "reading": "ねこ",
+    "meaning": "Cat",
+    "components": [
+      {
+        "kanji": "猫",
+        "radical": "⺨",
+        "rad_name": "beast",
+        "meaning": "cat",
+        "structure": {
+          "operator": "⿰",
+          "children": [
+            { "glyph": "⺨", "name": "beast", "strokeIndices": [0, 1, 2] },
+            {
+              "operator": "⿱",
+              "children": [
+                { "glyph": "艹", "name": "grass", "strokeIndices": [3, 4, 5] },
+                { "glyph": "田", "name": "rice field", "strokeIndices": [6, 7, 8, 9, 10] }
+              ]
+            }
+          ]
+        },
+        "strokes": [
+          "M 38,18 Q 30,32 20,40",
+          "M 24,30 Q 28,65 20,85",
+          "M 15,60 Q 25,50 35,45",
+          "M 45,28 L 81,28",
+          "M 53,18 L 53,34",
+          "M 72,18 L 72,34",
+          "M 48,46 L 48,84",
+          "M 48,46 L 80,46 L 80,84",
+          "M 48,64 L 80,64",
+          "M 64,46 L 64,84",
+          "M 48,84 L 80,84"
+        ]
+      }
+    ],
+    "phonetic_anchors": ["Nest", "Coin"],
+    "context_sentence": {
+      "sentence_ja": "その<b>猫</b>はとても可愛いです。",
+      "sentence_en": "That cat is very cute."
     }
   }
 };
@@ -202,31 +278,48 @@ export default function FlashcardDeck({ lesson, onBack }: FlashcardDeckProps) {
         }
         const data = await response.json();
         
-        // Map vocabulary dataset keying by vocabulary word
-        const datasetMap: Record<string, any> = {};
-        Object.entries(data).forEach(([id, val]: [string, any]) => {
-          if (val && val.vocabulary) {
-            datasetMap[val.vocabulary] = { id, ...val };
+        const lessonNumStr = lesson.id.match(/\d+/)?.[0] || "1";
+        const lessonNum = parseInt(lessonNumStr, 10);
+        
+        // 1. Try to find keys inside flashcards_data.txt matching: `N5-[lessonNum]-[index]`
+        interface ExtractedRecord extends VocabRecord {
+          sortIndex: number;
+        }
+        const records: ExtractedRecord[] = [];
+        
+        Object.entries(data).forEach(([key, val]: [string, any]) => {
+          const parts = key.split("-");
+          if (parts.length === 3 && parts[0] === "N5" && parseInt(parts[1], 10) === lessonNum) {
+            const itemIndex = parseInt(parts[2], 10);
+            records.push({
+              id: key,
+              vocabulary: val.vocabulary,
+              reading: val.reading,
+              meaning: val.meaning,
+              components: val.components,
+              phonetic_anchors: val.phonetic_anchors || [],
+              context_sentence: val.context_sentence || {
+                sentence_ja: `<b>${val.vocabulary}</b>`,
+                sentence_en: val.meaning
+              },
+              sortIndex: itemIndex
+            });
           }
         });
 
-        // Map all vocabulary words from the chosen Lesson
-        const records: VocabRecord[] = lesson.vocabulary.map((vocab, idx) => {
-          const matchedEntry = datasetMap[vocab.v];
-          if (matchedEntry) {
-            return {
-              id: matchedEntry.id,
-              vocabulary: vocab.v,
-              reading: vocab.r === "-" ? matchedEntry.reading : vocab.r,
-              meaning: vocab.m || matchedEntry.meaning,
-              components: matchedEntry.components,
-              phonetic_anchors: matchedEntry.phonetic_anchors || [],
-              context_sentence: matchedEntry.context_sentence || {
-                sentence_ja: `<b>${vocab.v}</b>`,
-                sentence_en: vocab.m
-              }
-            };
-          } else {
+        // If we found matched keys for this lesson in the file, use them strictly!
+        // This satisfies "do not merge anything, flashcards_data.txt should contain every data point required"
+        if (records.length > 0) {
+          records.sort((a, b) => a.sortIndex - b.sortIndex);
+          if (active) {
+            setVocabList(records);
+            setLoading(false);
+          }
+        } else {
+          // If the file is incomplete and doesn't contain entries for this lesson, 
+          // gracefully fallback to the lesson's 50 words as simple phonetic/text components
+          // so the user can still navigate other lessons.
+          const lessonRecords: VocabRecord[] = lesson.vocabulary.map((vocab, idx) => {
             return {
               id: `${lesson.id.replace(/\s+/g, "-")}-${idx + 1}`,
               vocabulary: vocab.v,
@@ -239,39 +332,47 @@ export default function FlashcardDeck({ lesson, onBack }: FlashcardDeckProps) {
                 sentence_en: vocab.m
               }
             };
+          });
+          if (active) {
+            setVocabList(lessonRecords);
+            setLoading(false);
           }
-        });
-
-        if (active) {
-          setVocabList(records);
-          setLoading(false);
         }
       } catch (err) {
         console.warn("Using premium fallback mock schema due to fetch issue:", err);
         
-        const datasetMap: Record<string, any> = {};
-        Object.entries(FALLBACK_VOCAB_DATA).forEach(([id, val]: [string, any]) => {
-          if (val && val.vocabulary) {
-            datasetMap[val.vocabulary] = { id, ...val };
+        const lessonNumStr = lesson.id.match(/\d+/)?.[0] || "1";
+        const lessonNum = parseInt(lessonNumStr, 10);
+        
+        const records: any[] = [];
+        Object.entries(FALLBACK_VOCAB_DATA).forEach(([key, val]: [string, any]) => {
+          const parts = key.split("-");
+          if (parts.length === 3 && parts[0] === "N5" && parseInt(parts[1], 10) === lessonNum) {
+            const itemIndex = parseInt(parts[2], 10);
+            records.push({
+              id: key,
+              vocabulary: val.vocabulary,
+              reading: val.reading,
+              meaning: val.meaning,
+              components: val.components,
+              phonetic_anchors: val.phonetic_anchors || [],
+              context_sentence: val.context_sentence || {
+                sentence_ja: `<b>${val.vocabulary}</b>`,
+                sentence_en: val.meaning
+              },
+              sortIndex: itemIndex
+            });
           }
         });
 
-        const records: VocabRecord[] = lesson.vocabulary.map((vocab, idx) => {
-          const matchedEntry = datasetMap[vocab.v];
-          if (matchedEntry) {
-            return {
-              id: matchedEntry.id,
-              vocabulary: vocab.v,
-              reading: vocab.r === "-" ? matchedEntry.reading : vocab.r,
-              meaning: vocab.m || matchedEntry.meaning,
-              components: matchedEntry.components,
-              phonetic_anchors: matchedEntry.phonetic_anchors || [],
-              context_sentence: matchedEntry.context_sentence || {
-                sentence_ja: `<b>${vocab.v}</b>`,
-                sentence_en: vocab.m
-              }
-            };
-          } else {
+        if (records.length > 0) {
+          records.sort((a, b) => a.sortIndex - b.sortIndex);
+          if (active) {
+            setVocabList(records);
+            setLoading(false);
+          }
+        } else {
+          const lessonRecords: VocabRecord[] = lesson.vocabulary.map((vocab, idx) => {
             return {
               id: `${lesson.id.replace(/\s+/g, "-")}-${idx + 1}`,
               vocabulary: vocab.v,
@@ -284,12 +385,11 @@ export default function FlashcardDeck({ lesson, onBack }: FlashcardDeckProps) {
                 sentence_en: vocab.m
               }
             };
+          });
+          if (active) {
+            setVocabList(lessonRecords);
+            setLoading(false);
           }
-        });
-
-        if (active) {
-          setVocabList(records);
-          setLoading(false);
         }
       }
     }
@@ -493,7 +593,7 @@ export default function FlashcardDeck({ lesson, onBack }: FlashcardDeckProps) {
                 {/* COMPONENT BLUEPRINT: Raw priming bar of parts near bottom */}
                 <div className="text-center pt-6 border-t border-gray-300/40 dark:border-white/5" id="blueprint-priming-footer">
                   <div className="text-[10px] font-mono text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-2.5">
-                    Component Blueprint Blueprint
+                    Component Blueprint
                   </div>
                   <div className="flex items-center justify-center gap-2 flex-wrap">
                     {isComponentsArray ? (

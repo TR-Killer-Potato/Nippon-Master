@@ -1,15 +1,18 @@
 import React, { useState } from "react";
-import { BookOpen, Award, CheckCircle2, AlertTriangle, Play, Flame, Search, Sparkles } from "lucide-react";
+import { BookOpen, Award, CheckCircle2, AlertTriangle, Play, Flame, Search, Sparkles, User as UserIcon } from "lucide-react";
 import { ExpandedLesson, allLessons } from "../data/lessons";
 import { ScorecardData } from "../lib/firebase";
+import { User } from "firebase/auth";
 
 interface DashboardProps {
   scorecard: ScorecardData;
+  user: User | null;
+  onSignIn: () => void;
   onSelectLesson: (lesson: ExpandedLesson, mode: "reader" | "quiz" | "study") => void;
   onNavigateToScorecard: () => void;
 }
 
-export default function Dashboard({ scorecard, onSelectLesson, onNavigateToScorecard }: DashboardProps) {
+export default function Dashboard({ scorecard, user, onSignIn, onSelectLesson, onNavigateToScorecard }: DashboardProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<"all" | "completed" | "progress">("all");
 
@@ -72,9 +75,20 @@ export default function Dashboard({ scorecard, onSelectLesson, onNavigateToScore
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-stone-950/40 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none" />
         
         <div className="relative z-10 max-w-2xl" id="hero-content">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 backdrop-blur-md rounded-full text-xs font-medium tracking-wide text-amber-400 mb-4 border border-amber-500/20">
-            <Sparkles className="w-3.5 h-3.5" />
-            Learn Japanese Vocab & Reading
+          <div className="flex items-center justify-between">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 backdrop-blur-md rounded-full text-xs font-medium tracking-wide text-amber-400 mb-4 border border-amber-500/20">
+              <Sparkles className="w-3.5 h-3.5" />
+              Learn Japanese Vocab & Reading
+            </div>
+            {!user && (
+              <button
+                onClick={onSignIn}
+                className="flex items-center gap-2 px-3 py-1 bg-white/5 hover:bg-white/10 rounded-full text-xs font-medium text-gray-300 mb-4 border border-white/10 transition-all cursor-pointer"
+              >
+                <UserIcon className="w-3.5 h-3.5" />
+                Sign in to sync
+              </button>
+            )}
           </div>
           <h1 className="text-3xl md:text-5xl font-extralight tracking-tight mb-4 font-sans leading-tight">
             Nippon <span className="text-amber-500 font-semibold">Master</span>

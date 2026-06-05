@@ -61,8 +61,8 @@
           "M 30,36 L 30,85",
           "M 30,52 L 15,68",
           "M 30,52 L 44,70",
-          "M 70,25 Q 70,45 54,60",
-          "M 54,60 L 80,60"
+          "M 70,25 Q 70,45 54,60 L 80,60",
+          "M 72,45 Q 75,53 77,55"
         ]
       }
     ],
@@ -130,10 +130,86 @@
         ]
       }
     ],
-    "phonetic_anchors": ["Glass", "Sword", "Sail"],
+    "phonetic_anchors": ["Glass", "Cushion", "Sword", "Sail"],
     "context_sentence": {
       "sentence_ja": "彼は東京大学の<b>学生</b>です。",
       "sentence_en": "He is a student of the University of Tokyo."
+    }
+  },
+  "N5-1-4": {
+    "vocabulary": "本",
+    "reading": "ほん",
+    "meaning": "Book",
+    "components": [
+      {
+        "kanji": "本",
+        "radical": "木",
+        "rad_name": "tree",
+        "meaning": "book / source",
+        "structure": {
+          "operator": "⿱",
+          "children": [
+            { "glyph": "木", "name": "tree", "strokeIndices": [0, 1, 2, 3] },
+            { "glyph": "一", "name": "one", "strokeIndices": [4] }
+          ]
+        },
+        "strokes": [
+          "M 20,30 L 80,30",
+          "M 50,15 L 50,85",
+          "M 50,30 L 25,65",
+          "M 50,30 L 75,65",
+          "M 38,70 L 62,70"
+        ]
+      }
+    ],
+    "phonetic_anchors": ["Horn", "Net"],
+    "context_sentence": {
+      "sentence_ja": "私は毎日<b>本</b>を読みます。",
+      "sentence_en": "I read books every day."
+    }
+  },
+  "N5-1-5": {
+    "vocabulary": "猫",
+    "reading": "ねこ",
+    "meaning": "Cat",
+    "components": [
+      {
+        "kanji": "猫",
+        "radical": "⺨",
+        "rad_name": "beast",
+        "meaning": "cat",
+        "structure": {
+          "operator": "⿰",
+          "children": [
+            { "glyph": "⺨", "name": "beast", "strokeIndices": [0, 1, 2] },
+            {
+              "operator": "⿱",
+              "children": [
+                { "glyph": "艹", "name": "grass", "strokeIndices": [3, 4, 5] },
+                { "glyph": "田", "name": "rice field", "strokeIndices": [6, 7, 8, 9, 10] }
+              ]
+            }
+          ]
+        },
+        "strokes": [
+          "M 38,18 Q 30,32 20,40",
+          "M 24,30 Q 28,65 20,85",
+          "M 15,60 Q 25,50 35,45",
+          "M 45,28 L 81,28",
+          "M 53,18 L 53,34",
+          "M 72,18 L 72,34",
+          "M 48,46 L 48,84",
+          "M 48,46 L 80,46 L 80,84",
+          "M 48,64 L 80,64",
+          "M 64,46 L 64,84",
+          "M 48,84 L 80,84"
+        ]
+      }
+    ],
+    "phonetic_anchors": ["Nest", "Coin"],
+    "context_sentence": {
+      "sentence_ja": "その<b>猫</b>はとても可愛いです。",
+      "sentence_en": "That cat is very cute."
     }
   }
 }

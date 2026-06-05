@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Award, BookOpen, CheckSquare, Cloud, CloudOff, Flame, HelpCircle, Inbox, Milestone, RotateCcw, Sparkles } from "lucide-react";
+import { Award, BookOpen, CheckSquare, Cloud, CloudOff, Flame, HelpCircle, Inbox, Milestone, RotateCcw, Sparkles, User as UserIcon } from "lucide-react";
 import Dashboard from "./components/Dashboard";
 import ReaderView from "./components/ReaderView";
 import QuizView from "./components/QuizView";
@@ -12,8 +12,10 @@ import {
   saveLocalScorecard, 
   fetchScorecardFromCloud, 
   syncScorecardToCloud,
-  tryInitFirebase
+  tryInitFirebase,
+  signInWithGoogle
 } from "./lib/firebase";
+import { User, onAuthStateChanged } from "firebase/auth";
 
 export default function App() {
   const [currentView, setCurrentView] = useState<"dashboard" | "reader" | "quiz" | "scorecard" | "study">("dashboard");
@@ -21,6 +23,7 @@ export default function App() {
   const [scorecard, setScorecard] = useState<ScorecardData>(getLocalScorecard());
   const [isCloudSynced, setIsCloudSynced] = useState(false);
   const [isSyncing, setIsSyncing] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
 
   // Synchronize with Firestore cloud state asynchronously on startup
   useEffect(() => {
@@ -85,6 +88,21 @@ export default function App() {
     return () => {
       active = false;
     };
+  }, []);
+
+  // Set up Firebase auth observer
+  useEffect(() => {
+    let unsubscribe: () => void;
+    async function setupAuth() {
+      const connection = await tryInitFirebase();
+      if (connection) {
+        unsubscribe = onAuthStateChanged(connection.auth, (user) => {
+          setUser(user);
+        });
+      }
+    }
+    setupAuth();
+    return () => unsubscribe?.();
   }, []);
 
   // Update error count in scorecard
@@ -220,6 +238,8 @@ export default function App() {
         {currentView === "dashboard" && (
           <Dashboard 
             scorecard={scorecard}
+            user={user}
+            onSignIn={signInWithGoogle}
             onSelectLesson={(lesson, mode) => {
               setSelectedLesson(lesson);
               setCurrentView(mode);
