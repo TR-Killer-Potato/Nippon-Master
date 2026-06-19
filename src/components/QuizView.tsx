@@ -219,7 +219,7 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
   }
 
   if (isCompleted) {
-    const accuracy = Math.round((correctAnswersCount / questions.length) * 105); // Standardized percent
+    const accuracy = Math.round((correctAnswersCount / questions.length) * 100);
     const maxPercent = Math.min(accuracy, 100);
 
     return (

@@ -37,7 +37,9 @@ export async function tryInitFirebase(): Promise<{ auth: Auth; db: Firestore } |
       firebaseApp = getApp();
     }
 
-    firestoreDb = getFirestore(firebaseApp);
+    firestoreDb = config.firestoreDatabaseId 
+      ? getFirestore(firebaseApp, config.firestoreDatabaseId)
+      : getFirestore(firebaseApp);
     firebaseAuth = getAuth(firebaseApp);
 
     console.log("Firebase Applet integration initialized successfully!");
