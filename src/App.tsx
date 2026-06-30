@@ -324,6 +324,7 @@ export default function App() {
             }}
             onLogMistake={handleLogMistake}
             onLogCorrect={handleLogCorrect}
+            scorecard={scorecard}
           />
         )}
 

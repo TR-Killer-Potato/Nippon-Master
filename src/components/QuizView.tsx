@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { AlertCircle, ArrowLeft, ArrowRight, CheckCircle, RefreshCcw, Star, Trophy, XCircle } from "lucide-react";
 import { ExpandedLesson, ExpandedVocab } from "../data/lessons";
+import { ScorecardData } from "../lib/firebase";
 
 interface QuizViewProps {
   lesson: ExpandedLesson;
   onBack: () => void;
   onLogMistake: (lessonId: string, word: string, testMode: string) => void;
   onLogCorrect?: (lessonId: string, word: string, testMode: string) => void;
+  scorecard?: ScorecardData;
 }
 
 interface Question {
@@ -17,10 +19,41 @@ interface Question {
   options: string[];
 }
 
-export default function QuizView({ lesson, onBack, onLogMistake, onLogCorrect }: QuizViewProps) {
+export default function QuizView({ lesson, onBack, onLogMistake, onLogCorrect, scorecard }: QuizViewProps) {
   const [quizLength, setQuizLength] = useState<10 | "all" | "custom">("all");
   const [customTypes, setCustomTypes] = useState<string[]>(['Vocabulary-Meaning']);
   const [isConfiguring, setIsConfiguring] = useState(true);
+  
+  // Calculate how many ledger matching terms we have for the current customTypes selection
+  const getLedgerMatchingCount = () => {
+    if (!scorecard) return 0;
+
+    const activeModes = new Set<string>();
+    customTypes.forEach(type => {
+      if (type === "Vocabulary-Meaning" || type === "Meaning-Vocabulary") {
+        activeModes.add("Vocab-Meaning");
+      } else if (type === "Vocabulary-Reading" || type === "Reading-Vocabulary") {
+        activeModes.add("Vocab-Reading");
+      } else if (type === "Meaning-Reading" || type === "Reading-Meaning") {
+        activeModes.add("Vocab-Meaning");
+        activeModes.add("Vocab-Reading");
+      }
+    });
+
+    let count = 0;
+    lesson.vocabulary.forEach(item => {
+      const hasMatchingError = Object.entries(scorecard.scores).some(([lessonId, vocabMap]) => {
+        const modes = vocabMap[item.v];
+        if (!modes) return false;
+        return Object.entries(modes).some(([mode, count]) => {
+          return activeModes.has(mode) && count > 0;
+        });
+      });
+      if (hasMatchingError) count++;
+    });
+
+    return count;
+  };
   
   const toggleCustomType = (type: string) => {
     setCustomTypes(prev => prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type]);
@@ -40,7 +73,34 @@ export default function QuizView({ lesson, onBack, onLogMistake, onLogCorrect }:
     const shuffledVocab = [...lesson.vocabulary].sort(() => Math.random() - 0.5);
     
     // 2. Splices based on requested quiz length
-    const targetedList = quizLength === 10 ? shuffledVocab.slice(0, 10) : shuffledVocab;
+    let targetedList = shuffledVocab;
+    if (lesson.id === "Scorecard Review" && quizLength === "custom" && scorecard) {
+      const activeModes = new Set<string>();
+      customTypes.forEach(type => {
+        if (type === "Vocabulary-Meaning" || type === "Meaning-Vocabulary") {
+          activeModes.add("Vocab-Meaning");
+        } else if (type === "Vocabulary-Reading" || type === "Reading-Vocabulary") {
+          activeModes.add("Vocab-Reading");
+        } else if (type === "Meaning-Reading" || type === "Reading-Meaning") {
+          activeModes.add("Vocab-Meaning");
+          activeModes.add("Vocab-Reading");
+        }
+      });
+
+      targetedList = shuffledVocab.filter(item => {
+        return Object.entries(scorecard.scores).some(([lessonId, vocabMap]) => {
+          const modes = vocabMap[item.v];
+          if (!modes) return false;
+          return Object.entries(modes).some(([mode, count]) => {
+            return activeModes.has(mode) && count > 0;
+          });
+        });
+      });
+    }
+
+    if (quizLength === 10) {
+      targetedList = targetedList.slice(0, 10);
+    }
 
     const builtQuestions: Question[] = targetedList.map((item) => {
       let testType: string;
@@ -197,6 +257,24 @@ export default function QuizView({ lesson, onBack, onLogMistake, onLogCorrect }:
                 ))}
               </div>
             )}
+
+            {quizLength === "custom" && lesson.id === "Scorecard Review" && (
+              <div className="text-xs text-amber-500/80 mt-2 font-medium" id="custom-ledger-matching-feedback">
+                Matching ledger entries to review: <strong className="text-amber-500 font-bold">{getLedgerMatchingCount()}</strong>
+              </div>
+            )}
+
+            {quizLength === "custom" && lesson.id === "Scorecard Review" && getLedgerMatchingCount() === 0 && (
+              <div className="text-xs text-red-400 bg-red-500/10 border border-red-500/20 rounded-lg p-2.5 mt-2" id="custom-ledger-matching-warning">
+                No ledger mistakes found matching these custom types. Please select types that have errors in your scorecard.
+              </div>
+            )}
+
+            {quizLength === "custom" && customTypes.length === 0 && (
+              <div className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 rounded-lg p-2.5 mt-2" id="custom-no-types-warning">
+                Please select at least one question type.
+              </div>
+            )}
           </div>
 
           <div className="flex items-center gap-2 pt-4" id="config-actions">
@@ -212,7 +290,8 @@ export default function QuizView({ lesson, onBack, onLogMistake, onLogCorrect }:
               type="button"
               id="btn-config-start"
               onClick={startQuiz}
-              className="flex-1 py-3 bg-amber-500 hover:bg-amber-600 text-black font-extrabold hover:text-black rounded-xl text-xs transition-all shadow-md shadow-amber-500/5 cursor-pointer"
+              disabled={(quizLength === "custom" && customTypes.length === 0) || (lesson.id === "Scorecard Review" && quizLength === "custom" && getLedgerMatchingCount() === 0)}
+              className={`flex-1 py-3 bg-amber-500 hover:bg-amber-600 text-black font-extrabold hover:text-black rounded-xl text-xs transition-all shadow-md shadow-amber-500/5 cursor-pointer ${(quizLength === "custom" && customTypes.length === 0) || (lesson.id === "Scorecard Review" && quizLength === "custom" && getLedgerMatchingCount() === 0) ? "opacity-50 cursor-not-allowed bg-gray-600 hover:bg-gray-600" : ""}`}
             >
               Start Quiz
             </button>
