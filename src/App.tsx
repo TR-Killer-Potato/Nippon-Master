@@ -105,26 +105,82 @@ export default function App() {
     return () => unsubscribe?.();
   }, []);
 
+  // Helper to find original lesson ID of a vocabulary word
+  const findOriginalLessonId = (word: string): string => {
+    const found = allLessons.find(lesson => 
+      lesson.vocabulary.some(vocab => vocab.v === word)
+    );
+    return found ? found.id : "";
+  };
+
   // Update error count in scorecard
   const handleLogMistake = (lessonId: string, word: string, testMode: string) => {
+    const targetLessonId = lessonId === "Scorecard Review" ? findOriginalLessonId(word) : lessonId;
+    if (!targetLessonId) return;
+
     setScorecard((prev) => {
       // Deep clone scores to trigger clean state update rerenders
       const updatedScores = JSON.parse(JSON.stringify(prev.scores));
       
-      if (!updatedScores[lessonId]) {
-        updatedScores[lessonId] = {};
+      if (!updatedScores[targetLessonId]) {
+        updatedScores[targetLessonId] = {};
       }
-      if (!updatedScores[lessonId][word]) {
-        updatedScores[lessonId][word] = {};
+      if (!updatedScores[targetLessonId][word]) {
+        updatedScores[targetLessonId][word] = {};
       }
       
-      const prevVal = updatedScores[lessonId][word][testMode] || 0;
-      updatedScores[lessonId][word][testMode] = prevVal + 1;
+      const prevVal = updatedScores[targetLessonId][word][testMode] || 0;
+      updatedScores[targetLessonId][word][testMode] = prevVal + 1;
 
       const updated: ScorecardData = { scores: updatedScores };
       saveLocalScorecard(updated);
       
       // Fire-and-forget background sync to Cloud Firestore
+      syncScorecardToCloud(updated).then((success) => {
+        if (success) setIsCloudSynced(true);
+      });
+
+      return updated;
+    });
+  };
+
+  // Prune/decrement errors from scorecard when corrected
+  const handleLogCorrect = (lessonId: string, word: string, testMode: string) => {
+    // Only prune/decrement if we are practicing mistakes, i.e., lessonId is "Scorecard Review"
+    if (lessonId !== "Scorecard Review") return;
+
+    const targetLessonId = findOriginalLessonId(word);
+    if (!targetLessonId) return;
+
+    setScorecard((prev) => {
+      const updatedScores = JSON.parse(JSON.stringify(prev.scores));
+      
+      if (updatedScores[targetLessonId] && updatedScores[targetLessonId][word]) {
+        const prevVal = updatedScores[targetLessonId][word][testMode] || 0;
+        if (prevVal > 0) {
+          updatedScores[targetLessonId][word][testMode] = prevVal - 1;
+          
+          // Clean up if count reaches 0 for this mode
+          if (updatedScores[targetLessonId][word][testMode] === 0) {
+            delete updatedScores[targetLessonId][word][testMode];
+          }
+
+          // Clean up if there are no modes left for this word
+          if (Object.keys(updatedScores[targetLessonId][word]).length === 0) {
+            delete updatedScores[targetLessonId][word];
+          }
+
+          // Clean up if there are no words left in this lesson
+          if (Object.keys(updatedScores[targetLessonId]).length === 0) {
+            delete updatedScores[targetLessonId];
+          }
+        }
+      }
+
+      const updated: ScorecardData = { scores: updatedScores };
+      saveLocalScorecard(updated);
+
+      // Background sync with Cloud Storage
       syncScorecardToCloud(updated).then((success) => {
         if (success) setIsCloudSynced(true);
       });
@@ -267,6 +323,7 @@ export default function App() {
               setSelectedLesson(null);
             }}
             onLogMistake={handleLogMistake}
+            onLogCorrect={handleLogCorrect}
           />
         )}
 

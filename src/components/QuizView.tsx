@@ -6,6 +6,7 @@ interface QuizViewProps {
   lesson: ExpandedLesson;
   onBack: () => void;
   onLogMistake: (lessonId: string, word: string, testMode: string) => void;
+  onLogCorrect?: (lessonId: string, word: string, testMode: string) => void;
 }
 
 interface Question {
@@ -16,7 +17,7 @@ interface Question {
   options: string[];
 }
 
-export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps) {
+export default function QuizView({ lesson, onBack, onLogMistake, onLogCorrect }: QuizViewProps) {
   const [quizLength, setQuizLength] = useState<10 | "all" | "custom">("all");
   const [customTypes, setCustomTypes] = useState<string[]>(['Vocabulary-Meaning']);
   const [isConfiguring, setIsConfiguring] = useState(true);
@@ -104,6 +105,9 @@ export default function QuizView({ lesson, onBack, onLogMistake }: QuizViewProps
 
     if (isCorrect) {
       setCorrectAnswersCount((prev) => prev + 1);
+      if (onLogCorrect) {
+        onLogCorrect(lesson.id, question.vocab.v, `Vocab-${question.testMode}`);
+      }
     } else {
       // Record mistake
       setIncorrectList((prev) => [...prev, { vocab: question.vocab, mode: question.testMode }]);
